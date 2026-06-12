@@ -10,6 +10,7 @@ I build retrieval, agents, MCP servers, voice, and automation with one rule runn
 - **[mini-rag](https://github.com/vinimabreu/mini-rag):** a small, working RAG API on FastAPI, Chroma and Claude. The clean baseline.
 
 ### Agents and tools
+- **[web-pilot](https://github.com/vinimabreu/web-pilot):** a browser-use agent that proposes one action per step and lets code validate it against guardrails (domain allowlist, no credential fields, step budget) before the browser acts.
 - **[multi-agent-analyst](https://github.com/vinimabreu/multi-agent-analyst):** a planner, worker, and verifier crew that answers questions no single source can, with citations or an honest refusal.
 - **[sql-agent](https://github.com/vinimabreu/sql-agent):** plain English to SQL, with a real self-correction loop and defence-in-depth read-only safety.
 - **[mcp-listings](https://github.com/vinimabreu/mcp-listings):** a Model Context Protocol server exposing live data to Claude as typed tools.
