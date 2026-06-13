@@ -3,11 +3,20 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Fifteen public projects, more than 170 deterministic tests, one rule.
 
-<sub><a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
+<sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=4" width="100%" alt="" />
+
+## The house rule, running
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/safety-demo-dark.svg">
+  <img src="assets/safety-demo-light.svg" alt="A captured web-pilot run: the model tries to type into a password field and to navigate off-site, both actions are blocked in code, and the agent gives up safely." width="100%">
+</picture>
+
+<sub>A captured run of <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s safety demo, reproducible from the committed <code>examples/safety_demo.py</code>: the model tries a credential field and an off-site jump, and the guardrails answer.</sub>
 
 ## Flagships
 
