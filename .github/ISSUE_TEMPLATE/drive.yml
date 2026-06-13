@@ -1,0 +1,17 @@
+name: Drive my agent
+description: Give web-pilot a goal. An Action runs it against a sandbox store in a real browser and replies with the full audit trace.
+title: "drive: give the agent a goal"
+labels: [drive]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence. Ask for a price, or try to make it type a password or leave the sandbox. It will not.
+      placeholder: Find the price of the Standing Desk.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        The agent only ever drives its own bundled sandbox store. The reply takes a couple of minutes (a real Chromium boots up for you). Every step lands in the trace, blocked or not: the model proposes, the code disposes.

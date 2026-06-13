@@ -18,6 +18,14 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 
 <sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>), <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> abstaining below its measured BM25 floor, and <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a>'s gate failing a candidate that improved the headline number while losing a field. Each one is reproducible from its repo.</sub>
 
+### Drive it yourself
+
+**[Open an issue with a goal](https://github.com/vinimabreu/vinimabreu/issues/new?template=drive.yml)** and a GitHub Action will boot a real Chromium, run web-pilot against its sandbox store with your goal, reply with the full audit trace, and log the attempt below. Ask for a price. Or try to make it type a password or leave the sandbox. It will not.
+
+<!-- drives:start -->
+_No drives yet. Be the first._
+<!-- drives:end -->
+
 ## Flagships
 
 <p align="center">

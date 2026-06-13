@@ -1,0 +1,70 @@
+name: drive-agent
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-write
+  cancel-in-progress: false
+
+jobs:
+  drive:
+    if: contains(github.event.issue.labels.*.name, 'drive')
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Get web-pilot
+        run: git clone --depth 1 https://github.com/vinimabreu/web-pilot.git /tmp/web-pilot
+      - name: Install Playwright Chromium
+        run: |
+          pip install "playwright==1.48.0"
+          playwright install --with-deps chromium
+      - name: Drive the agent with the visitor's goal
+        id: drive
+        env:
+          DRIVE_GOAL: ${{ github.event.issue.body }}
+          DRIVE_ISSUE: ${{ github.event.issue.number }}
+          WEBPILOT_DIR: /tmp/web-pilot
+        run: python assets/drive_agent.py
+
+      # The reply is the deliverable, so it runs even if the drive crashed,
+      # and it never waits on the board commit.
+      - name: Reply with the audit trace and close
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if [ ! -s /tmp/drive_comment.md ]; then
+            printf '%s\n' "The agent hit an error booting the browser for this goal. Please open a new drive issue and it will try again." > /tmp/drive_comment.md
+          fi
+          gh issue comment "$ISSUE" -R vinimabreu/vinimabreu --body-file /tmp/drive_comment.md
+          gh issue close "$ISSUE" -R vinimabreu/vinimabreu --reason completed
+
+      - name: Commit the drives board
+        if: always()
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/drives.json README.md
+          if git diff --cached --quiet; then
+            echo "board unchanged"; exit 0
+          fi
+          git commit -m "drives: log run for issue #${{ github.event.issue.number }}"
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push retry $i"; sleep 5
+          done
+          echo "board push failed after retries (reply already sent)"; exit 0
