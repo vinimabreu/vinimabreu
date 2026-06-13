@@ -1,0 +1,27 @@
+name: update-indicators
+
+on:
+  schedule:
+    - cron: "20 13 * * 1-5"  # weekdays, after BCB publishes the day's PTAX
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate indicator strip from the BCB SGS API
+        run: python assets/make_indicators.py
+      - name: Commit only if the numbers changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/indicators-dark.svg assets/indicators-light.svg
+          git diff --cached --quiet || git commit -m "indicators: weekday refresh from BCB SGS"
+          git push

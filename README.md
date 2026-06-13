@@ -79,6 +79,13 @@ Field-level evaluation and a CI release gate for LLM document extraction.
 
 *The layer underneath everything above: scrape, parse, validate, schedule.*
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/indicators-dark.svg">
+  <img src="assets/indicators-light.svg" alt="Live Central Bank of Brazil indicators rendered by this repo's scheduled pipeline" width="100%">
+</picture>
+
+<sub>Not a screenshot: live numbers from the Central Bank of Brazil, refreshed on weekdays by <a href="https://github.com/vinimabreu/vinimabreu/blob/main/.github/workflows/update-indicators.yml">a scheduled pipeline in this repo</a>, committed only when the data changes. The commit history is the proof.</sub>
+
 **[pdf-extract](https://github.com/vinimabreu/pdf-extract)**<br>
 PDFs into validated structured JSON, with pluggable OCR.
 
