@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   drive:
-    if: contains(github.event.issue.labels.*.name, 'drive')
+    if: contains(github.event.issue.labels.*.name, 'drive') || startsWith(github.event.issue.title, 'drive:')
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
