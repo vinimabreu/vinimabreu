@@ -34,6 +34,8 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 
 <sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>), <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> abstaining below its measured BM25 floor, and <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a>'s gate failing a candidate that improved the headline number while losing a field. Each one is reproducible from its repo.</sub>
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+
 ## Flagships
 
 <p align="center">
@@ -44,6 +46,8 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 </p>
 
 <sub><a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> &middot; <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a> &middot; <a href="https://github.com/vinimabreu/voice-receptionist">voice-receptionist</a> &middot; <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a></sub>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Retrieval and RAG
 
@@ -57,6 +61,8 @@ A RAG pipeline with its own eval harness (hit@k, MRR, recall@k): BM25, dense, an
 
 **[mini-rag](https://github.com/vinimabreu/mini-rag)**<br>
 A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Agents and tools
 
@@ -74,6 +80,8 @@ Plain English to SQL, with a self-correction loop, on a read-only connection.
 **[mcp-listings](https://github.com/vinimabreu/mcp-listings)**<br>
 MCP server exposing a property-listings dataset to Claude as typed tools.
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+
 ## Voice and automation
 
 *Conversation up front, a tested service underneath, and a human whenever confidence drops.*
@@ -84,12 +92,16 @@ AI phone receptionist over Twilio: books against a live calendar, abstains on po
 **[n8n-lead-triage](https://github.com/vinimabreu/n8n-lead-triage)**<br>
 n8n routes, a tested HTTP service decides. Low confidence or any model failure routes to a human, never to silence.
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+
 ## Evaluation and quality
 
 *A regression gets blocked before it ships, not discovered after.*
 
 **[doc-eval](https://github.com/vinimabreu/doc-eval)**<br>
 Field-level evaluation and a CI release gate for LLM document extraction.
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Data engineering and extraction
 
@@ -117,6 +129,8 @@ Daily ETL of Brazilian macro indicators from the central bank API, on pandas and
 **[web-scraper](https://github.com/vinimabreu/web-scraper)**<br>
 A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+
 ## Stack
 
 **Core** &nbsp;Python &middot; FastAPI &middot; Pydantic &middot; pytest<br>
@@ -125,6 +139,8 @@ A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Twilio &middot; Streamlit<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## How I work
 
