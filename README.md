@@ -1,6 +1,4 @@
-# Vinicius Pereira
-
-**AI systems that are grounded, tested, and honest, and the data pipelines behind them.**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=210&section=header&text=Vinicius%20Pereira&fontSize=54&fontColor=FFFFFF&fontAlignY=36&desc=AI%20systems%20that%20are%20grounded%2C%20tested%2C%20and%20honest&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="Vinicius Pereira. AI systems that are grounded, tested, and honest." />
 
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
@@ -111,4 +109,4 @@ A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
   Based in Brazil, working with clients worldwide.
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=4" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=110&section=footer" width="100%" alt="" />
