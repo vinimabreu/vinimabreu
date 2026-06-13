@@ -15,6 +15,7 @@ from playwright.sync_api import sync_playwright
 OUT = Path.home() / "Desktop" / "social-cards"
 
 REPOS = {
+    "record-refinery": "Raw business records in, a clean validated deduplicated dataset and a QA brief out",
     "rag-chat": "Chat with your docs: grounded answers, clickable citations, an honest \"I don't know\"",
     "web-pilot": "A browser-use agent whose guardrails are enforced in code, not in the prompt",
     "voice-receptionist": "An AI phone receptionist that books against a live calendar and logs every call",
