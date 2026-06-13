@@ -13,10 +13,10 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/safety-demo-dark.svg">
-  <img src="assets/safety-demo-light.svg" alt="A captured web-pilot run: the model tries to type into a password field and to navigate off-site, both actions are blocked in code, and the agent gives up safely." width="100%">
+  <img src="assets/safety-demo-light.svg" alt="Three captured scenes on rotation: web-pilot's guardrails block a password field and an off-site jump, rag-chat abstains honestly below its measured retrieval floor, and doc-eval's gate blocks a release whose headline number improved." width="100%">
 </picture>
 
-<sub>A captured run of <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s safety demo, reproducible from the committed <code>examples/safety_demo.py</code>: the model tries a credential field and an off-site jump, and the guardrails answer.</sub>
+<sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>), <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> abstaining below its measured BM25 floor, and <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a>'s gate failing a candidate that improved the headline number while losing a field. Each one is reproducible from its repo.</sub>
 
 ## Flagships
 
