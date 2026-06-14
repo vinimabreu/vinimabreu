@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Sixteen public projects, more than 200 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Seventeen public projects, more than 200 deterministic tests, one rule.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
@@ -52,6 +52,9 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 ## Retrieval and RAG
 
 *Citations you can click, an honest "I don't know", and retrieval quality that is measured, not assumed.*
+
+**[source-of-truth](https://github.com/vinimabreu/source-of-truth)**<br>
+Centralizes scattered sources (markdown, FAQ, HTML, plaintext) into one queryable base that flags where two sources disagree, marks stale sources, and abstains honestly. Deterministic, no API key.
 
 **[rag-chat](https://github.com/vinimabreu/rag-chat)**<br>
 Chat-with-your-docs widget: grounded answers with clickable citations and a working chat UI. Key-free demo mode.
