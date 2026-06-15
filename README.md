@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Eighteen public projects, more than 200 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Nineteen public projects, more than 200 deterministic tests, one rule.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
@@ -92,6 +92,9 @@ MCP server exposing a property-listings dataset to Claude as typed tools.
 **[voice-receptionist](https://github.com/vinimabreu/voice-receptionist)**<br>
 AI phone receptionist over Twilio: books against a live calendar, abstains on policy questions, logs every call.
 
+**[retell-sms-handler](https://github.com/vinimabreu/retell-sms-handler)**<br>
+Makes a Retell voice agent's In-Call SMS fire deterministically through a Conversation Flow function node: consent gated, the destination resolved in code, every send logged. FastAPI and Twilio.
+
 **[n8n-lead-triage](https://github.com/vinimabreu/n8n-lead-triage)**<br>
 n8n routes, a tested HTTP service decides. Low confidence or any model failure routes to a human, never to silence.
 
@@ -146,7 +149,7 @@ A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
 **Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
 **Models** &nbsp;Anthropic Claude API &middot; MCP (Model Context Protocol)<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
-**Automation** &nbsp;n8n &middot; Twilio &middot; Streamlit<br>
+**Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />

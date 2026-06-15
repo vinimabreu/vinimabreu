@@ -15,6 +15,7 @@ from playwright.sync_api import sync_playwright
 OUT = Path.home() / "Desktop" / "social-cards"
 
 REPOS = {
+    "retell-sms-handler": "An In-Call SMS for your Retell voice agent that fires every time, with consent logged and the number resolved in code",
     "grounded-copy": "On-brand product copy from your catalog, with every invented spec, price or claim caught before it ships",
     "source-of-truth": "Scattered sources in, one trustworthy answer out, with cross-source conflicts and stale sources flagged",
     "record-refinery": "Raw business records in, a clean validated deduplicated dataset and a QA brief out",
