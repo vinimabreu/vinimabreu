@@ -15,6 +15,7 @@ from playwright.sync_api import sync_playwright
 OUT = Path.home() / "Desktop" / "social-cards"
 
 REPOS = {
+    "grounded-copy": "On-brand product copy from your catalog, with every invented spec, price or claim caught before it ships",
     "source-of-truth": "Scattered sources in, one trustworthy answer out, with cross-source conflicts and stale sources flagged",
     "record-refinery": "Raw business records in, a clean validated deduplicated dataset and a QA brief out",
     "rag-chat": "Chat with your docs: grounded answers, clickable citations, an honest \"I don't know\"",
