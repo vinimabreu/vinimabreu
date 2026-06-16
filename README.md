@@ -12,12 +12,16 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 <img src="https://img.shields.io/badge/pytest-6E56CF?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 <img src="https://img.shields.io/badge/Playwright-6E56CF?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
 <img src="https://img.shields.io/badge/pandas-6E56CF?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
+<img src="https://img.shields.io/badge/Tesseract%20OCR-6E56CF?style=flat-square" alt="Tesseract OCR">
 <img src="https://img.shields.io/badge/Claude-6E56CF?style=flat-square&logo=anthropic&logoColor=white" alt="Claude">
+<img src="https://img.shields.io/badge/MCP-6E56CF?style=flat-square" alt="MCP (Model Context Protocol)">
 <img src="https://img.shields.io/badge/Chroma-6E56CF?style=flat-square&logo=chromadb&logoColor=white" alt="Chroma">
 <img src="https://img.shields.io/badge/SQLite-6E56CF?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 <img src="https://img.shields.io/badge/Docker-6E56CF?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 <img src="https://img.shields.io/badge/n8n-6E56CF?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
 <img src="https://img.shields.io/badge/Twilio-6E56CF?style=flat-square&logo=twilio&logoColor=white" alt="Twilio">
+<img src="https://img.shields.io/badge/Retell-6E56CF?style=flat-square" alt="Retell">
+<img src="https://img.shields.io/badge/Streamlit-6E56CF?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
 <img src="https://img.shields.io/badge/GitHub%20Actions-6E56CF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
 </p>
 
