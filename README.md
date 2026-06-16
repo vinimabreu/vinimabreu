@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Nineteen public projects, more than 200 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-one public projects, more than 200 deterministic tests, one rule.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
@@ -39,13 +39,13 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 ## Flagships
 
 <p align="center">
+  <a href="https://github.com/vinimabreu/bedrock"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=bedrock&bg_color=00000000&hide_border=true&title_color=A78BFA&text_color=9DA7B3&icon_color=A78BFA"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=bedrock&bg_color=00000000&hide_border=true&title_color=6E56CF&text_color=57606A&icon_color=6E56CF" alt="bedrock: a NL-to-SQL data agent that proves it answers the same right thing every time" width="49%"></picture></a>
   <a href="https://github.com/vinimabreu/rag-chat"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=rag-chat&bg_color=00000000&hide_border=true&title_color=A78BFA&text_color=9DA7B3&icon_color=A78BFA"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=rag-chat&bg_color=00000000&hide_border=true&title_color=6E56CF&text_color=57606A&icon_color=6E56CF" alt="rag-chat: chat with your docs, grounded answers with clickable citations" width="49%"></picture></a>
   <a href="https://github.com/vinimabreu/web-pilot"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=web-pilot&bg_color=00000000&hide_border=true&title_color=A78BFA&text_color=9DA7B3&icon_color=A78BFA"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=web-pilot&bg_color=00000000&hide_border=true&title_color=6E56CF&text_color=57606A&icon_color=6E56CF" alt="web-pilot: a browser-use agent with guardrails enforced in code" width="49%"></picture></a>
   <a href="https://github.com/vinimabreu/voice-receptionist"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=voice-receptionist&bg_color=00000000&hide_border=true&title_color=A78BFA&text_color=9DA7B3&icon_color=A78BFA"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=voice-receptionist&bg_color=00000000&hide_border=true&title_color=6E56CF&text_color=57606A&icon_color=6E56CF" alt="voice-receptionist: an AI phone receptionist that books appointments against a live calendar" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/doc-eval"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=doc-eval&bg_color=00000000&hide_border=true&title_color=A78BFA&text_color=9DA7B3&icon_color=A78BFA"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vinimabreu&repo=doc-eval&bg_color=00000000&hide_border=true&title_color=6E56CF&text_color=57606A&icon_color=6E56CF" alt="doc-eval: field-level evaluation and a CI release gate for LLM extraction" width="49%"></picture></a>
 </p>
 
-<sub><a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> &middot; <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a> &middot; <a href="https://github.com/vinimabreu/voice-receptionist">voice-receptionist</a> &middot; <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a></sub>
+<sub><a href="https://github.com/vinimabreu/bedrock">bedrock</a> &middot; <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> &middot; <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a> &middot; <a href="https://github.com/vinimabreu/voice-receptionist">voice-receptionist</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
@@ -106,6 +106,9 @@ Generates on-brand product copy from your catalog, then checks every claim back 
 ## Evaluation and quality
 
 *A regression gets blocked before it ships, not discovered after.*
+
+**[bedrock](https://github.com/vinimabreu/bedrock)**<br>
+A natural-language-to-SQL data agent with a stability harness: it runs each question K times against a defended answer key, flags the ones that flap, and a CI gate blocks a candidate when reliability regresses. Deterministic, key-free demo.
 
 **[doc-eval](https://github.com/vinimabreu/doc-eval)**<br>
 Field-level evaluation and a CI release gate for LLM document extraction.
