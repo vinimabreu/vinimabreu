@@ -25,6 +25,9 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 <img src="https://img.shields.io/badge/GitHub%20Actions-6E56CF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
 <img src="https://img.shields.io/badge/TypeScript-6E56CF?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
 <img src="https://img.shields.io/badge/JavaScript-6E56CF?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
+<img src="https://img.shields.io/badge/React-6E56CF?style=flat-square&logo=react&logoColor=white" alt="React">
+<img src="https://img.shields.io/badge/Next.js-6E56CF?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+<img src="https://img.shields.io/badge/Vue.js-6E56CF?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js">
 <img src="https://img.shields.io/badge/Node.js-6E56CF?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
 <img src="https://img.shields.io/badge/Vercel-6E56CF?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
 <img src="https://img.shields.io/badge/Supabase-6E56CF?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
@@ -162,7 +165,7 @@ A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
 **Models** &nbsp;Anthropic Claude API &middot; MCP (Model Context Protocol)<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
-**Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; Node.js &middot; Vercel &middot; Supabase<br>
+**Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vercel &middot; Supabase<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
