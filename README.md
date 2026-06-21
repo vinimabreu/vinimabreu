@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-one public projects, more than 200 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-two public projects, more than 200 deterministic tests, one rule.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
@@ -155,6 +155,9 @@ Daily ETL of Brazilian macro indicators from the central bank API, on pandas and
 
 **[web-scraper](https://github.com/vinimabreu/web-scraper)**<br>
 A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
+
+**[repo-packager](https://github.com/vinimabreu/repo-packager)**<br>
+Downloads GitHub repos and delivers clean, deterministic ZIPs: strips build noise and credential files, builds a byte-for-byte reproducible archive, and writes a manifest with the sha256 and the rule that removed each file. Standard library only.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
