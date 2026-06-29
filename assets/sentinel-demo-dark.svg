@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 392" role="img"
+     aria-label="scrape-sentinel diffing two runs of a product catalog: one new, one removed, one changed with a price drop and stock change">
+  <rect x="2" y="2" width="716" height="388" rx="12" fill="#0D1117" stroke="#30363D"/>
+  <circle cx="24" cy="30" r="6" fill="#FF5F56"/><circle cx="46" cy="30" r="6" fill="#FFBD2E"/><circle cx="68" cy="30" r="6" fill="#27C93F"/>
+  <text x="92" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E">scrape-sentinel · catalog monitor · change detection</text>
+  <line x1="2" y1="48" x2="718" y2="48" stroke="#30363D"/>
+  <text x="24" y="80" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#3FB950" font-weight="600">$ </tspan><tspan fill="#E6EDF3">scrape-sentinel run --source catalog.json --key sku</tspan></text>
+  <text x="24" y="114" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#A78BFA" font-weight="600">[scrape-sentinel] catalog: 1 new, 1 changed, 1 removed (2 unchanged)</tspan></text>
+  <text x="24" y="150" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#3FB950" font-weight="600">NEW</tspan></text>
+  <text x="24" y="174" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#3FB950">  + W-104  "Botanical Linen"</tspan></text>
+  <text x="24" y="200" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#F85149" font-weight="600">REMOVED</tspan></text>
+  <text x="24" y="224" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#F85149">  - W-099  "Retro Bloom"</tspan></text>
+  <text x="24" y="250" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#D29922" font-weight="600">CHANGED</tspan></text>
+  <text x="24" y="274" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#D29922">  ~ W-101  "Coastal Stripe"</tspan></text>
+  <text x="24" y="296" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#8B949E">      price: 39.0 -&gt; 35.0</tspan></text>
+  <text x="24" y="318" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#8B949E">      in_stock: True -&gt; False</tspan></text>
+  <text x="24" y="352" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#A78BFA"># what changed since the last run, down to the field</tspan></text>
+</svg>

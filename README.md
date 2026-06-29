@@ -170,6 +170,13 @@ Downloads GitHub repos and delivers clean, deterministic ZIPs: strips build nois
 **[cloudrun-pipeline](https://github.com/vinimabreu/cloudrun-pipeline)**<br>
 Takes a pipeline from a local script to a deployed service that runs on a schedule, with health checks, run history, and retries. Built for Google Cloud Run.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sentinel-demo-dark.svg">
+  <img src="assets/sentinel-demo-light.svg" alt="scrape-sentinel diffing two runs of a product catalog: one new product, one removed, and one with a price drop and a stock change" width="100%">
+</picture>
+
+<sub>Captured output: <a href="https://github.com/vinimabreu/scrape-sentinel">scrape-sentinel</a> diffing two runs of a product catalog. It reports what is new, gone, and changed down to the field, then alerts and stores a snapshot. Reproducible from the repo's offline demo.</sub>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Stack
