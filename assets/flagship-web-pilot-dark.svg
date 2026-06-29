@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 150" role="img"
+     aria-label="web-pilot: A browser-use agent with its guardrails enforced in code, plus a full audit trace.">
+  <rect x="1.5" y="1.5" width="477" height="147" rx="12" fill="#0D1117" stroke="#30363D"/>
+  <circle cx="30" cy="36" r="5" fill="#A78BFA"/>
+  <text x="44" y="43" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#A78BFA">web-pilot</text>
+  <text x="24" y="78" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#E6EDF3">A browser-use agent with its guardrails</text><text x="24" y="102" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" fill="#E6EDF3">enforced in code, plus a full audit trace.</text>
+  <text x="24" y="130" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" fill="#8B949E">Python · guardrails in code · audit trace</text>
+</svg>
