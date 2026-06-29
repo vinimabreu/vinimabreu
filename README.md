@@ -5,6 +5,8 @@
 
 I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-six public projects, more than 400 deterministic tests, one rule.
 
+> My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
+
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/FastAPI-6E56CF?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
@@ -194,6 +196,7 @@ Takes a pipeline from a local script to a deployed service that runs on a schedu
 
 <p align="center">
   <b>Open to AI engineering, RAG, agents, and data work.</b><br>
+  RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI.<br>
   Based in Brazil, working with clients worldwide.
 </p>
 
