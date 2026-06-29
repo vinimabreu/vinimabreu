@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-two public projects, more than 200 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-six public projects, more than 400 deterministic tests, one rule.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
@@ -125,6 +125,9 @@ A natural-language-to-SQL data agent with a stability harness: it runs each ques
 **[doc-eval](https://github.com/vinimabreu/doc-eval)**<br>
 Field-level evaluation and a CI release gate for LLM document extraction.
 
+**[lead-qualifier](https://github.com/vinimabreu/lead-qualifier)**<br>
+Qualifies scraped leads with rules or an injected LLM (a 0-100 score, a reason, keep or drop), then measures the qualifier itself: precision, recall, and f1 against a labeled set. Zero runtime dependencies.
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Data engineering and extraction
@@ -156,20 +159,26 @@ Daily ETL of Brazilian macro indicators from the central bank API, on pandas and
 **[web-scraper](https://github.com/vinimabreu/web-scraper)**<br>
 A Playwright scraper, SQLite storage, and a Streamlit dashboard, end to end.
 
+**[scrape-sentinel](https://github.com/vinimabreu/scrape-sentinel)**<br>
+The change-aware layer for any scraper: turns a list of records into new, changed, and removed since the last run, then alerts and stores a snapshot. Zero runtime dependencies.
+
 **[repo-packager](https://github.com/vinimabreu/repo-packager)**<br>
 Downloads GitHub repos and delivers clean, deterministic ZIPs: strips build noise and credential files, builds a byte-for-byte reproducible archive, and writes a manifest with the sha256 and the rule that removed each file. Standard library only.
+
+**[cloudrun-pipeline](https://github.com/vinimabreu/cloudrun-pipeline)**<br>
+Takes a pipeline from a local script to a deployed service that runs on a schedule, with health checks, run history, and retries. Built for Google Cloud Run.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Stack
 
-**Core** &nbsp;Python &middot; FastAPI &middot; Pydantic &middot; pytest<br>
+**Core** &nbsp;Python &middot; FastAPI &middot; Flask &middot; Pydantic &middot; pytest<br>
 **Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
 **Models** &nbsp;Anthropic Claude API &middot; MCP (Model Context Protocol)<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
 **Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vercel &middot; Supabase<br>
-**Ops** &nbsp;Docker &middot; GitHub Actions
+**Ops** &nbsp;Docker &middot; GitHub Actions &middot; Google Cloud Run
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
