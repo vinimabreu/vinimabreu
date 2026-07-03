@@ -35,7 +35,7 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 <img src="https://img.shields.io/badge/Supabase-6E56CF?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
 </p>
 
-<sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
+<sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#the-free-handbook">Free handbook</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=4" width="100%" alt="" />
 
@@ -47,6 +47,20 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 </picture>
 
 <sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>), <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> abstaining below its measured BM25 floor, and <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a>'s gate failing a candidate that improved the headline number while losing a field. Each one is reproducible from its repo.</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+
+## The free handbook
+
+<table><tr><td width="170" valign="top">
+<a href="https://github.com/vinimabreu/ai-in-practice"><img src="https://raw.githubusercontent.com/vinimabreu/ai-in-practice/main/assets/cover.png" width="160" alt="Artificial Intelligence in Practice, book cover"></a>
+</td><td valign="top">
+
+**[Artificial Intelligence in Practice](https://github.com/vinimabreu/ai-in-practice)**: a free 84-page handbook that walks from "what is a token" to working agents with tools. Local models, RAG, agents, MCP, fine-tuning, real API costs, security, prompting as a method, and how to test AI systems so they do not embarrass you in front of a customer. Written for people starting out in AI, with every example tested by hand. CC BY-NC-SA: share it, translate it, teach with it.
+
+<sub><a href="https://github.com/vinimabreu/ai-in-practice/blob/main/Artificial_Intelligence_in_Practice.pdf">Read the PDF</a> &middot; <a href="https://github.com/vinimabreu/ai-in-practice">Star the repo</a> &middot; <a href="https://dev.to/vinimabreu">Chapters serialized on dev.to</a></sub>
+
+</td></tr></table>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
@@ -199,9 +213,13 @@ Takes a pipeline from a local script to a deployed service that runs on a schedu
 | --- | --- | --- |
 | Answers cite their sources and refuse when the evidence is not there. | Deterministic suites that run with no API key and no network; CI gates catch regressions. | Trade-offs go in the README: rag-quality ships the eval showing hybrid retrieval was not a free win on its corpus. |
 
-> "completed the work ahead of schedule and with accuracy. I would hire him again."
+> "He built a reusable, profile-driven Python data cleansing framework with strong architecture, clear documentation, automated tests, and disciplined output controls. [...] The final delivery was professional, well-structured, tested, and ready for the next productisation phase. I would confidently work with Vinicius again."
 >
 > <sub>recent client review</sub>
+
+> "completed the work ahead of schedule and with accuracy. I would hire him again."
+>
+> <sub>another client review</sub>
 
 <p align="center">
   <b>Open to AI engineering, RAG, agents, and data work.</b><br>
