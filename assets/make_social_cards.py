@@ -34,6 +34,11 @@ REPOS = {
     "ai-watcher": "Watches feeds and turns new articles into structured AI summaries",
     "bcb-data-pipeline": "Daily ETL of Brazilian macro indicators from the central bank API",
     "web-scraper": "A Playwright scraper, SQLite storage and a Streamlit dashboard, end to end",
+    "scrape-sentinel": "The change-aware layer for any scraper: what's new, changed and gone since the last run",
+    "lead-qualifier": "Noisy scraped leads in, scored keep-or-drop calls out, with the qualifier measured",
+    "cloudrun-pipeline": "A job becomes a scheduled Cloud Run service, with health checks, retries and run history",
+    "crosswatch": "Two sources confirm every number or the row is out, and every score explains itself",
+    "lead-quorum": "Two models read each lead independently: agree and the score adds up, disagree and it abstains",
 }
 
 TEMPLATE = """<!DOCTYPE html>

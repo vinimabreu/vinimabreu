@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-seven public projects, more than 460 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Twenty-eight public projects, more than 470 deterministic tests, one rule.
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
@@ -104,6 +104,9 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 **[web-pilot](https://github.com/vinimabreu/web-pilot)**<br>
 Browser-use agent built on the house rule: the model proposes one action, code disposes. Closed action vocabulary, guardrails (domain allowlist, no credential or payment fields, step budget), full audit trace.
 
+**[lead-quorum](https://github.com/vinimabreu/lead-quorum)**<br>
+Distributed multi-agent lead qualifier on Google ADK and the A2A protocol: two readers on different Gemini models extract every lead independently as separate microservices, deterministic code scores it with a reason that provably sums to the number, and when the readings disagree on which rules fire it abstains instead of guessing.
+
 **[multi-agent-analyst](https://github.com/vinimabreu/multi-agent-analyst)**<br>
 Planner, self-correcting SQL agent, BM25 retriever, and a verifier crew. Cites evidence or honestly refuses.
 
@@ -202,7 +205,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 **Core** &nbsp;Python &middot; FastAPI &middot; Flask &middot; Pydantic &middot; pytest<br>
 **Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
-**Models** &nbsp;Anthropic Claude API &middot; MCP (Model Context Protocol)<br>
+**Models** &nbsp;Anthropic Claude API &middot; Google Gemini &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
 **Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vercel &middot; Supabase<br>
