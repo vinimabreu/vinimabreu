@@ -16,6 +16,9 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 <img src="https://img.shields.io/badge/pandas-6E56CF?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
 <img src="https://img.shields.io/badge/Tesseract%20OCR-6E56CF?style=flat-square" alt="Tesseract OCR">
 <img src="https://img.shields.io/badge/Claude-6E56CF?style=flat-square&logo=anthropic&logoColor=white" alt="Claude">
+<img src="https://img.shields.io/badge/Gemini-6E56CF?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini">
+<img src="https://img.shields.io/badge/Google%20ADK-6E56CF?style=flat-square&logo=google&logoColor=white" alt="Google ADK (Agent Development Kit)">
+<img src="https://img.shields.io/badge/A2A-6E56CF?style=flat-square" alt="A2A (Agent2Agent protocol)">
 <img src="https://img.shields.io/badge/MCP-6E56CF?style=flat-square" alt="MCP (Model Context Protocol)">
 <img src="https://img.shields.io/badge/Chroma-6E56CF?style=flat-square&logo=chromadb&logoColor=white" alt="Chroma">
 <img src="https://img.shields.io/badge/SQLite-6E56CF?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
