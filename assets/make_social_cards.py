@@ -39,6 +39,7 @@ REPOS = {
     "cloudrun-pipeline": "A job becomes a scheduled Cloud Run service, with health checks, retries and run history",
     "crosswatch": "Two sources confirm every number or the row is out, and every score explains itself",
     "lead-quorum": "Two models read each lead independently: agree and the score adds up, disagree and it abstains",
+    "token-ledger": "Every LLM call your pipeline makes, both sides of the bill, one GROUP BY away. Zero dependencies, dashboard included",
 }
 
 TEMPLATE = """<!DOCTYPE html>
