@@ -8,6 +8,10 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
 <p align="center">
+<a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-6E56CF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio: vinimabreu.dev"></a>
+</p>
+
+<p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/FastAPI-6E56CF?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
 <img src="https://img.shields.io/badge/Pydantic-6E56CF?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic">
@@ -236,7 +240,8 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 <p align="center">
   <b>Open to AI engineering, RAG, agents, and data work.</b><br>
   RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI.<br>
-  Based in Brazil, working with clients worldwide.
+  Based in Brazil, working with clients worldwide.<br>
+  Full portfolio and case studies at <a href="https://vinimabreu.dev"><b>vinimabreu.dev</b></a>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=110&section=footer" width="100%" alt="" />
