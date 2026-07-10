@@ -14,6 +14,7 @@ real numbers beat fresh wrong ones.
 """
 
 import json
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -38,11 +39,19 @@ THEMES = {
 
 
 def fetch(series_id: int) -> float:
+    # The SGS "ultimos/1" endpoint intermittently answers 200 with {"erro": {}}
+    # for some series (432, the Selic target, among them). Asking for the last
+    # few rows and taking the most recent valid one sidesteps that quirk.
     url = (f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{series_id}"
-           f"/dados/ultimos/1?formato=json")
+           f"/dados/ultimos/3?formato=json")
     with urllib.request.urlopen(url, timeout=30) as resp:
         payload = json.load(resp)
-    return float(payload[0]["valor"])
+    if not isinstance(payload, list) or not payload:
+        raise ValueError(
+            f"SGS series {series_id} returned no rows: "
+            f"{json.dumps(payload)[:120]}"
+        )
+    return float(payload[-1]["valor"])
 
 
 def build(theme: str, selic: float, ipca: float, usd: float) -> str:
@@ -72,7 +81,12 @@ def build(theme: str, selic: float, ipca: float, usd: float) -> str:
 
 
 def main() -> None:
-    values = {name: fetch(sid) for name, sid in SERIES.items()}
+    try:
+        values = {name: fetch(sid) for name, sid in SERIES.items()}
+    except (urllib.error.URLError, ValueError, KeyError, TypeError) as exc:
+        # Stale real numbers beat fresh wrong ones: leave the SVGs untouched
+        # and fail loud with a clear reason instead of a raw traceback.
+        raise SystemExit(f"indicators: upstream unavailable, kept prior strip ({exc})")
     for theme in THEMES:
         out = HERE / f"indicators-{theme}.svg"
         out.write_text(
