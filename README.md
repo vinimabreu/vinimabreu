@@ -8,6 +8,11 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
 <p align="center">
+<a href="https://youtu.be/X4L-zDGmFeA"><img src="https://img.youtube.com/vi/X4L-zDGmFeA/maxresdefault.jpg" width="640" alt="60-second profile reel: Vinicius Pereira, Full-Stack AI Engineer"></a><br>
+<em>▶ 60-second profile reel</em>
+</p>
+
+<p align="center">
 <a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-6E56CF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio: vinimabreu.dev"></a>
 </p>
 
