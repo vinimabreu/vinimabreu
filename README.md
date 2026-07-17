@@ -7,7 +7,11 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
-https://github.com/vinimabreu/vinimabreu/raw/main/reel.mp4
+
+
+https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
+
+
 
 <p align="center"><em>▶ 60-second profile reel</em></p>
 
