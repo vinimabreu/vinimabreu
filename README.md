@@ -162,6 +162,9 @@ Generates on-brand product copy from your catalog, then checks every claim back 
 
 *A regression gets blocked before it ships, not discovered after.*
 
+**[confidence-gate](https://github.com/vinimabreu/confidence-gate)**<br>
+The gate between an LLM's output and production. It validates the structure, then scores confidence from external signals instead of the model's own word (is the output grounded in the evidence, does it survive resampling, does it satisfy the schema), and routes each result to auto-accept, a human review queue with a full audit trail, or abstain. Calibrated on the cost of a false accept, not the acceptance rate, because a confident wrong answer is the expensive one. Zero runtime dependencies beyond Pydantic, the generator injected as a callable.
+
 **[bedrock](https://github.com/vinimabreu/bedrock)**<br>
 A natural-language-to-SQL data agent with a stability harness: it runs each question K times against a defended answer key, flags the ones that flap, and a CI gate blocks a candidate when reliability regresses. Deterministic, key-free demo.
 
