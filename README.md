@@ -81,8 +81,8 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 
 ## Invited review
 
-**[The Agentic Commerce Blueprint](https://www.webdigestpro.com/the-agentic-commerce-blueprint/)**<br>
-Invited technical architecture reviewer for the published blueprint by Dimitrios S. Sfyris, founder of AspectSoft. Helped refine the separation between commercial eligibility and actor authority, payment artifacts treated as evidence rather than automatic permission, and the controls that keep AI-generated claims grounded, scoped, and verifiable.
+**[A Decision-Centered Reference Architecture for Trustworthy Agentic Commerce](https://arxiv.org/abs/2607.18347)**<br>
+Invited technical reviewer on this decision-centered reference architecture by Dimitrios S. Sfyris, founder of AspectSoft, now published on arXiv. Credited by name for refining the separation between commercial eligibility and actor authority, payment artifacts treated as evidence rather than automatic permission, and the controls that keep AI-generated claims grounded, scoped, and verifiable.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
