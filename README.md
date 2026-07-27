@@ -27,6 +27,7 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 <img src="https://img.shields.io/badge/Playwright-6E56CF?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
 <img src="https://img.shields.io/badge/pandas-6E56CF?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
 <img src="https://img.shields.io/badge/Tesseract%20OCR-6E56CF?style=flat-square" alt="Tesseract OCR">
+<img src="https://img.shields.io/badge/AWS%20Rekognition-6E56CF?style=flat-square" alt="AWS Rekognition">
 <img src="https://img.shields.io/badge/Claude-6E56CF?style=flat-square&logo=anthropic&logoColor=white" alt="Claude">
 <img src="https://img.shields.io/badge/Gemini-6E56CF?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini">
 <img src="https://img.shields.io/badge/Google%20ADK-6E56CF?style=flat-square&logo=google&logoColor=white" alt="Google ADK (Agent Development Kit)">
@@ -46,6 +47,9 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 <img src="https://img.shields.io/badge/Next.js-6E56CF?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
 <img src="https://img.shields.io/badge/Vue.js-6E56CF?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js">
 <img src="https://img.shields.io/badge/Node.js-6E56CF?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
+<img src="https://img.shields.io/badge/Vite-6E56CF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+<img src="https://img.shields.io/badge/Deno-6E56CF?style=flat-square&logo=deno&logoColor=white" alt="Deno">
+<img src="https://img.shields.io/badge/Capacitor-6E56CF?style=flat-square&logo=capacitor&logoColor=white" alt="Capacitor">
 <img src="https://img.shields.io/badge/Vercel-6E56CF?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
 <img src="https://img.shields.io/badge/Supabase-6E56CF?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
 </p>
@@ -239,7 +243,8 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 **Models** &nbsp;Anthropic Claude API &middot; Google Gemini &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
-**Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vercel &middot; Supabase<br>
+**Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vite &middot; Deno &middot; Capacitor &middot; Vercel &middot; Supabase<br>
+**Identity &amp; trust** &nbsp;AWS Rekognition face match &middot; document + liveness KYC flows &middot; privacy-by-design under LGPD<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions &middot; Google Cloud Run
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
