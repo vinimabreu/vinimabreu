@@ -37,6 +37,7 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 <img src="https://img.shields.io/badge/SQLite-6E56CF?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 <img src="https://img.shields.io/badge/Docker-6E56CF?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 <img src="https://img.shields.io/badge/n8n-6E56CF?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
+<img src="https://img.shields.io/badge/Make-6E56CF?style=flat-square&logo=make&logoColor=white" alt="Make">
 <img src="https://img.shields.io/badge/Twilio-6E56CF?style=flat-square&logo=twilio&logoColor=white" alt="Twilio">
 <img src="https://img.shields.io/badge/Retell-6E56CF?style=flat-square" alt="Retell">
 <img src="https://img.shields.io/badge/Streamlit-6E56CF?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
@@ -157,6 +158,9 @@ Makes a Retell voice agent's In-Call SMS fire deterministically through a Conver
 **[n8n-lead-triage](https://github.com/vinimabreu/n8n-lead-triage)**<br>
 n8n routes, a tested HTTP service decides. Low confidence or any model failure routes to a human, never to silence.
 
+**[make-failsafe](https://github.com/vinimabreu/make-failsafe)**<br>
+The same thesis on Make (ex Integromat): error routing for scenarios that refuse to die silently, backed by a tested decision service. Importable blueprints, 83 tests, and the order-export scenario verified live in a real workspace.
+
 **[grounded-copy](https://github.com/vinimabreu/grounded-copy)**<br>
 Generates on-brand product copy from your catalog, then checks every claim back against it: an invented price, spec, discount or material is flagged for review, nothing fabricated ships. Deterministic, key-free core.
 
@@ -242,7 +246,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 **Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
 **Models** &nbsp;Anthropic Claude API &middot; Google Gemini &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
-**Automation** &nbsp;n8n &middot; Twilio &middot; Retell &middot; Streamlit<br>
+**Automation** &nbsp;n8n &middot; Make &middot; Twilio &middot; Retell &middot; Streamlit<br>
 **Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vite &middot; Deno &middot; Capacitor &middot; Vercel &middot; Supabase<br>
 **Identity &amp; trust** &nbsp;AWS Rekognition face match &middot; document + liveness KYC flows &middot; privacy-by-design under LGPD<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions &middot; Google Cloud Run
