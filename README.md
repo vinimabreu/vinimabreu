@@ -128,6 +128,9 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
 *Agents that can only do what their tool layer allows.*
 
+**[langgraph-production](https://github.com/vinimabreu/langgraph-production)**<br>
+A LangGraph support agent with the reliability layer that decides whether it can ship. Routing is measured against labelled fixtures with a confusion matrix, and scored on the arguments rather than just the tool name, because choosing "issue refund" correctly means nothing if the amount is wrong. Irreversible tools stop for a human, approvals are single use, and the interrupt is measured in both directions, since stopping for nothing is how a gate stops meaning anything. The process can be killed at any of 208 points in a run and resumed from disk with the effect count unchanged, and where a window genuinely cannot be closed it holds the ticket for a human instead of guessing. A CI gate fails the build when any of those numbers moves. 373 tests, no network, no API key.
+
 **[web-pilot](https://github.com/vinimabreu/web-pilot)**<br>
 Browser-use agent built on the house rule: the model proposes one action, code disposes. Closed action vocabulary, guardrails (domain allowlist, no credential or payment fields, step budget), full audit trace.
 
