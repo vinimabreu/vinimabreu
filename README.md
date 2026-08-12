@@ -115,7 +115,10 @@ crun is the OCI runtime that Podman and CRI-O run containers with. Its passwd pa
 
 ## Retrieval and RAG
 
-*Citations you can click, an honest "I don't know", and retrieval quality that is measured, not assumed.*
+*Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
+
+**[tenant-fence](https://github.com/vinimabreu/tenant-fence)**<br>
+One knowledge base, many customers, and an entitlement filter that runs before the candidate set is scored instead of after it. The wrong version ships beside the right one so the suite can demonstrate the leak rather than describe it: same corpus, same question, same account, three sections returned one way and none at all the other. 360 tests, 141 of them adversarial, and every number in the README read off the offline demo.
 
 **[source-of-truth](https://github.com/vinimabreu/source-of-truth)**<br>
 Centralizes scattered sources (markdown, FAQ, HTML, plaintext) into one queryable base that flags where two sources disagree, marks stale sources, and abstains honestly. Deterministic, no API key.
