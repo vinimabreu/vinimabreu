@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 64" role="img"
-     aria-label="Live Central Bank of Brazil indicators: Selic 14.00 percent, IPCA twelve months 4.44 percent, USD/BRL 5.22, refreshed 2026-08-17">
+     aria-label="Live Central Bank of Brazil indicators: Selic 14.00 percent, IPCA twelve months 4.44 percent, USD/BRL 5.20, refreshed 2026-08-18">
   <rect x="2" y="2" width="716" height="60" rx="12" fill="#FFFFFF" stroke="#D0D7DE"/>
   <circle cx="30" cy="34" r="5" fill="#6E56CF">
     <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
   </circle>
   <text x="56" y="39" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14"><tspan fill="#57606A">Selic </tspan><tspan fill="#1F2328" font-weight="600">14.00%</tspan></text>
   <text x="194" y="39" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14"><tspan fill="#57606A">IPCA 12m </tspan><tspan fill="#1F2328" font-weight="600">4.44%</tspan></text>
-  <text x="350" y="39" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14"><tspan fill="#57606A">USD/BRL </tspan><tspan fill="#1F2328" font-weight="600">5.22</tspan></text>
-  <text x="696" y="39" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#57606A">BCB SGS &#183; refreshed 2026-08-17</text>
+  <text x="350" y="39" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14"><tspan fill="#57606A">USD/BRL </tspan><tspan fill="#1F2328" font-weight="600">5.20</tspan></text>
+  <text x="696" y="39" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#57606A">BCB SGS &#183; refreshed 2026-08-18</text>
 </svg>
