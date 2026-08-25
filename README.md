@@ -22,6 +22,9 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 <p align="center">
 <img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/FastAPI-6E56CF?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+<img src="https://img.shields.io/badge/Django-6E56CF?style=flat-square&logo=django&logoColor=white" alt="Django">
+<img src="https://img.shields.io/badge/Celery-6E56CF?style=flat-square&logo=celery&logoColor=white" alt="Celery">
+<img src="https://img.shields.io/badge/PostgreSQL-6E56CF?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
 <img src="https://img.shields.io/badge/Pydantic-6E56CF?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic">
 <img src="https://img.shields.io/badge/pytest-6E56CF?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 <img src="https://img.shields.io/badge/Playwright-6E56CF?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
@@ -258,14 +261,14 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 ## Stack
 
-**Core** &nbsp;Python &middot; FastAPI &middot; Flask &middot; Pydantic &middot; pytest<br>
+**Core** &nbsp;Python &middot; FastAPI &middot; Django + DRF &middot; Celery &middot; Flask &middot; Pydantic &middot; pytest<br>
 **Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
 **Models** &nbsp;Anthropic Claude API &middot; Google Gemini &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
 **Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
 **Automation** &nbsp;n8n &middot; Make &middot; Twilio &middot; Retell &middot; Streamlit<br>
 **Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vite &middot; Deno &middot; Capacitor &middot; Vercel &middot; Supabase<br>
 **Identity &amp; trust** &nbsp;AWS Rekognition face match &middot; document + liveness KYC flows &middot; privacy-by-design under LGPD<br>
-**Ops** &nbsp;Docker &middot; GitHub Actions &middot; Google Cloud Run
+**Ops** &nbsp;Docker &middot; GitHub Actions &middot; PostgreSQL &middot; Google Cloud Run
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
