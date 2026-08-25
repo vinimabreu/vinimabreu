@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Thirty-one public projects, more than 500 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Thirty-two public projects, more than 500 deterministic tests, one rule.
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
@@ -167,6 +167,9 @@ MCP server exposing a property-listings dataset to Claude as typed tools.
 ## Voice and automation
 
 *Conversation up front, a tested service underneath, and a human whenever confidence drops.*
+
+**[ghl-bridge](https://github.com/vinimabreu/ghl-bridge)**<br>
+A policy-gated bridge between a CRM workspace and AI automation, built against the platform's documented API with a deterministic fake standing in for the account. Webhook idempotency keys on the event, so a redelivery with a fresh delivery id never doubles an effect. The gate auto-sends only inside policy (business hours by timezone, covered intent, no price commitments) and parks everything else as a draft with the reason named; a redundant guard raises instead of silently filtering if an unapproved send ever reaches the transport. 379 tests, no network, no key, no account.
 
 **[voice-receptionist](https://github.com/vinimabreu/voice-receptionist)**<br>
 AI phone receptionist over Twilio: books against a live calendar, abstains on policy questions, logs every call.
