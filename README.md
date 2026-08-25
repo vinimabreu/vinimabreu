@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Thirty public projects, more than 500 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Thirty-one public projects, more than 500 deterministic tests, one rule.
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
@@ -119,6 +119,9 @@ crun is the OCI runtime that Podman and CRI-O run containers with. Its passwd pa
 
 **[tenant-fence](https://github.com/vinimabreu/tenant-fence)**<br>
 One knowledge base, many customers, and an entitlement filter that runs before the candidate set is scored instead of after it. The wrong version ships beside the right one so the suite can demonstrate the leak rather than describe it: same corpus, same question, same account, three sections returned one way and none at all the other. 360 tests, 141 of them adversarial, and every number in the README read off the offline demo.
+
+**[on-behalf](https://github.com/vinimabreu/on-behalf)**<br>
+The other half of the fence: people inside the same organization, where the authority over who opens a document is Microsoft Graph or Google Drive, not the index. Every candidate is checked against the source at query time, as the signed-in user, through a modeled on-behalf-of token exchange, and enters the answer with its right named: a direct grant, a nested group, a sharing link, a site role. The index that copies ACLs at ingestion ships beside it, wrong by design, so the suite can demonstrate the leaks that a revoked grant, a group removal, and an expired sharing link each open. Fails closed, raises instead of silently filtering, 353 tests, no network, no key.
 
 **[source-of-truth](https://github.com/vinimabreu/source-of-truth)**<br>
 Centralizes scattered sources (markdown, FAQ, HTML, plaintext) into one queryable base that flags where two sources disagree, marks stale sources, and abstains honestly. Deterministic, no API key.
