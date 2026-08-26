@@ -9,8 +9,9 @@ Action in this repo runs it on weekdays and commits the result only when the
 numbers actually changed, so the strip on the profile is always real data
 with a commit trail to prove it.
 
-Any fetch or parse failure exits non-zero without touching the SVGs: stale
-real numbers beat fresh wrong ones.
+A transient upstream outage leaves the SVGs untouched and exits clean, since
+the prior real numbers are still correct. Only unexpected or malformed data
+fails loud: stale real numbers beat fresh wrong ones.
 """
 
 import json
@@ -83,10 +84,16 @@ def build(theme: str, selic: float, ipca: float, usd: float) -> str:
 def main() -> None:
     try:
         values = {name: fetch(sid) for name, sid in SERIES.items()}
-    except (urllib.error.URLError, ValueError, KeyError, TypeError) as exc:
-        # Stale real numbers beat fresh wrong ones: leave the SVGs untouched
-        # and fail loud with a clear reason instead of a raw traceback.
-        raise SystemExit(f"indicators: upstream unavailable, kept prior strip ({exc})")
+    except urllib.error.URLError as exc:
+        # Transient upstream outage (5xx, timeout, DNS): keeping the prior real
+        # numbers is the intended outcome, not a failure of this repo. Log it
+        # and exit clean so a Central Bank blip does not turn the profile red.
+        print(f"indicators: upstream unavailable, kept prior strip ({exc})")
+        return
+    except (ValueError, KeyError, TypeError) as exc:
+        # Bad or changed data from BCB, not a transient outage: leave the SVGs
+        # untouched and fail loud, because this one is actionable.
+        raise SystemExit(f"indicators: unexpected data, kept prior strip ({exc})")
     for theme in THEMES:
         out = HERE / f"indicators-{theme}.svg"
         out.write_text(
