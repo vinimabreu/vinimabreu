@@ -101,6 +101,13 @@ crun is the OCI runtime that Podman and CRI-O run containers with. Its passwd pa
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
+## CI security
+
+*The scanner finds the template. This follows the value after someone moves it.*
+
+**[taint-trail](https://github.com/vinimabreu/taint-trail)**<br>
+The usual fix for `${{ github.event.comment.body }}` inside a `run:` block is to move the value into `env:`, which removes the finding from every scanner that looks for templates in scripts and removes nothing from the job. This follows the value after the move: through `env:`, `with:`, step outputs and into the called action, recursively, until it dies as a discrete argument with no shell in between, reaches a shell, can spoof `$GITHUB_OUTPUT` through a static heredoc delimiter, or becomes opaque, in which case it says exactly where it stopped and why instead of guessing. Every verdict is a chain with a file and line at each hop, because that is what convinces a maintainer. Modelled on a real finding in coordinated disclosure. 707 tests, one dependency, no network, no key.
+
 ## Flagships
 
 <p align="center">
