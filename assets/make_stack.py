@@ -69,7 +69,7 @@ def card(x: float, y: float, h: float, label: str, rows, icons: dict) -> str:
                 parts.append(f'<path transform="translate({ix:.1f},{iy:.1f}) scale({ICON / 24:.4f})" fill="{C["text"]}" d="{icons[slug]}"/>')
             else:
                 parts.append(f'<rect x="{ix + 3:.1f}" y="{iy + 3:.1f}" width="8" height="8" rx="1.5" fill="none" stroke="{C["text"]}" stroke-width="1.5"/>')
-            parts.append(f'<text x="{ix + ICON + 8:.1f}" y="{py + 20:.1f}" font-family="{SANS}" font-size="{FONT}" fill="{C["text"]}">{esc(name)}</text>')
+            parts.append(f'<text x="{ix + ICON + 8:.1f}" y="{py + 20:.1f}" font-family="{SANS}" font-size="{FONT}" fill="{C["amber"]}">{esc(name)}</text>')
             px += w + PILL_GAP
         py += PILL_H + PILL_GAP
     return "\n  ".join(parts)

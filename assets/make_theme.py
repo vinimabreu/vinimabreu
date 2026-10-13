@@ -99,7 +99,7 @@ def handbook(cover: bytes) -> str:
              f'<image x="{cx}" y="{cy}" width="{cw}" height="{chh}" preserveAspectRatio="xMidYMid slice" '
              f'href="data:image/jpeg;base64,{b64}"/>',
              eyebrow(x, 64, "FREE HANDBOOK · 84 PAGES"),
-             f'<text x="{x}" y="112" font-family="{SANS}" font-size="34" font-weight="700" fill="{C["white"]}">{esc(HB_TITLE)}</text>']
+             f'<text x="{x}" y="112" font-family="{SANS}" font-size="34" font-weight="700" fill="{C["amber"]}">{esc(HB_TITLE)}</text>']
     body, y = text_block(x, 154, wrap(HB_BODY, W - x - 48, 17.5, per_em=0.47), 17.5, C["soft"], 28, justify=W - x - 48)
     lic, _ = text_block(x, y + 40, [HB_LICENSE], 14, C["muted"], 20, MONO)
     return frame(cy * 2 + chh, "\n  ".join(parts + [body, lic]), f"{HB_TITLE}: {HB_BODY} {HB_LICENSE}")
