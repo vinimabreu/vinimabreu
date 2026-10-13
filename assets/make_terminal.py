@@ -30,8 +30,8 @@ THEMES = {
     # Both variants use the mission palette of vinimabreu.dev, so the terminals match the console.
     "dark": {
         "panel": "#05070A", "border": "#26313D", "title": "#6B7683",
-        "text": "#D8E1E8", "dim": "#6B7683", "prompt": "#FFB000",
-        "blocked": "#FF5C5C", "ok": "#37D67A", "brand": "#FFB000",
+        "text": "#D8E1E8", "dim": "#6B7683", "prompt": "#6B7683",
+        "blocked": "#FF5C5C", "ok": "#37D67A", "brand": "#F2F5F8",
         "dots": ("#FF5C5C", "#FFB000", "#37D67A"),
     },
 }
@@ -94,14 +94,24 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+# The loop starts this far into the first scene, when every line of it is already printed, so the
+# first frame (and any static capture) shows a full terminal instead of an empty window.
+START = ACT - FADE_GAP - 0.6
+
+
 def window(act_index: int, at: float) -> str:
     """Looping discrete opacity: on at act_start+at, off at act end."""
     on = (act_index * ACT + at) / CYCLE
     off = ((act_index + 1) * ACT - FADE_GAP) / CYCLE
     return (
-        f'<animate attributeName="opacity" dur="{CYCLE:g}s" repeatCount="indefinite" '
+        f'<animate attributeName="opacity" dur="{CYCLE:g}s" begin="-{START:g}s" repeatCount="indefinite" '
         f'calcMode="discrete" values="0;1;0" keyTimes="0;{on:.4f};{off:.4f}"/>'
     )
+
+
+def shown(act_index: int) -> str:
+    """Resting opacity for renderers that do not animate: the first scene, fully printed."""
+    return "1" if act_index == 0 else "0"
 
 
 def line_svg(act_index: int, y: int, at: float, segs, c) -> str:
@@ -110,7 +120,7 @@ def line_svg(act_index: int, y: int, at: float, segs, c) -> str:
         for text, key, bold in segs
     )
     return (
-        f'<text x="24" y="{y}" font-family="{FONT}" font-size="13.5" opacity="0">'
+        f'<text x="24" y="{y}" font-family="{FONT}" font-size="13.5" opacity="{shown(act_index)}">'
         f"{spans}{window(act_index, at)}</text>"
     )
 
@@ -125,12 +135,12 @@ def build(theme: str) -> str:
     for i, scene in enumerate(SCENES):
         parts.append(
             f'<text x="92" y="34" font-family="{FONT}" font-size="12" '
-            f'fill="{c["title"]}" opacity="0">{scene["title"]}{window(i, 0.0)}</text>'
+            f'fill="{c["title"]}" opacity="{shown(i)}">{scene["title"]}{window(i, 0.0)}</text>'
         )
         parts.extend(line_svg(i, y, at, segs, c) for y, at, segs in scene["lines"])
         last_at = scene["lines"][-1][1]
         parts.append(
-            f'<g opacity="0">{window(i, last_at + 0.5)}'
+            f'<g opacity="{shown(i)}">{window(i, last_at + 0.5)}'
             f'<rect x="24" y="368" width="8" height="15" fill="{c["brand"]}">'
             f'<animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>'
             f"</rect></g>"

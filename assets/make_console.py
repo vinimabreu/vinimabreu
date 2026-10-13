@@ -1,12 +1,12 @@
-"""Draw the mission console from telemetry.json: a radar of every public repo, live readouts, a launch ticker.
+"""Draw the live status panel from telemetry.json: a radar of every public repo, readouts, a launch ticker.
 
     python3 assets/collect_telemetry.py && python3 assets/make_console.py
 
-Same palette and type as vinimabreu.dev (ground #05070A, amber #FFB000). Each repo
-is a blip on the radar: the closer to the centre, the more recently it launched.
-Flagships are amber and named; the sweep lights each blip as it passes. Plain SVG
-with SMIL and CSS animation, no script and no external font, so GitHub serves it
-as-is inside the README.
+Same palette and type as vinimabreu.dev. Each repo is a blip on the radar: the
+closer to the centre, the more recently it launched. Amber is kept for project
+names only. Everything is drawn in place from the first frame; the only motion is
+the sweep and the ticker, so a static capture never shows an empty panel. Plain SVG
+with SMIL, no script and no external font, so GitHub serves it as-is.
 """
 
 from __future__ import annotations
@@ -22,7 +22,8 @@ W, H = 1200, 500
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
 C = {
     "ground": "#05070A", "panel": "#0A0E14", "hair": "#1C2530", "hair2": "#26313D",
-    "amber": "#FFB000", "amberdim": "#7A5600", "green": "#37D67A", "text": "#D8E1E8", "muted": "#6B7683",
+    "amber": "#FFB000", "amberdim": "#7A5600", "green": "#37D67A", "red": "#FF5C5C", "text": "#D8E1E8",
+    "soft": "#A9B4BF", "muted": "#6B7683", "white": "#F2F5F8",
 }
 CX, CY, R = 238, 258, 160      # radar
 SWEEP = 6.0                     # seconds per revolution
@@ -68,9 +69,9 @@ def radar(data: dict) -> str:
         x0, y0 = CX + R * math.cos(a0), CY + R * math.sin(a0)
         x1, y1 = CX + R * math.cos(a1), CY + R * math.sin(a1)
         wedge.append(f'<path d="M{CX},{CY} L{x0:.1f},{y0:.1f} A{R},{R} 0 0 1 {x1:.1f},{y1:.1f} Z" '
-                     f'fill="{C["amber"]}" opacity="{0.16 * (1 - i / 10):.3f}"/>')
+                     f'fill="{C["text"]}" opacity="{0.10 * (1 - i / 10):.3f}"/>')
     parts.append(
-        f'<g>{"".join(wedge)}<line x1="{CX}" y1="{CY}" x2="{CX}" y2="{CY - R}" stroke="{C["amber"]}" stroke-width="1.5"/>'
+        f'<g>{"".join(wedge)}<line x1="{CX}" y1="{CY}" x2="{CX}" y2="{CY - R}" stroke="{C["muted"]}" stroke-width="1.5"/>'
         f'<animateTransform attributeName="transform" type="rotate" from="0 {CX} {CY}" to="360 {CX} {CY}" '
         f'dur="{SWEEP:g}s" repeatCount="indefinite"/></g>'
     )
@@ -100,7 +101,7 @@ def radar(data: dict) -> str:
             labels.append(f'<text x="{x + dx:.1f}" y="{y + 3.5:.1f}" text-anchor="{anchor}" font-family="{MONO}" '
                           f'font-size="10.5" fill="{C["amber"]}">{esc(p["name"])}</text>')
     parts.extend(labels)
-    parts.append(f'<circle cx="{CX}" cy="{CY}" r="3" fill="{C["amber"]}"/>')
+    parts.append(f'<circle cx="{CX}" cy="{CY}" r="3" fill="{C["muted"]}"/>')
     parts.append(f'<text x="{CX}" y="{CY + R + 26}" text-anchor="middle" font-family="{MONO}" font-size="10" '
                  f'fill="{C["muted"]}" letter-spacing="2">CENTRE = TODAY · {len(projects)} PUBLIC REPOS</text>')
     return "\n  ".join(parts)
@@ -110,33 +111,27 @@ def readouts(data: dict) -> str:
     x0, x1 = 480, 640
     flags = [p for p in data["projects"] if p["name"] in data["flagships"]]
     green = sum(1 for p in flags if p.get("ci") == "success")
-    # NOMINAL only when every flagship's latest CI run passed; anything else says so
-    status = ([("● ", "green"), ("NOMINAL", "text")] if green == len(flags) and flags
-              else [("● ", "amber"), (f"CHECK: {len(flags) - green} flagship CI not green", "text")])
+    # the test count shown is only the flagships', each backed by a CI run anyone can open
+    flag_tests = sum(p.get("tests") or 0 for p in flags)
+    ci_colour = "green" if green == len(flags) and flags else "red"
     rows = [
-        ("STATUS", status),
-        ("WRITE-UPS", [(str(data.get("articles_published", "")), "amber"), ("  published on dev.to", "muted")]),
-        ("PUBLIC REPOS", [(str(data["project_count"]), "amber")]),
-        ("TESTS STATED", [(f'{data["tests_total"]:,}', "amber"), (f'  across {data["repos_with_tests"]} READMEs', "muted")]),
+        ("PUBLIC REPOS", [(str(data["project_count"]), "white")]),
+        ("FLAGSHIP TESTS", [(f"{flag_tests:,}", "white"), (f"  in {len(flags)} repos · ", "muted"),
+                            (f"CI passing {green}/{len(flags)}", ci_colour)]),
         ("LAST LAUNCH", [(data["last_launch"], "amber"), (f'  {stamp(data["last_launch_date"])}', "muted")]),
+        ("WRITE-UPS", [(str(data.get("articles_published", "")), "white"), ("  published on dev.to", "muted")]),
     ]
     art = data.get("latest_article")
     if art:
         rows.append(("LAST WRITE-UP", [(clip(art["title"], 52), "text")]))
-    rows.append(("FLAGSHIP CI", [(f"{green}/{len(flags)} ", "green" if green == len(flags) else "amber"), ("passing on the last run", "muted")]))
     out = []
-    y = 120
-    for i, (label, segs) in enumerate(rows):
-        reveal = (f'<animate attributeName="opacity" from="0" to="1" begin="{0.35 + i * 0.28:.2f}s" dur="0.25s" fill="freeze"/>')
+    y = 128
+    for label, segs in rows:
         spans = "".join(f'<tspan fill="{C[c]}">{esc(t)}</tspan>' for t, c in segs)
-        out.append(f'<g opacity="0">{reveal}'
-                   f'<text x="{x0}" y="{y}" font-family="{MONO}" font-size="11" fill="{C["muted"]}" letter-spacing="2">{label}</text>'
+        out.append(f'<text x="{x0}" y="{y}" font-family="{MONO}" font-size="11" fill="{C["muted"]}" letter-spacing="2">{label}</text>'
                    f'<text x="{x1}" y="{y}" font-family="{MONO}" font-size="15">{spans}</text>'
-                   f'<line x1="{x0}" y1="{y + 14}" x2="{W - 40}" y2="{y + 14}" stroke="{C["hair"]}"/></g>')
-        y += 38
-    # the status dot breathes
-    out.append(f'<circle cx="{x1 + 5}" cy="115" r="9" fill="{C["green"]}" opacity="0">'
-               f'<animate attributeName="opacity" values="0;0.25;0" dur="2.2s" begin="0.6s" repeatCount="indefinite"/></circle>')
+                   f'<line x1="{x0}" y1="{y + 14}" x2="{W - 40}" y2="{y + 14}" stroke="{C["hair"]}"/>')
+        y += 42
     return "\n  ".join(out)
 
 
@@ -153,12 +148,9 @@ def cadence(data: dict) -> str:
         h = max(3, max_h * counts[m] / top)
         x = x0 + i * (bar_w + gap)
         last = i == len(months) - 1
-        grow = (f'<animate attributeName="height" from="0" to="{h:.1f}" begin="{2.4 + i * 0.12:.2f}s" dur="0.5s" fill="freeze"/>'
-                f'<animate attributeName="y" from="{y_base}" to="{y_base - h:.1f}" begin="{2.4 + i * 0.12:.2f}s" dur="0.5s" fill="freeze"/>')
-        parts.append(f'<rect x="{x}" y="{y_base}" width="{bar_w}" height="0" fill="{C["amber"] if last else C["amberdim"]}">{grow}</rect>')
+        parts.append(f'<rect x="{x}" y="{y_base - h:.1f}" width="{bar_w}" height="{h:.1f}" fill="{C["soft"] if last else C["hair2"]}"/>')
         parts.append(f'<text x="{x + bar_w / 2}" y="{y_base - h - 6:.1f}" text-anchor="middle" font-family="{MONO}" font-size="10" '
-                     f'fill="{C["amber"] if last else C["muted"]}" opacity="0">{counts[m]}'
-                     f'<animate attributeName="opacity" from="0" to="1" begin="{2.9 + i * 0.12:.2f}s" dur="0.3s" fill="freeze"/></text>')
+                     f'fill="{C["text"] if last else C["muted"]}">{counts[m]}</text>')
         parts.append(f'<text x="{x + bar_w / 2}" y="{y_base + 14}" text-anchor="middle" font-family="{MONO}" font-size="9.5" '
                      f'fill="{C["muted"]}" letter-spacing="1">{MONTHS[int(m[5:]) - 1]}</text>')
     return "\n  ".join(parts)
@@ -179,15 +171,13 @@ def ticker(data: dict) -> str:
 
 def build(data: dict) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img"
-     aria-label="Mission console: {data['project_count']} public repos on a radar, {data['tests_total']:,} tests stated across {data['repos_with_tests']} READMEs, last launch {esc(data['last_launch'] or '')}, updated {data['collected']}">
+     aria-label="Live status: {data['project_count']} public repos on a radar by launch date, the six flagships with their tests and CI state, last launch {esc(data['last_launch'] or '')}, updated {data['collected']}">
   <defs>
     <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#FFFFFF" opacity="0.018"/></pattern>
-    <radialGradient id="glow" cx="0.85" cy="1" r="0.7"><stop offset="0" stop-color="{C['amber']}" stop-opacity="0.10"/><stop offset="1" stop-color="{C['amber']}" stop-opacity="0"/></radialGradient>
   </defs>
   <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="{C['ground']}" stroke="{C['hair2']}"/>
-  <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="url(#glow)"/>
-  <text x="32" y="44" font-family="{MONO}" font-size="12" fill="{C['amber']}" letter-spacing="3" font-weight="700">MISSION CONSOLE</text>
-  <text x="{W - 32}" y="44" text-anchor="end" font-family="{MONO}" font-size="11" fill="{C['muted']}" letter-spacing="2">LIVE TELEMETRY · UPDATED {stamp(data['collected'])}</text>
+  <text x="32" y="44" font-family="{MONO}" font-size="12" fill="{C['text']}" letter-spacing="3" font-weight="700">LIVE STATUS</text>
+  <text x="{W - 32}" y="44" text-anchor="end" font-family="{MONO}" font-size="11" fill="{C['muted']}" letter-spacing="2">FROM PUBLIC DATA · UPDATED {stamp(data['collected'])}</text>
   <line x1="20" y1="62" x2="{W - 20}" y2="62" stroke="{C['hair']}"/>
   {radar(data)}
   {readouts(data)}

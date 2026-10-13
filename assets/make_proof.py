@@ -1,4 +1,4 @@
-"""Proof tiles in the mission palette: four things a reader can verify, each linked to its evidence.
+"""Proof tiles: four things a reader can verify, each linked to its evidence.
 
     python3 assets/make_proof.py
 
@@ -34,7 +34,7 @@ def tile(label: str, name: str, detail: str) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(label.lower())}: {esc(name)}, {esc(detail)}">
   <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="{C['ground']}" stroke="{C['hair2']}"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="{C['green']}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="52" y="33" font-family="{MONO}" font-size="11" fill="{C['amber']}" letter-spacing="2.5" font-weight="700">{esc(label)}</text>
+  <text x="52" y="33" font-family="{MONO}" font-size="11" fill="{C['muted']}" letter-spacing="2.5" font-weight="700">{esc(label)}</text>
   <text x="{W - 24}" y="33" text-anchor="end" font-family="{MONO}" font-size="10" fill="{C['muted']}" letter-spacing="1">VERIFY ↗</text>
   <text x="26" y="70" font-family="{SANS}" font-size="24" font-weight="700" fill="#F2F5F8">{esc(name)}</text>
   <text x="26" y="94" font-family="{MONO}" font-size="12" fill="{C['muted']}">{esc(detail)}</text>

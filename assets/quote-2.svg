@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 192" role="img" aria-label="Client review: completed the work ahead of schedule and with accuracy. I would hire him again. (another client review)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 192" role="img" aria-label="Client review, data extraction from a public registry: completed the work ahead of schedule and with accuracy. I would hire him again.">
   <rect x="1" y="1" width="1198" height="190" rx="14" fill="#05070A" stroke="#26313D"/>
-  <text x="48" y="96" font-family="Georgia,serif" font-size="96" fill="#7A5600">“</text>
-  <text x="106" y="58" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#FFB000" letter-spacing="3" font-weight="700">CLIENT REVIEW</text>
+  <text x="48" y="96" font-family="Georgia,serif" font-size="96" fill="#26313D">“</text>
+  <text x="106" y="58" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6B7683" letter-spacing="3" font-weight="700">CLIENT REVIEW</text>
   <text x="56" y="112.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="400" fill="#D8E1E8" font-style="italic">“completed the work ahead of schedule and with accuracy. I would hire him again.”</text>
-  <text x="56" y="158.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">· another client review</text>
+  <text x="56" y="158.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">· Data extraction from a public registry</text>
 </svg>
