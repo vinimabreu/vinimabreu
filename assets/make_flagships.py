@@ -20,26 +20,26 @@ THEMES = {
     "light": {"panel": "#FFFFFF", "border": "#D0D7DE", "text": "#1F2328", "dim": "#57606A", "brand": "#6E56CF"},
 }
 
-# repo, two description lines, meta line (feature tags, no unverified numbers)
+# repo, two description lines, meta line (feature tags; test counts from each repo's README)
 CARDS = [
-    ("bedrock",
-     ["A NL-to-SQL data agent that proves it", "answers the same right thing every run."],
-     "Python · stability harness · CI gate"),
-    ("rag-chat",
-     ["Chat with your docs: grounded answers", "with clickable citations."],
-     "Python · grounded · clickable citations"),
-    ("web-pilot",
-     ["A browser-use agent with its guardrails", "enforced in code, plus a full audit trace."],
-     "Python · guardrails in code · audit trace"),
-    ("voice-receptionist",
-     ["An AI phone receptionist that books", "against a live calendar."],
-     "Python · Twilio · abstains on policy"),
-    ("scrape-sentinel",
-     ["The change-aware layer for any scraper:", "new, changed, removed since the last run."],
-     "Python · change detection · zero deps"),
-    ("lead-qualifier",
-     ["Qualify leads with rules or an LLM, then", "measure the qualifier with an eval harness."],
-     "Python · LLM + rules · eval harness"),
+    ("revenue-loop",
+     ["A won CRM deal reaches Google and Meta", "exactly once, or waits in quarantine."],
+     "Python · Data Manager + CAPI · 734 tests"),
+    ("sequence-gate",
+     ["Decides whether the next follow-up may", "fire: stop before the send, never twice."],
+     "Python · n8n / Make / Zapier · 138 tests"),
+    ("tenant-fence",
+     ["Multi-tenant RAG: entitlements filter", "before top-k, so no ranking can leak."],
+     "Python · RAG · 369 tests"),
+    ("langgraph-production",
+     ["A LangGraph support agent with a human", "gate and a resume that runs exactly once."],
+     "Python · LangGraph · 373 tests"),
+    ("taint-trail",
+     ["Follows an untrusted Actions value after", "it moves, until it dies or hits a shell."],
+     "Python · CI security · 707 tests"),
+    ("betorskip",
+     ["A local Gemma reads the bet slip; code", "checks every number and its arithmetic."],
+     "Python · Ollama + Gemma 4 · 134 tests"),
 ]
 
 

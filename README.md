@@ -3,7 +3,7 @@
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key, show captured output from actual runs, and come with an architecture diagram; every README is honest about the trade-offs. Forty-two public projects, more than 500 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from actual runs; every README is honest about the trade-offs. Forty-two public projects, more than 500 deterministic tests, one rule.
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
 
@@ -66,10 +66,10 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/safety-demo-dark.svg">
-  <img src="assets/safety-demo-light.svg" alt="Three captured scenes on rotation: web-pilot's guardrails block a password field and an off-site jump, rag-chat abstains honestly below its measured retrieval floor, and doc-eval's gate blocks a release whose headline number improved." width="100%">
+  <img src="assets/safety-demo-light.svg" alt="Three captured scenes on rotation: betorskip refuses a $84.00 return that Gemma worked out on its own, sequence-gate stops a send after the invoice is paid, refuses a replay and holds a message at 00:12 local time, and web-pilot's guardrails block a password field and an off-site jump." width="100%">
 </picture>
 
-<sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>), <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> abstaining below its measured BM25 floor, and <a href="https://github.com/vinimabreu/doc-eval">doc-eval</a>'s gate failing a candidate that improved the headline number while losing a field. Each one is reproducible from its repo.</sub>
+<sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/betorskip">betorskip</a> refusing a $84.00 return that Gemma worked out on its own, because the slip only prints To Win $64.00 (the recorded model answer in <code>examples/readings</code>); <a href="https://github.com/vinimabreu/sequence-gate">sequence-gate</a> stopping a send after the invoice was paid, refusing a replay and holding a message at 00:12 in the contact's time zone (<code>examples/demo.py</code>, column spacing trimmed); and <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>). Each one is reproducible from its repo.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
@@ -111,15 +111,15 @@ The usual fix for `${{ github.event.comment.body }}` inside a `run:` block is to
 ## Flagships
 
 <p align="center">
-  <a href="https://github.com/vinimabreu/bedrock"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-bedrock-dark.svg"><img src="assets/flagship-bedrock-light.svg" alt="bedrock: a NL-to-SQL data agent that proves it answers the same right thing every run" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/rag-chat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-rag-chat-dark.svg"><img src="assets/flagship-rag-chat-light.svg" alt="rag-chat: chat with your docs, grounded answers with clickable citations" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/web-pilot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-web-pilot-dark.svg"><img src="assets/flagship-web-pilot-light.svg" alt="web-pilot: a browser-use agent with guardrails enforced in code" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/voice-receptionist"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-voice-receptionist-dark.svg"><img src="assets/flagship-voice-receptionist-light.svg" alt="voice-receptionist: an AI phone receptionist that books appointments against a live calendar" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/scrape-sentinel"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-scrape-sentinel-dark.svg"><img src="assets/flagship-scrape-sentinel-light.svg" alt="scrape-sentinel: turn any scraper output into new, changed, and removed since the last run" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/lead-qualifier"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-lead-qualifier-dark.svg"><img src="assets/flagship-lead-qualifier-light.svg" alt="lead-qualifier: qualify scraped leads with rules or an LLM and measure the qualifier with an eval harness" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/revenue-loop"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-revenue-loop-dark.svg"><img src="assets/flagship-revenue-loop-light.svg" alt="revenue-loop: a won CRM deal reaches Google and Meta exactly once, or waits in quarantine" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/sequence-gate"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-sequence-gate-dark.svg"><img src="assets/flagship-sequence-gate-light.svg" alt="sequence-gate: decides whether the next follow-up may fire, stopping before the send and never sending twice" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/tenant-fence"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-tenant-fence-dark.svg"><img src="assets/flagship-tenant-fence-light.svg" alt="tenant-fence: multi-tenant RAG where entitlements filter before top-k, so no ranking can leak across customers" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/langgraph-production"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-langgraph-production-dark.svg"><img src="assets/flagship-langgraph-production-light.svg" alt="langgraph-production: a LangGraph support agent with a human gate and a resume that runs exactly once" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/taint-trail"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-taint-trail-dark.svg"><img src="assets/flagship-taint-trail-light.svg" alt="taint-trail: follows an untrusted GitHub Actions value after it moves, until it dies or reaches a shell" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/betorskip"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-betorskip-dark.svg"><img src="assets/flagship-betorskip-light.svg" alt="betorskip: a local Gemma reads the bet slip, and code checks every number and the slip's own arithmetic" width="49%"></picture></a>
 </p>
 
-<sub><a href="https://github.com/vinimabreu/bedrock">bedrock</a> &middot; <a href="https://github.com/vinimabreu/rag-chat">rag-chat</a> &middot; <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a> &middot; <a href="https://github.com/vinimabreu/voice-receptionist">voice-receptionist</a> &middot; <a href="https://github.com/vinimabreu/scrape-sentinel">scrape-sentinel</a> &middot; <a href="https://github.com/vinimabreu/lead-qualifier">lead-qualifier</a></sub>
+<sub><a href="https://github.com/vinimabreu/revenue-loop">revenue-loop</a> &middot; <a href="https://github.com/vinimabreu/sequence-gate">sequence-gate</a> &middot; <a href="https://github.com/vinimabreu/tenant-fence">tenant-fence</a> &middot; <a href="https://github.com/vinimabreu/langgraph-production">langgraph-production</a> &middot; <a href="https://github.com/vinimabreu/taint-trail">taint-trail</a> &middot; <a href="https://github.com/vinimabreu/betorskip">betorskip</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
@@ -282,21 +282,22 @@ Takes a pipeline from a local script to a deployed service that runs on a schedu
 Cross-source corroboration and scheduled scoring for data you cannot trust from one provider: two sources confirm each other or the row is excluded, every score ships a plain-language reason that provably sums to the number, and a config-driven scheduler runs it all on cadence with a kill switch. Zero runtime dependencies.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sentinel-demo-dark.svg">
-  <img src="assets/sentinel-demo-light.svg" alt="scrape-sentinel diffing two runs of a product catalog: one new product, one removed, and one with a price drop and a stock change" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/revenue-demo-dark.svg">
+  <img src="assets/revenue-demo-light.svg" alt="revenue-loop's offline demo: a won deal uploaded once to Google and Meta under one conversion key, a click that belongs to another contact quarantined on both, and a re-fired webhook that sends nothing" width="100%">
 </picture>
 
-<sub>Captured output: <a href="https://github.com/vinimabreu/scrape-sentinel">scrape-sentinel</a> diffing two runs of a product catalog. It reports what is new, gone, and changed down to the field, then alerts and stores a snapshot. Reproducible from the repo's offline demo.</sub>
+<sub>Captured output: <a href="https://github.com/vinimabreu/revenue-loop">revenue-loop</a>'s offline demo (<code>python -m examples.loop_demo</code>, trimmed to three of its six steps). A won deal reaches Google and Meta once under one conversion key, a click captured for another contact is quarantined on both platforms instead of credited, and the CRM firing the same webhook again sends nothing. All data synthetic.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
 
 ## Stack
 
-**Core** &nbsp;Python &middot; FastAPI &middot; Django + DRF &middot; Celery &middot; Flask &middot; Pydantic &middot; pytest<br>
-**Retrieval** &nbsp;Chroma &middot; BM25 + dense embeddings &middot; SQLite<br>
-**Models** &nbsp;Anthropic Claude API &middot; Google Gemini &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
-**Extraction** &nbsp;Playwright &middot; pandas &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
-**Automation** &nbsp;n8n &middot; Make &middot; Twilio &middot; Retell &middot; Streamlit<br>
+**Core** &nbsp;Python &middot; FastAPI &middot; Django + DRF &middot; Celery &middot; Flask &middot; Pydantic &middot; pytest &middot; pandas &middot; NumPy<br>
+**Retrieval** &nbsp;Chroma &middot; Qdrant &middot; pgvector &middot; BM25 + dense embeddings &middot; SQLite<br>
+**Models** &nbsp;Anthropic Claude API &middot; OpenAI &middot; Google Gemini &middot; Gemma, Llama, Qwen and Mistral on Ollama or LM Studio &middot; Hugging Face<br>
+**Agents** &nbsp;LangGraph &middot; LangChain &middot; CrewAI &middot; MCP (Model Context Protocol) &middot; Google ADK + A2A<br>
+**Extraction** &nbsp;Playwright &middot; Selenium &middot; Scrapy &middot; Tesseract OCR &middot; AWS Textract (optional adapter)<br>
+**Automation** &nbsp;n8n &middot; Make &middot; Clay &middot; Airtable &middot; Xero &middot; Dropbox &middot; PDFMonkey &middot; Microsoft 365 &middot; Twilio &middot; Retell &middot; ElevenLabs &middot; Streamlit<br>
 **Full-stack web** &nbsp;TypeScript &middot; JavaScript &middot; React &middot; Next.js &middot; Vue &middot; Node.js &middot; Vite &middot; Deno &middot; Capacitor &middot; Vercel &middot; Supabase<br>
 **Identity &amp; trust** &nbsp;AWS Rekognition face match &middot; document + liveness KYC flows &middot; privacy-by-design under LGPD<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions &middot; PostgreSQL &middot; Google Cloud Run

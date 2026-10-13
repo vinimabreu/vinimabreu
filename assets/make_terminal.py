@@ -4,14 +4,14 @@
 
 Three scenes on rotation, every one of them a real, reproducible result:
 
-1. web-pilot's guardrails blocking a credential field and an off-site jump,
+1. betorskip refusing a $84.00 return that Gemma worked out on its own: the
+   slip prints "To Win $64.00", so the quote is not on the slip. Verbatim
+   output of --explain on the recorded model answer in examples/readings.
+2. sequence-gate stopping a send after the invoice was paid, refusing a
+   replay, and holding a message at 00:12 in the contact's time zone.
+   Captured from examples/demo.py (column spacing trimmed).
+3. web-pilot's guardrails blocking a credential field and an off-site jump,
    the captured run of its committed examples/safety_demo.py.
-2. rag-chat's two-layer abstention, with the BM25 scores actually measured
-   on its bundled corpus (floor 2.5, "Linux desktop app" 10, weather 0.35),
-   as documented in its README.
-3. doc-eval's release gate failing a candidate that improved the headline
-   number while losing the due-date field, verbatim from its README (the
-   regression is the labelled simulated one, edited from a real run file).
 
 The animation is plain SMIL (discrete opacity reveals on a looping cycle),
 which GitHub's camo proxy serves untouched, so it plays inside the README.
@@ -44,6 +44,35 @@ THEMES = {
 # Each scene: title-bar text + (y, reveal_seconds_into_act, segments) lines.
 SCENES = [
     {
+        "title": "betorskip · a bet slip read by Gemma 4 · the slip checks the model",
+        "lines": [
+            (70, 0.5, [("$ ", "prompt", True), ("betorskip examples/slips/us-parlay.txt --rules examples/rules.toml --explain", "text", False)]),
+            (104, 1.8, [("BET", "ok", True), (" · stake 4.0% of your bankroll · break-even 23.8%", "text", False)]),
+            (126, 2.6, [("bet      PARLAY (2 LEGS) · odds 4.20 · stake $20.00 · to win $64.00", "dim", False)]),
+            (148, 3.4, [("note     ignored returns 84: quote is not on the slip", "blocked", False)]),
+            (184, 5.0, [("ok", "ok", True), (" stake         20                    \"$20.00\"", "dim", False)]),
+            (206, 6.0, [("NO", "blocked", True), (" returns       84                    \"$84.00\"  <- quote is not on the slip", "blocked", False)]),
+            (228, 7.0, [("ok", "ok", True), (" to_win        64                    \"$64.00\"", "dim", False)]),
+            (250, 8.0, [("ok", "ok", True), (" total_odds    +320                  \"Parlay odds +320\"", "dim", False)]),
+            (290, 9.8, [("# Gemma worked out $84.00 on its own · the slip says To Win $64.00", "brand", False)]),
+            (316, 11.2, [("# the model proposed a number · the code checked it against the slip", "brand", False)]),
+        ],
+    },
+    {
+        "title": "sequence-gate · follow-up sequence · stop before the send",
+        "lines": [
+            (70, 0.5, [("$ ", "prompt", True), ("python examples/demo.py", "text", False)]),
+            (104, 1.6, [("day 0, first email     ", "dim", False), ("SEND", "ok", True), ("  clear  token=tok-1", "dim", False)]),
+            (126, 2.4, [("day 3, reminder sms    ", "dim", False), ("SEND", "ok", True), ("  clear  token=tok-2", "dim", False)]),
+            (148, 3.4, [("day 4, the invoice is paid", "text", True)]),
+            (170, 4.4, [("day 7, final notice    ", "dim", False), ("STOP", "blocked", True), ("  stopping_signal", "blocked", False)]),
+            (206, 6.0, [("keyed on (case, step), replay  ", "dim", False), ("SKIP", "blocked", True), ("  already_sent  token=tok-1", "blocked", False)]),
+            (242, 7.6, [("contact clock    00:12 in Asia/Kolkata", "dim", False)]),
+            (264, 8.6, [("decide           ", "dim", False), ("HOLD", "blocked", True), ("  quiet_hours  retry_after=2026-09-15T02:30:00+00:00", "blocked", False)]),
+            (304, 10.4, [("# paid stops the send · a replay is refused · 00:12 local waits", "brand", False)]),
+        ],
+    },
+    {
         "title": "web-pilot · safety demo · guardrails enforced in code",
         "lines": [
             (70, 0.5, [("$ ", "prompt", True), ("python examples/safety_demo.py", "text", False)]),
@@ -60,36 +89,13 @@ SCENES = [
             (352, 13.0, [("outcome: gave_up", "text", True), ("   # the model proposed, the code disposed", "brand", False)]),
         ],
     },
-    {
-        "title": "rag-chat · grounded answers · two-layer abstention",
-        "lines": [
-            (70, 0.5, [("$ ", "prompt", True), ("uvicorn app.main:app --port 8000   # rag-chat", "text", False)]),
-            (110, 1.8, [("q: ", "dim", False), ("\"is there a Linux desktop app?\"", "text", True)]),
-            (134, 3.0, [("   bm25 top score 10 · clears the floor (2.5)", "dim", False)]),
-            (158, 4.2, [("   -> ", "ok", True), ("answers from the retrieved passages, cites the source", "ok", False)]),
-            (200, 6.5, [("q: ", "dim", False), ("\"what's the weather tomorrow?\"", "text", True)]),
-            (224, 7.7, [("   bm25 top score 0.35 · below the floor (2.5)", "dim", False)]),
-            (248, 8.9, [("   -> ", "ok", True), ("abstains: \"I don't know\", the model is never called", "ok", False)]),
-            (300, 10.8, [("# grounded when the docs answer · honest when they do not", "brand", False)]),
-        ],
-    },
-    {
-        "title": "doc-eval · field-level eval · release gate",
-        "lines": [
-            (70, 0.5, [("$ ", "prompt", True), ("python main.py gate runs/claude.json --baseline data/baseline.json", "text", False)]),
-            (108, 1.8, [("baseline:  rules (perfect rate 0.900)", "text", False)]),
-            (130, 2.8, [("candidate: claude-new-prompt (simulated) (perfect rate 0.920)", "text", False)]),
-            (164, 4.2, [("checked 15 metric(s) against the baseline", "dim", False)]),
-            (192, 5.4, [("GATE FAILED: ", "blocked", True), ("2 regression(s)", "blocked", False)]),
-            (216, 6.6, [("  - due_date accuracy dropped 0.980 -> 0.900 (max allowed drop 0.02)", "blocked", False)]),
-            (238, 7.7, [("  - due_date recall dropped 0.964 -> 0.850 (max allowed drop 0.02)", "blocked", False)]),
-            (272, 9.2, [("exit code 1 · the release is blocked", "text", True)]),
-            (310, 10.8, [("# the headline number improved · the gate said no", "brand", False)]),
-        ],
-    },
 ]
 
 CYCLE = ACT * len(SCENES)
+
+
+def esc(text: str) -> str:
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 def window(act_index: int, at: float) -> str:
@@ -104,7 +110,7 @@ def window(act_index: int, at: float) -> str:
 
 def line_svg(act_index: int, y: int, at: float, segs, c) -> str:
     spans = "".join(
-        f'<tspan fill="{c[key]}"{" font-weight=\"600\"" if bold else ""}>{text}</tspan>'
+        f'<tspan fill="{c[key]}"{" font-weight=\"600\"" if bold else ""}>{esc(text)}</tspan>'
         for text, key, bold in segs
     )
     return (
@@ -135,7 +141,7 @@ def build(theme: str) -> str:
         )
     body = "\n  ".join(parts)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img"
-     aria-label="Three captured scenes: web-pilot guardrails blocking unsafe actions, rag-chat abstaining honestly, doc-eval blocking a regression">
+     aria-label="Three captured scenes: betorskip refusing a number the model worked out on its own, sequence-gate stopping a send after payment and refusing a replay, web-pilot guardrails blocking unsafe actions">
   <rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="12" fill="{c['panel']}" stroke="{c['border']}"/>
   {dots}
   <line x1="2" y1="48" x2="{W - 2}" y2="48" stroke="{c['border']}"/>

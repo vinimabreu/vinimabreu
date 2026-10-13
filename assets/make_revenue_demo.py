@@ -1,10 +1,12 @@
-"""Generate the scrape-sentinel terminal SVGs (dark + light).
+"""Generate the revenue-loop terminal SVGs (dark + light).
 
-    python3 assets/make_sentinel.py
+    python3 assets/make_revenue_demo.py
 
-A static capture of scrape-sentinel diffing two runs of a product catalog:
-one new product, one removed, and one with a price drop and a stock change.
-This is the output of the repo's offline demo (examples/demo.py), verbatim.
+A static capture of revenue-loop's offline demo (python -m examples.loop_demo):
+a won deal uploaded once to Google and Meta under one conversion key, the CRM
+re-firing the same webhook and sending nothing, and a click that belongs to
+another contact quarantined on both platforms. Lines are verbatim from the
+demo, in its order, trimmed to these moments; one long Meta line is cut at "...".
 """
 
 from pathlib import Path
@@ -29,21 +31,22 @@ THEMES = {
     },
 }
 
-TITLE = "scrape-sentinel · catalog monitor · change detection"
+TITLE = "revenue-loop · CRM won deals to Google and Meta · exactly once"
 
 # (y, [(text, color_key, bold), ...])
 LINES = [
-    (80, [("$ ", "prompt", True), ("scrape-sentinel run --source catalog.json --key sku", "text", False)]),
-    (114, [("[scrape-sentinel] catalog: 1 new, 1 changed, 1 removed (2 unchanged)", "brand", True)]),
-    (150, [("NEW", "added", True)]),
-    (174, [('  + W-104  "Botanical Linen"', "added", False)]),
-    (200, [("REMOVED", "removed", True)]),
-    (224, [('  - W-099  "Retro Bloom"', "removed", False)]),
-    (250, [("CHANGED", "changed", True)]),
-    (274, [('  ~ W-101  "Coastal Stripe"', "changed", False)]),
-    (296, [("      price: 39.0 -> 35.0", "dim", False)]),
-    (318, [("      in_stock: True -> False", "dim", False)]),
-    (352, [("# what changed since the last run, down to the field", "brand", False)]),
+    (78, [("$ ", "prompt", True), ("python -m examples.loop_demo", "text", False)]),
+    (110, [("1. a deal closes, and the same customer hashes two different ways", "brand", True)]),
+    (132, [("conversion key: rl-cdd69e95cbc8127f41c20d755d518d52", "dim", False)]),
+    (154, [("  google_ads  uploaded   carrying gclid, email, phone, address", "added", False)]),
+    (176, [("  meta        uploaded   carrying fbc, email, phone, given_name, ...", "added", False)]),
+    (210, [("2. a lead whose gclid never rendered, and one whose click belongs to somebody else", "brand", True)]),
+    (232, [("  opp-7783 google_ads  quarantined  snapshot_belongs_to_another_contact", "removed", False)]),
+    (254, [("  opp-7783 meta        quarantined  snapshot_belongs_to_another_contact", "removed", False)]),
+    (288, [("3. the CRM re-fires the same won webhook", "brand", True)]),
+    (310, [("outcomes:       {'already_uploaded': 2}", "changed", False)]),
+    (332, [("requests sent:  0", "changed", False)]),
+    (364, [("# uploaded once · the wrong click waits · the re-fire sends nothing", "dim", False)]),
 ]
 
 
@@ -67,7 +70,7 @@ def build(theme: str) -> str:
     )
     body = "\n  ".join(line_svg(y, segs, c) for y, segs in LINES)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img"
-     aria-label="scrape-sentinel diffing two runs of a product catalog: one new, one removed, one changed with a price drop and stock change">
+     aria-label="revenue-loop: a won deal uploaded once to Google and Meta, a re-fired webhook that sends nothing, and a click from another contact quarantined">
   <rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="12" fill="{c['panel']}" stroke="{c['border']}"/>
   {dots}
   <text x="92" y="34" font-family="{FONT}" font-size="12" fill="{c['title']}">{esc(TITLE)}</text>
@@ -79,7 +82,7 @@ def build(theme: str) -> str:
 
 def main() -> None:
     for theme in THEMES:
-        out = HERE / f"sentinel-demo-{theme}.svg"
+        out = HERE / f"revenue-demo-{theme}.svg"
         out.write_text(build(theme), encoding="utf-8")
         print(f"wrote {out.name} ({out.stat().st_size} bytes)")
 
