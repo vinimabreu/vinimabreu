@@ -9,55 +9,15 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 
 <img src="assets/console.svg" width="100%" alt="Mission console, refreshed every weekday from public data: every public repo on a radar by launch date, the tests their READMEs state, the last launch, the last write-up, and the CI state of the six flagships.">
 
-
-
-https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
-
-
-
-<p align="center"><em>▶ 60-second profile reel</em></p>
-
 <p align="center">
-<a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-FFB000?style=for-the-badge&logo=vercel&logoColor=05070A" alt="Portfolio: vinimabreu.dev"></a>
+  <a href="https://vinimabreu.dev/proof"><img src="assets/proof-anthropic.svg" alt="Paid bounty: Anthropic, security report, paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
+  <a href="https://vinimabreu.dev/proof"><img src="assets/proof-mongodb.svg" alt="Paid bounty: MongoDB, security report, resolved and paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
+  <a href="https://github.com/containers/crun/pull/2166"><img src="assets/proof-crun.svg" alt="Merged upstream: containers/crun pull request 2166" width="49%"></a>
+  <a href="https://arxiv.org/abs/2607.18347"><img src="assets/proof-arxiv.svg" alt="Credited reviewer: arXiv 2607.18347, agentic commerce reference architecture" width="49%"></a>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-0A0E14?style=flat-square&logo=python&logoColor=FFB000" alt="Python">
-<img src="https://img.shields.io/badge/FastAPI-0A0E14?style=flat-square&logo=fastapi&logoColor=FFB000" alt="FastAPI">
-<img src="https://img.shields.io/badge/Django-0A0E14?style=flat-square&logo=django&logoColor=FFB000" alt="Django">
-<img src="https://img.shields.io/badge/Celery-0A0E14?style=flat-square&logo=celery&logoColor=FFB000" alt="Celery">
-<img src="https://img.shields.io/badge/PostgreSQL-0A0E14?style=flat-square&logo=postgresql&logoColor=FFB000" alt="PostgreSQL">
-<img src="https://img.shields.io/badge/Pydantic-0A0E14?style=flat-square&logo=pydantic&logoColor=FFB000" alt="Pydantic">
-<img src="https://img.shields.io/badge/pytest-0A0E14?style=flat-square&logo=pytest&logoColor=FFB000" alt="pytest">
-<img src="https://img.shields.io/badge/Playwright-0A0E14?style=flat-square&logo=playwright&logoColor=FFB000" alt="Playwright">
-<img src="https://img.shields.io/badge/pandas-0A0E14?style=flat-square&logo=pandas&logoColor=FFB000" alt="pandas">
-<img src="https://img.shields.io/badge/Tesseract%20OCR-0A0E14?style=flat-square" alt="Tesseract OCR">
-<img src="https://img.shields.io/badge/AWS%20Rekognition-0A0E14?style=flat-square" alt="AWS Rekognition">
-<img src="https://img.shields.io/badge/Claude-0A0E14?style=flat-square&logo=anthropic&logoColor=FFB000" alt="Claude">
-<img src="https://img.shields.io/badge/Gemini-0A0E14?style=flat-square&logo=googlegemini&logoColor=FFB000" alt="Google Gemini">
-<img src="https://img.shields.io/badge/Google%20ADK-0A0E14?style=flat-square&logo=google&logoColor=FFB000" alt="Google ADK (Agent Development Kit)">
-<img src="https://img.shields.io/badge/A2A-0A0E14?style=flat-square" alt="A2A (Agent2Agent protocol)">
-<img src="https://img.shields.io/badge/MCP-0A0E14?style=flat-square" alt="MCP (Model Context Protocol)">
-<img src="https://img.shields.io/badge/Chroma-0A0E14?style=flat-square&logo=chromadb&logoColor=FFB000" alt="Chroma">
-<img src="https://img.shields.io/badge/SQLite-0A0E14?style=flat-square&logo=sqlite&logoColor=FFB000" alt="SQLite">
-<img src="https://img.shields.io/badge/Docker-0A0E14?style=flat-square&logo=docker&logoColor=FFB000" alt="Docker">
-<img src="https://img.shields.io/badge/n8n-0A0E14?style=flat-square&logo=n8n&logoColor=FFB000" alt="n8n">
-<img src="https://img.shields.io/badge/Make-0A0E14?style=flat-square&logo=make&logoColor=FFB000" alt="Make">
-<img src="https://img.shields.io/badge/Twilio-0A0E14?style=flat-square&logo=twilio&logoColor=FFB000" alt="Twilio">
-<img src="https://img.shields.io/badge/Retell-0A0E14?style=flat-square" alt="Retell">
-<img src="https://img.shields.io/badge/Streamlit-0A0E14?style=flat-square&logo=streamlit&logoColor=FFB000" alt="Streamlit">
-<img src="https://img.shields.io/badge/GitHub%20Actions-0A0E14?style=flat-square&logo=githubactions&logoColor=FFB000" alt="GitHub Actions">
-<img src="https://img.shields.io/badge/TypeScript-0A0E14?style=flat-square&logo=typescript&logoColor=FFB000" alt="TypeScript">
-<img src="https://img.shields.io/badge/JavaScript-0A0E14?style=flat-square&logo=javascript&logoColor=FFB000" alt="JavaScript">
-<img src="https://img.shields.io/badge/React-0A0E14?style=flat-square&logo=react&logoColor=FFB000" alt="React">
-<img src="https://img.shields.io/badge/Next.js-0A0E14?style=flat-square&logo=nextdotjs&logoColor=FFB000" alt="Next.js">
-<img src="https://img.shields.io/badge/Vue.js-0A0E14?style=flat-square&logo=vuedotjs&logoColor=FFB000" alt="Vue.js">
-<img src="https://img.shields.io/badge/Node.js-0A0E14?style=flat-square&logo=nodedotjs&logoColor=FFB000" alt="Node.js">
-<img src="https://img.shields.io/badge/Vite-0A0E14?style=flat-square&logo=vite&logoColor=FFB000" alt="Vite">
-<img src="https://img.shields.io/badge/Deno-0A0E14?style=flat-square&logo=deno&logoColor=FFB000" alt="Deno">
-<img src="https://img.shields.io/badge/Capacitor-0A0E14?style=flat-square&logo=capacitor&logoColor=FFB000" alt="Capacitor">
-<img src="https://img.shields.io/badge/Vercel-0A0E14?style=flat-square&logo=vercel&logoColor=FFB000" alt="Vercel">
-<img src="https://img.shields.io/badge/Supabase-0A0E14?style=flat-square&logo=supabase&logoColor=FFB000" alt="Supabase">
+<a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-FFB000?style=for-the-badge&logo=vercel&logoColor=05070A" alt="Portfolio: vinimabreu.dev"></a>
 </p>
 
 <sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#the-free-handbook">Free handbook</a> &middot; <a href="#invited-review">Invited review</a> &middot; <a href="#merged-upstream">Merged upstream</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
@@ -122,6 +82,12 @@ The usual fix for `${{ github.event.comment.body }}` inside a `run:` block is to
 </p>
 
 <sub><a href="https://github.com/vinimabreu/revenue-loop">revenue-loop</a> &middot; <a href="https://github.com/vinimabreu/sequence-gate">sequence-gate</a> &middot; <a href="https://github.com/vinimabreu/tenant-fence">tenant-fence</a> &middot; <a href="https://github.com/vinimabreu/langgraph-production">langgraph-production</a> &middot; <a href="https://github.com/vinimabreu/taint-trail">taint-trail</a> &middot; <a href="https://github.com/vinimabreu/betorskip">betorskip</a></sub>
+
+https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
+
+
+
+<p align="center"><em>▶ 60-second profile reel</em></p>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 

@@ -17,19 +17,15 @@ FONT = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 W, H = 720, 392
 
 THEMES = {
+    # Both variants use the mission palette of vinimabreu.dev, so the terminals match the console.
     "dark": {
-        "panel": "#0D1117", "border": "#30363D", "title": "#8B949E",
-        "text": "#E6EDF3", "dim": "#8B949E", "prompt": "#3FB950",
-        "added": "#3FB950", "removed": "#F85149", "changed": "#D29922",
-        "brand": "#A78BFA", "dots": ("#FF5F56", "#FFBD2E", "#27C93F"),
-    },
-    "light": {
-        "panel": "#FFFFFF", "border": "#D0D7DE", "title": "#57606A",
-        "text": "#1F2328", "dim": "#57606A", "prompt": "#1A7F37",
-        "added": "#1A7F37", "removed": "#CF222E", "changed": "#9A6700",
-        "brand": "#6E56CF", "dots": ("#FF5F56", "#FFBD2E", "#27C93F"),
+        "panel": "#05070A", "border": "#26313D", "title": "#6B7683",
+        "text": "#D8E1E8", "dim": "#6B7683", "prompt": "#FFB000",
+        "added": "#37D67A", "removed": "#FF5C5C", "changed": "#FFB000",
+        "brand": "#FFB000", "dots": ("#FF5C5C", "#FFB000", "#37D67A"),
     },
 }
+THEMES["light"] = THEMES["dark"]
 
 TITLE = "revenue-loop · CRM won deals to Google and Meta · exactly once"
 

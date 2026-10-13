@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 392" role="img"
      aria-label="revenue-loop: a won deal uploaded once to Google and Meta, a re-fired webhook that sends nothing, and a click from another contact quarantined">
-  <rect x="2" y="2" width="716" height="388" rx="12" fill="#FFFFFF" stroke="#D0D7DE"/>
-  <circle cx="24" cy="30" r="6" fill="#FF5F56"/><circle cx="46" cy="30" r="6" fill="#FFBD2E"/><circle cx="68" cy="30" r="6" fill="#27C93F"/>
-  <text x="92" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#57606A">revenue-loop · CRM won deals to Google and Meta · exactly once</text>
-  <line x1="2" y1="48" x2="718" y2="48" stroke="#D0D7DE"/>
-  <text x="24" y="78" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#1A7F37" font-weight="600">$ </tspan><tspan fill="#1F2328">python -m examples.loop_demo</tspan></text>
-  <text x="24" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#6E56CF" font-weight="600">1. a deal closes, and the same customer hashes two different ways</tspan></text>
-  <text x="24" y="132" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#57606A">conversion key: rl-cdd69e95cbc8127f41c20d755d518d52</tspan></text>
-  <text x="24" y="154" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#1A7F37">  google_ads  uploaded   carrying gclid, email, phone, address</tspan></text>
-  <text x="24" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#1A7F37">  meta        uploaded   carrying fbc, email, phone, given_name, ...</tspan></text>
-  <text x="24" y="210" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#6E56CF" font-weight="600">2. a lead whose gclid never rendered, and one whose click belongs to somebody else</tspan></text>
-  <text x="24" y="232" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#CF222E">  opp-7783 google_ads  quarantined  snapshot_belongs_to_another_contact</tspan></text>
-  <text x="24" y="254" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#CF222E">  opp-7783 meta        quarantined  snapshot_belongs_to_another_contact</tspan></text>
-  <text x="24" y="288" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#6E56CF" font-weight="600">3. the CRM re-fires the same won webhook</tspan></text>
-  <text x="24" y="310" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#9A6700">outcomes:       {'already_uploaded': 2}</tspan></text>
-  <text x="24" y="332" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#9A6700">requests sent:  0</tspan></text>
-  <text x="24" y="364" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#57606A"># uploaded once · the wrong click waits · the re-fire sends nothing</tspan></text>
+  <rect x="2" y="2" width="716" height="388" rx="12" fill="#05070A" stroke="#26313D"/>
+  <circle cx="24" cy="30" r="6" fill="#FF5C5C"/><circle cx="46" cy="30" r="6" fill="#FFB000"/><circle cx="68" cy="30" r="6" fill="#37D67A"/>
+  <text x="92" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#6B7683">revenue-loop · CRM won deals to Google and Meta · exactly once</text>
+  <line x1="2" y1="48" x2="718" y2="48" stroke="#26313D"/>
+  <text x="24" y="78" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000" font-weight="600">$ </tspan><tspan fill="#D8E1E8">python -m examples.loop_demo</tspan></text>
+  <text x="24" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000" font-weight="600">1. a deal closes, and the same customer hashes two different ways</tspan></text>
+  <text x="24" y="132" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#6B7683">conversion key: rl-cdd69e95cbc8127f41c20d755d518d52</tspan></text>
+  <text x="24" y="154" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#37D67A">  google_ads  uploaded   carrying gclid, email, phone, address</tspan></text>
+  <text x="24" y="176" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#37D67A">  meta        uploaded   carrying fbc, email, phone, given_name, ...</tspan></text>
+  <text x="24" y="210" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000" font-weight="600">2. a lead whose gclid never rendered, and one whose click belongs to somebody else</tspan></text>
+  <text x="24" y="232" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FF5C5C">  opp-7783 google_ads  quarantined  snapshot_belongs_to_another_contact</tspan></text>
+  <text x="24" y="254" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FF5C5C">  opp-7783 meta        quarantined  snapshot_belongs_to_another_contact</tspan></text>
+  <text x="24" y="288" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000" font-weight="600">3. the CRM re-fires the same won webhook</tspan></text>
+  <text x="24" y="310" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000">outcomes:       {'already_uploaded': 2}</tspan></text>
+  <text x="24" y="332" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#FFB000">requests sent:  0</tspan></text>
+  <text x="24" y="364" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5"><tspan fill="#6B7683"># uploaded once · the wrong click waits · the re-fire sends nothing</tspan></text>
 </svg>
