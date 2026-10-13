@@ -1,0 +1,331 @@
+[
+ {
+  "section": "rag",
+  "index": "07.01",
+  "name": "tenant-fence",
+  "url": "https://github.com/vinimabreu/tenant-fence",
+  "desc": "Multi-tenant RAG retrieval where cross-tenant leakage is impossible by construction",
+  "slug": "tenant-fence"
+ },
+ {
+  "section": "rag",
+  "index": "07.02",
+  "name": "on-behalf",
+  "url": "https://github.com/vinimabreu/on-behalf",
+  "desc": "Permission-aware RAG that asks the source, as the user, at query time",
+  "slug": "on-behalf"
+ },
+ {
+  "section": "rag",
+  "index": "07.03",
+  "name": "source-of-truth",
+  "url": "https://github.com/vinimabreu/source-of-truth",
+  "desc": "One queryable base from scattered sources that flags conflicts, marks stale ones and abstains honestly",
+  "slug": "source-of-truth"
+ },
+ {
+  "section": "rag",
+  "index": "07.04",
+  "name": "rag-chat",
+  "url": "https://github.com/vinimabreu/rag-chat",
+  "desc": "Chat with your docs: grounded answers with clickable citations and an honest \"I don't know\"",
+  "slug": "rag-chat"
+ },
+ {
+  "section": "rag",
+  "index": "07.05",
+  "name": "rag-quality",
+  "url": "https://github.com/vinimabreu/rag-quality",
+  "desc": "A RAG pipeline that measures retrieval quality instead of assuming it",
+  "slug": "rag-quality"
+ },
+ {
+  "section": "rag",
+  "index": "07.06",
+  "name": "mini-rag",
+  "url": "https://github.com/vinimabreu/mini-rag",
+  "desc": "A small, working Retrieval-Augmented Generation API (FastAPI + Chroma + Claude)",
+  "slug": "mini-rag"
+ },
+ {
+  "section": "agents",
+  "index": "08.01",
+  "name": "langgraph-production",
+  "url": "https://github.com/vinimabreu/langgraph-production",
+  "desc": "A LangGraph support agent with the reliability layer around it",
+  "slug": "langgraph-production"
+ },
+ {
+  "section": "agents",
+  "index": "08.02",
+  "name": "whatran",
+  "url": "https://github.com/vinimabreu/whatran",
+  "desc": "What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma",
+  "slug": "whatran"
+ },
+ {
+  "section": "agents",
+  "index": "08.03",
+  "name": "dapraia",
+  "url": "https://github.com/vinimabreu/dapraia",
+  "desc": "The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code",
+  "slug": "dapraia"
+ },
+ {
+  "section": "agents",
+  "index": "08.04",
+  "name": "betorskip",
+  "url": "https://github.com/vinimabreu/betorskip",
+  "desc": "A local Gemma reads the bet slip; code checks every number and the slip's own arithmetic",
+  "slug": "betorskip"
+ },
+ {
+  "section": "agents",
+  "index": "08.05",
+  "name": "web-pilot",
+  "url": "https://github.com/vinimabreu/web-pilot",
+  "desc": "A browser-use agent where the model proposes one action and code disposes",
+  "slug": "web-pilot"
+ },
+ {
+  "section": "agents",
+  "index": "08.06",
+  "name": "lead-quorum",
+  "url": "https://github.com/vinimabreu/lead-quorum",
+  "desc": "Multi-agent lead qualifier on Google ADK + A2A that abstains instead of guessing",
+  "slug": "lead-quorum"
+ },
+ {
+  "section": "agents",
+  "index": "08.07",
+  "name": "multi-agent-analyst",
+  "url": "https://github.com/vinimabreu/multi-agent-analyst",
+  "desc": "A multi-agent crew that answers business questions no single source can",
+  "slug": "multi-agent-analyst"
+ },
+ {
+  "section": "agents",
+  "index": "08.08",
+  "name": "sql-agent",
+  "url": "https://github.com/vinimabreu/sql-agent",
+  "desc": "Ask a database questions in plain English",
+  "slug": "sql-agent"
+ },
+ {
+  "section": "agents",
+  "index": "08.09",
+  "name": "mcp-listings",
+  "url": "https://github.com/vinimabreu/mcp-listings",
+  "desc": "An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools",
+  "slug": "mcp-listings"
+ },
+ {
+  "section": "automation",
+  "index": "09.01",
+  "name": "sequence-gate",
+  "url": "https://github.com/vinimabreu/sequence-gate",
+  "desc": "Decide whether the next step of a follow-up sequence may fire",
+  "slug": "sequence-gate"
+ },
+ {
+  "section": "automation",
+  "index": "09.02",
+  "name": "ghl-bridge",
+  "url": "https://github.com/vinimabreu/ghl-bridge",
+  "desc": "Policy-gated bridge between a HighLevel workspace and AI automation",
+  "slug": "ghl-bridge"
+ },
+ {
+  "section": "automation",
+  "index": "09.03",
+  "name": "revenue-loop",
+  "url": "https://github.com/vinimabreu/revenue-loop",
+  "desc": "A won CRM deal reaches Google and Meta exactly once, or waits in quarantine",
+  "slug": "revenue-loop"
+ },
+ {
+  "section": "automation",
+  "index": "09.04",
+  "name": "conversion-preflight",
+  "url": "https://github.com/vinimabreu/conversion-preflight",
+  "desc": "Preflight agent for Google and Meta offline conversion uploads",
+  "slug": "conversion-preflight"
+ },
+ {
+  "section": "automation",
+  "index": "09.05",
+  "name": "voice-receptionist",
+  "url": "https://github.com/vinimabreu/voice-receptionist",
+  "desc": "An AI phone receptionist for a multi-location business",
+  "slug": "voice-receptionist"
+ },
+ {
+  "section": "automation",
+  "index": "09.06",
+  "name": "retell-sms-handler",
+  "url": "https://github.com/vinimabreu/retell-sms-handler",
+  "desc": "Deterministic In-Call SMS for Retell voice agents",
+  "slug": "retell-sms-handler"
+ },
+ {
+  "section": "automation",
+  "index": "09.07",
+  "name": "n8n-lead-triage",
+  "url": "https://github.com/vinimabreu/n8n-lead-triage",
+  "desc": "AI lead triage in n8n: a tested service decides, and low confidence routes to a human",
+  "slug": "n8n-lead-triage"
+ },
+ {
+  "section": "automation",
+  "index": "09.08",
+  "name": "make-failsafe",
+  "url": "https://github.com/vinimabreu/make-failsafe",
+  "desc": "Error handling patterns for Make.com scenarios that refuse to die silently",
+  "slug": "make-failsafe"
+ },
+ {
+  "section": "automation",
+  "index": "09.09",
+  "name": "grounded-copy",
+  "url": "https://github.com/vinimabreu/grounded-copy",
+  "desc": "Generate on-brand product copy from your catalog, and prove it didn't invent anything",
+  "slug": "grounded-copy"
+ },
+ {
+  "section": "evals",
+  "index": "10.01",
+  "name": "confidence-gate",
+  "url": "https://github.com/vinimabreu/confidence-gate",
+  "desc": "A trust gate for LLM output: auto-accept, human review, or abstain, on external signals",
+  "slug": "confidence-gate"
+ },
+ {
+  "section": "evals",
+  "index": "10.02",
+  "name": "bedrock",
+  "url": "https://github.com/vinimabreu/bedrock",
+  "desc": "A natural-language-to-SQL data agent with a stability harness",
+  "slug": "bedrock"
+ },
+ {
+  "section": "evals",
+  "index": "10.03",
+  "name": "doc-eval",
+  "url": "https://github.com/vinimabreu/doc-eval",
+  "desc": "Field-level evaluation and release gate for LLM document extraction",
+  "slug": "doc-eval"
+ },
+ {
+  "section": "evals",
+  "index": "10.04",
+  "name": "lead-qualifier",
+  "url": "https://github.com/vinimabreu/lead-qualifier",
+  "desc": "Qualify scraped leads with rules or an LLM, then measure the qualifier with an eval harness",
+  "slug": "lead-qualifier"
+ },
+ {
+  "section": "evals",
+  "index": "10.05",
+  "name": "token-ledger",
+  "url": "https://github.com/vinimabreu/token-ledger",
+  "desc": "Per-query token ledger for LLM pipelines: record what the API reports, answer with one GROUP BY",
+  "slug": "token-ledger"
+ },
+ {
+  "section": "evals",
+  "index": "10.06",
+  "name": "grounding-probe",
+  "url": "https://github.com/vinimabreu/grounding-probe",
+  "desc": "Does the RAG answer use the retrieved context, or just agree with it? A counterfactual check",
+  "slug": "grounding-probe"
+ },
+ {
+  "section": "evals",
+  "index": "10.07",
+  "name": "Keep the number you wrote",
+  "url": "https://www.kaggle.com/benchmarks/vinimabreu/keep-the-number-you-wrote",
+  "desc": "Kaggle benchmark: do models keep the number, the unit and the direction when a sentence becomes rules?",
+  "slug": "keep-the-number-you-wrote",
+  "extra": "KAGGLE BENCHMARK"
+ },
+ {
+  "section": "data",
+  "index": "11.01",
+  "name": "record-refinery",
+  "url": "https://github.com/vinimabreu/record-refinery",
+  "desc": "Raw business records in, a clean validated deduplicated dataset + a QA brief out",
+  "slug": "record-refinery"
+ },
+ {
+  "section": "data",
+  "index": "11.02",
+  "name": "pdf-extract",
+  "url": "https://github.com/vinimabreu/pdf-extract",
+  "desc": "Turn PDF documents into validated structured JSON, with pluggable OCR and extraction",
+  "slug": "pdf-extract"
+ },
+ {
+  "section": "data",
+  "index": "11.03",
+  "name": "docs-to-markdown",
+  "url": "https://github.com/vinimabreu/docs-to-markdown",
+  "desc": "Scrape any documentation or marketing site into a clean Markdown corpus",
+  "slug": "docs-to-markdown"
+ },
+ {
+  "section": "data",
+  "index": "11.04",
+  "name": "ai-watcher",
+  "url": "https://github.com/vinimabreu/ai-watcher",
+  "desc": "Monitor RSS/Atom feeds and turn new articles into structured AI summaries",
+  "slug": "ai-watcher"
+ },
+ {
+  "section": "data",
+  "index": "11.05",
+  "name": "bcb-data-pipeline",
+  "url": "https://github.com/vinimabreu/bcb-data-pipeline",
+  "desc": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API",
+  "slug": "bcb-data-pipeline"
+ },
+ {
+  "section": "data",
+  "index": "11.06",
+  "name": "web-scraper",
+  "url": "https://github.com/vinimabreu/web-scraper",
+  "desc": "Playwright scraper, SQLite storage and a Streamlit dashboard, end to end",
+  "slug": "web-scraper"
+ },
+ {
+  "section": "data",
+  "index": "11.07",
+  "name": "scrape-sentinel",
+  "url": "https://github.com/vinimabreu/scrape-sentinel",
+  "desc": "The change-aware layer for any scraper",
+  "slug": "scrape-sentinel"
+ },
+ {
+  "section": "data",
+  "index": "11.08",
+  "name": "repo-packager",
+  "url": "https://github.com/vinimabreu/repo-packager",
+  "desc": "Download GitHub repos and deliver clean, deterministic, verifiable ZIPs (manifest + sha256)",
+  "slug": "repo-packager"
+ },
+ {
+  "section": "data",
+  "index": "11.09",
+  "name": "cloudrun-pipeline",
+  "url": "https://github.com/vinimabreu/cloudrun-pipeline",
+  "desc": "A data pipeline taken from a local script to a scheduled Cloud Run service, with health checks and retries",
+  "slug": "cloudrun-pipeline"
+ },
+ {
+  "section": "data",
+  "index": "11.10",
+  "name": "crosswatch",
+  "url": "https://github.com/vinimabreu/crosswatch",
+  "desc": "Cross-source corroboration and scheduled scoring for data you cannot trust from one provider",
+  "slug": "crosswatch"
+ }
+]

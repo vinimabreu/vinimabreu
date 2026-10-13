@@ -32,11 +32,11 @@ SERIES = {
 }
 
 THEMES = {
-    "dark": {"panel": "#0D1117", "border": "#30363D", "dim": "#8B949E",
-             "text": "#E6EDF3", "brand": "#A78BFA"},
-    "light": {"panel": "#FFFFFF", "border": "#D0D7DE", "dim": "#57606A",
-              "text": "#1F2328", "brand": "#6E56CF"},
+    # Both variants use the mission palette of vinimabreu.dev, like the rest of the profile.
+    "dark": {"panel": "#05070A", "border": "#26313D", "dim": "#6B7683",
+             "text": "#D8E1E8", "brand": "#FFB000"},
 }
+THEMES["light"] = THEMES["dark"]
 
 
 def fetch(series_id: int) -> float:
