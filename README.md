@@ -52,10 +52,16 @@ Invited technical reviewer on [A Decision-Centered Reference Architecture for Tr
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/revenue-loop"><img src="assets/payload-revenue-loop.svg" alt="revenue-loop: live CI state, test count and last push" width="100%"></a><br>A won CRM deal reaches Google and Meta exactly once, or waits in quarantine.</td>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/sequence-gate"><img src="assets/payload-sequence-gate.svg" alt="sequence-gate: live CI state, test count and last push" width="100%"></a><br>Decides whether the next follow-up may fire, stopping before the send and never sending twice.</td>
 </tr>
+</table>
+
+<table>
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/tenant-fence"><img src="assets/payload-tenant-fence.svg" alt="tenant-fence: live CI state, test count and last push" width="100%"></a><br>Multi-tenant RAG where entitlements filter before top-k, so no ranking can leak across customers.</td>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/langgraph-production"><img src="assets/payload-langgraph-production.svg" alt="langgraph-production: live CI state, test count and last push" width="100%"></a><br>A LangGraph support agent with a human gate and a resume that runs exactly once.</td>
 </tr>
+</table>
+
+<table>
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/taint-trail"><img src="assets/payload-taint-trail.svg" alt="taint-trail: live CI state, test count and last push" width="100%"></a><br>Follows an untrusted GitHub Actions value after it moves, until it dies or reaches a shell.</td>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/betorskip"><img src="assets/payload-betorskip.svg" alt="betorskip: live CI state, test count and last push" width="100%"></a><br>A local Gemma reads the bet slip; code checks every number and the slip's own arithmetic.</td>
