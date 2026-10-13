@@ -23,6 +23,8 @@
   <a href="https://arxiv.org/abs/2607.18347"><img src="assets/proof-arxiv.svg" alt="Credited reviewer: arXiv 2607.18347, a reference architecture for trustworthy agentic commerce" width="49%"></a>
 </p>
 
+<p align="center">Co-author, with Dimitrios S. Sfyris, of <a href="https://www.verba.ing/2026/10/13/when-ai-acts-for-the-company">When AI Acts for the Company</a> on Verba (October 2026): what changes when an AI system stops answering and starts acting for a company.</p>
+
 <details>
 <summary><b>The crun fix in full</b></summary>
 
