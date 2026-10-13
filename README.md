@@ -95,8 +95,20 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 
 *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
+| Repo | What it does |
+|---|---|
+| **[tenant-fence](https://github.com/vinimabreu/tenant-fence)** | Multi-tenant RAG retrieval where cross-tenant leakage is impossible by construction |
+| **[on-behalf](https://github.com/vinimabreu/on-behalf)** | Permission-aware RAG that asks the source, as the user, at query time |
+| **[source-of-truth](https://github.com/vinimabreu/source-of-truth)** | One queryable base from scattered sources that flags conflicts, marks stale ones and abstains honestly |
+| **[rag-chat](https://github.com/vinimabreu/rag-chat)** | Chat with your docs: grounded answers with clickable citations and an honest "I don't know" |
+| **[rag-quality](https://github.com/vinimabreu/rag-quality)** | A RAG pipeline that measures retrieval quality instead of assuming it |
+| **[mini-rag](https://github.com/vinimabreu/mini-rag)** | A small, working Retrieval-Augmented Generation API (FastAPI + Chroma + Claude) |
+
+<details>
+<summary><b>Full notes on these 6</b></summary>
+
 **[tenant-fence](https://github.com/vinimabreu/tenant-fence)**<br>
-One knowledge base, many customers, and an entitlement filter that runs before the candidate set is scored instead of after it. The wrong version ships beside the right one so the suite can demonstrate the leak rather than describe it: same corpus, same question, same account, three sections returned one way and none at all the other. 360 tests, 141 of them adversarial, and every number in the README read off the offline demo.
+One knowledge base, many customers, and an entitlement filter that runs before the candidate set is scored instead of after it. The wrong version ships beside the right one so the suite can demonstrate the leak rather than describe it: same corpus, same question, same account, three sections returned one way and none at all the other. 369 tests, 141 of them adversarial, and every number in the README read off the offline demo.
 
 **[on-behalf](https://github.com/vinimabreu/on-behalf)**<br>
 The other half of the fence: people inside the same organization, where the authority over who opens a document is Microsoft Graph or Google Drive, not the index. Every candidate is checked against the source at query time, as the signed-in user, through a modeled on-behalf-of token exchange, and enters the answer with its right named: a direct grant, a nested group, a sharing link, a site role. The index that copies ACLs at ingestion ships beside it, wrong by design, so the suite can demonstrate the leaks that a revoked grant, a group removal, and an expired sharing link each open. Fails closed, raises instead of silently filtering, 353 tests, no network, no key.
@@ -113,11 +125,28 @@ A RAG pipeline with its own eval harness (hit@k, MRR, recall@k): BM25, dense, an
 **[mini-rag](https://github.com/vinimabreu/mini-rag)**<br>
 A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
+</details>
+
 <img src="assets/divider.svg" width="100%" alt="" />
 
 ## Agents and tools
 
 *Agents that can only do what their tool layer allows.*
+
+| Repo | What it does |
+|---|---|
+| **[langgraph-production](https://github.com/vinimabreu/langgraph-production)** | A LangGraph support agent with the reliability layer around it |
+| **[whatran](https://github.com/vinimabreu/whatran)** | What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma |
+| **[dapraia](https://github.com/vinimabreu/dapraia)** | The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code |
+| **[betorskip](https://github.com/vinimabreu/betorskip)** | A local Gemma reads the bet slip; code checks every number and the slip's own arithmetic |
+| **[web-pilot](https://github.com/vinimabreu/web-pilot)** | A browser-use agent where the model proposes one action and code disposes |
+| **[lead-quorum](https://github.com/vinimabreu/lead-quorum)** | Multi-agent lead qualifier on Google ADK + A2A that abstains instead of guessing |
+| **[multi-agent-analyst](https://github.com/vinimabreu/multi-agent-analyst)** | A multi-agent crew that answers business questions no single source can |
+| **[sql-agent](https://github.com/vinimabreu/sql-agent)** | Ask a database questions in plain English |
+| **[mcp-listings](https://github.com/vinimabreu/mcp-listings)** | An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools |
+
+<details>
+<summary><b>Full notes on these 9</b></summary>
 
 **[langgraph-production](https://github.com/vinimabreu/langgraph-production)**<br>
 A LangGraph support agent with the reliability layer that decides whether it can ship. Routing is measured against labelled fixtures with a confusion matrix, and scored on the arguments rather than just the tool name, because choosing "issue refund" correctly means nothing if the amount is wrong. Irreversible tools stop for a human, approvals are single use, and the interrupt is measured in both directions, since stopping for nothing is how a gate stops meaning anything. The process can be killed at any of 208 points in a run and resumed from disk with the effect count unchanged, and where a window genuinely cannot be closed it holds the ticket for a human instead of guessing. A CI gate fails the build when any of those numbers moves. 373 tests, no network, no API key.
@@ -146,11 +175,28 @@ Plain English to SQL, with a self-correction loop, on a read-only connection.
 **[mcp-listings](https://github.com/vinimabreu/mcp-listings)**<br>
 MCP server exposing a property-listings dataset to Claude as typed tools.
 
+</details>
+
 <img src="assets/divider.svg" width="100%" alt="" />
 
 ## Voice and automation
 
 *Conversation up front, a tested service underneath, and a human whenever confidence drops.*
+
+| Repo | What it does |
+|---|---|
+| **[sequence-gate](https://github.com/vinimabreu/sequence-gate)** | Decide whether the next step of a follow-up sequence may fire |
+| **[ghl-bridge](https://github.com/vinimabreu/ghl-bridge)** | Policy-gated bridge between a HighLevel workspace and AI automation |
+| **[revenue-loop](https://github.com/vinimabreu/revenue-loop)** | A won CRM deal reaches Google and Meta exactly once, or waits in quarantine |
+| **[conversion-preflight](https://github.com/vinimabreu/conversion-preflight)** | Preflight agent for Google and Meta offline conversion uploads |
+| **[voice-receptionist](https://github.com/vinimabreu/voice-receptionist)** | An AI phone receptionist for a multi-location business |
+| **[retell-sms-handler](https://github.com/vinimabreu/retell-sms-handler)** | Deterministic In-Call SMS for Retell voice agents |
+| **[n8n-lead-triage](https://github.com/vinimabreu/n8n-lead-triage)** | AI lead triage in n8n: a tested service decides, and low confidence routes to a human |
+| **[make-failsafe](https://github.com/vinimabreu/make-failsafe)** | Error handling patterns for Make.com scenarios that refuse to die silently |
+| **[grounded-copy](https://github.com/vinimabreu/grounded-copy)** | Generate on-brand product copy from your catalog, and prove it didn't invent anything |
+
+<details>
+<summary><b>Full notes on these 9</b></summary>
 
 **[sequence-gate](https://github.com/vinimabreu/sequence-gate)**<br>
 The service a follow-up sequence asks before every send. It answers whether the next step may fire, and the order of the checks is the design: stopping signals are read before anything else, so a contact who replied on Tuesday is not chased on Wednesday, and a store that cannot answer holds rather than sends. Idempotency keys on the case and the step rather than the provider's message id, so a replayed workflow cannot double-send; quiet hours are read on the contact's clock, including the two days a year that clock lies; frequency caps count across every sequence the contact is in; and an escalation ladder whose last rung is not a person is refused when the config loads. The three wrong implementations ship alongside and are run by the suite. 138 tests, importable n8n workflow and Make blueprint.
@@ -179,11 +225,26 @@ The same thesis on Make (ex Integromat): error routing for scenarios that refuse
 **[grounded-copy](https://github.com/vinimabreu/grounded-copy)**<br>
 Generates on-brand product copy from your catalog, then checks every claim back against it: an invented price, spec, discount or material is flagged for review, nothing fabricated ships. Deterministic, key-free core.
 
+</details>
+
 <img src="assets/divider.svg" width="100%" alt="" />
 
 ## Evaluation and quality
 
 *A regression gets blocked before it ships, not discovered after.*
+
+| Repo | What it does |
+|---|---|
+| **[confidence-gate](https://github.com/vinimabreu/confidence-gate)** | A trust gate for LLM output: auto-accept, human review, or abstain, on external signals |
+| **[bedrock](https://github.com/vinimabreu/bedrock)** | A natural-language-to-SQL data agent with a stability harness |
+| **[doc-eval](https://github.com/vinimabreu/doc-eval)** | Field-level evaluation and release gate for LLM document extraction |
+| **[lead-qualifier](https://github.com/vinimabreu/lead-qualifier)** | Qualify scraped leads with rules or an LLM, then measure the qualifier with an eval harness |
+| **[token-ledger](https://github.com/vinimabreu/token-ledger)** | Per-query token ledger for LLM pipelines: record what the API reports, answer with one GROUP BY |
+| **[grounding-probe](https://github.com/vinimabreu/grounding-probe)** | Does the RAG answer use the retrieved context, or just agree with it? A counterfactual check |
+| **[Keep the number you wrote](https://www.kaggle.com/benchmarks/vinimabreu/keep-the-number-you-wrote)** (Kaggle benchmark) | Kaggle benchmark: do models keep the number, the unit and the direction when a sentence becomes rules? |
+
+<details>
+<summary><b>Full notes on these 7</b></summary>
 
 **[confidence-gate](https://github.com/vinimabreu/confidence-gate)**<br>
 The gate between an LLM's output and production. It validates the structure, then scores confidence from external signals instead of the model's own word (is the output grounded in the evidence, does it survive resampling, does it satisfy the schema), and routes each result to auto-accept, a human review queue with a full audit trail, or abstain. Calibrated on the cost of a false accept, not the acceptance rate, because a confident wrong answer is the expensive one. Zero runtime dependencies beyond Pydantic, the generator injected as a callable.
@@ -206,6 +267,8 @@ A RAG answer can be correct, cite the right chunk, and still come from the model
 **[Keep the number you wrote](https://www.kaggle.com/benchmarks/vinimabreu/keep-the-number-you-wrote)** (Kaggle benchmark)<br>
 Do models keep the number, the unit and the direction when a plain sentence becomes rules? 40 sentences about going outside, in Portuguese and English, with knots, Fahrenheit, "12 da noite" and numbers that are not limits, graded against a hand-checked key on two prompts: units named only in the field, and units spelled out. Across eight models, six got all 40 with the units spelled out; without them, the misses were knots read as km/h, a wrong Fahrenheit conversion and midnight as hour 0, the same kind of error dapraia caught in a local Gemma. [Write-up](https://dev.to/vinimabreu/keep-the-number-you-wrote-40-beach-plans-8-models-and-where-the-knots-went-3fl2).
 
+</details>
+
 <img src="assets/divider.svg" width="100%" alt="" />
 
 ## Data engineering and extraction
@@ -218,6 +281,22 @@ Do models keep the number, the unit and the direction when a plain sentence beco
 </picture>
 
 <sub>Not a screenshot: live numbers from the Central Bank of Brazil, refreshed on weekdays by <a href="https://github.com/vinimabreu/vinimabreu/blob/main/.github/workflows/update-indicators.yml">a scheduled pipeline in this repo</a>, committed only when the data changes. The commit history is the proof.</sub>
+
+| Repo | What it does |
+|---|---|
+| **[record-refinery](https://github.com/vinimabreu/record-refinery)** | Raw business records in, a clean validated deduplicated dataset + a QA brief out |
+| **[pdf-extract](https://github.com/vinimabreu/pdf-extract)** | Turn PDF documents into validated structured JSON, with pluggable OCR and extraction |
+| **[docs-to-markdown](https://github.com/vinimabreu/docs-to-markdown)** | Scrape any documentation or marketing site into a clean Markdown corpus |
+| **[ai-watcher](https://github.com/vinimabreu/ai-watcher)** | Monitor RSS/Atom feeds and turn new articles into structured AI summaries |
+| **[bcb-data-pipeline](https://github.com/vinimabreu/bcb-data-pipeline)** | Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API |
+| **[web-scraper](https://github.com/vinimabreu/web-scraper)** | Playwright scraper, SQLite storage and a Streamlit dashboard, end to end |
+| **[scrape-sentinel](https://github.com/vinimabreu/scrape-sentinel)** | The change-aware layer for any scraper |
+| **[repo-packager](https://github.com/vinimabreu/repo-packager)** | Download GitHub repos and deliver clean, deterministic, verifiable ZIPs (manifest + sha256) |
+| **[cloudrun-pipeline](https://github.com/vinimabreu/cloudrun-pipeline)** | A data pipeline taken from a local script to a scheduled Cloud Run service, with health checks and retries |
+| **[crosswatch](https://github.com/vinimabreu/crosswatch)** | Cross-source corroboration and scheduled scoring for data you cannot trust from one provider |
+
+<details>
+<summary><b>Full notes on these 10</b></summary>
 
 **[record-refinery](https://github.com/vinimabreu/record-refinery)**<br>
 Raw business records in, a clean deduplicated dataset plus a QA brief out. Email, phone, and url validated in code, with an optional model-proposed canonical name for fuzzy dedup.
@@ -248,6 +327,8 @@ Takes a pipeline from a local script to a deployed service that runs on a schedu
 
 **[crosswatch](https://github.com/vinimabreu/crosswatch)**<br>
 Cross-source corroboration and scheduled scoring for data you cannot trust from one provider: two sources confirm each other or the row is excluded, every score ships a plain-language reason that provably sums to the number, and a config-driven scheduler runs it all on cadence with a kill switch. Zero runtime dependencies.
+
+</details>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/revenue-demo-dark.svg">
