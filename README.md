@@ -1,15 +1,4 @@
-<img src="assets/header.svg" width="100%" alt="Vinicius Pereira. AI systems that are grounded, tested, and honest." />
-
-<img src="assets/brief.svg" width="100%" alt="The house rule: The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from actual runs; every README is honest about the trade-offs. The console below counts the public repos and the tests their READMEs state, fresh every weekday; one rule runs through all of them. My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.">
-
-<img src="assets/console.svg" width="100%" alt="Mission console, refreshed every weekday from public data: every public repo on a radar by launch date, the tests their READMEs state, the last launch, the last write-up, and the CI state of the six flagships.">
-
-<p align="center">
-  <a href="https://vinimabreu.dev/proof"><img src="assets/proof-anthropic.svg" alt="Paid bounty: Anthropic, security report, paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
-  <a href="https://vinimabreu.dev/proof"><img src="assets/proof-mongodb.svg" alt="Paid bounty: MongoDB, security report, resolved and paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
-  <a href="https://github.com/containers/crun/pull/2166"><img src="assets/proof-crun.svg" alt="Merged upstream: containers/crun pull request 2166" width="49%"></a>
-  <a href="https://arxiv.org/abs/2607.18347"><img src="assets/proof-arxiv.svg" alt="Credited reviewer: arXiv 2607.18347, agentic commerce reference architecture" width="49%"></a>
-</p>
+<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI systems that are grounded, tested, and honest. The house rule: the model proposes, the code disposes; the model holds the conversation, tested code makes every decision that matters. Mission console, refreshed every weekday from public data: every public repo on a radar by launch date, the tests their READMEs state, write-ups published, the last launch and the CI state of the six flagships. Receipts: paid bounties from Anthropic and MongoDB, a fix merged into containers/crun, a credited review on arXiv; verify at vinimabreu.dev/proof."></a>
 
 <p align="center">
 <a href="https://vinimabreu.dev"><img src="assets/button-portfolio.svg" alt="Open the full portfolio on vinimabreu.dev" width="560"></a>

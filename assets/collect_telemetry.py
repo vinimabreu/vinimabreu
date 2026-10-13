@@ -76,7 +76,7 @@ def main() -> None:
             project["ci"] = runs[0]["conclusion"] if runs else None
         except Exception:
             project["ci"] = None
-    articles = json.loads(get(f"https://dev.to/api/articles?username={USER}&per_page=1"))
+    articles = json.loads(get(f"https://dev.to/api/articles?username={USER}&per_page=1000"))
     latest = articles[0] if articles else None
     data = {
         "collected": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -86,6 +86,7 @@ def main() -> None:
         "repos_with_tests": sum(1 for p in projects if p["tests"]),
         "last_launch": projects[0]["name"] if projects else None,
         "last_launch_date": projects[0]["created"] if projects else None,
+        "articles_published": len(articles),
         "latest_article": {"title": latest["title"], "date": latest["published_at"][:10], "url": latest["url"]} if latest else None,
         "flagships": FLAGSHIPS,
     }

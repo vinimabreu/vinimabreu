@@ -115,7 +115,7 @@ def readouts(data: dict) -> str:
               else [("● ", "amber"), (f"CHECK: {len(flags) - green} flagship CI not green", "text")])
     rows = [
         ("STATUS", status),
-        ("HOUSE RULE", [("the model proposes · the code disposes", "text")]),
+        ("WRITE-UPS", [(str(data.get("articles_published", "")), "amber"), ("  published on dev.to", "muted")]),
         ("PUBLIC REPOS", [(str(data["project_count"]), "amber")]),
         ("TESTS STATED", [(f'{data["tests_total"]:,}', "amber"), (f'  across {data["repos_with_tests"]} READMEs', "muted")]),
         ("LAST LAUNCH", [(data["last_launch"], "amber"), (f'  {stamp(data["last_launch_date"])}', "muted")]),
@@ -186,7 +186,7 @@ def build(data: dict) -> str:
   </defs>
   <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="{C['ground']}" stroke="{C['hair2']}"/>
   <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="url(#glow)"/>
-  <text x="32" y="44" font-family="{MONO}" font-size="12" fill="{C['amber']}" letter-spacing="3" font-weight="700">VINIMABREU · MISSION CONTROL</text>
+  <text x="32" y="44" font-family="{MONO}" font-size="12" fill="{C['amber']}" letter-spacing="3" font-weight="700">MISSION CONSOLE</text>
   <text x="{W - 32}" y="44" text-anchor="end" font-family="{MONO}" font-size="11" fill="{C['muted']}" letter-spacing="2">LIVE TELEMETRY · UPDATED {stamp(data['collected'])}</text>
   <line x1="20" y1="62" x2="{W - 20}" y2="62" stroke="{C['hair']}"/>
   {radar(data)}
