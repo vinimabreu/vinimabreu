@@ -85,12 +85,12 @@ def header() -> str:
   <rect width="{w}" height="{h}" rx="14" fill="{C['ground']}"/>
   <rect width="{w}" height="{h}" rx="14" fill="url(#grid)"/>
   <rect width="{w}" height="{h}" rx="14" fill="url(#glow)"/>
-  <text x="56" y="62" font-family="{MONO}" font-size="13" fill="{C['amber']}" letter-spacing="4" font-weight="700">VINIMABREU · MISSION CONTROL</text>
-  <text x="56" y="136" font-family="{SANS}" font-size="64" font-weight="700" fill="#F2F5F8" letter-spacing="-1.5">Vinicius Pereira</text>
-  <text x="58" y="178" font-family="{MONO}" font-size="17" fill="{C['text']}">AI systems that are grounded, tested, and honest<tspan fill="{C['amber']}">_</tspan></text>
+  <text x="{w / 2}" y="62" text-anchor="middle" font-family="{MONO}" font-size="13" fill="{C['amber']}" letter-spacing="4" font-weight="700">VINIMABREU · MISSION CONTROL</text>
+  <text x="{w / 2}" y="136" text-anchor="middle" font-family="{SANS}" font-size="64" font-weight="700" fill="#F2F5F8" letter-spacing="-1.5">Vinicius Pereira</text>
+  <text x="{w / 2}" y="178" text-anchor="middle" font-family="{MONO}" font-size="17" fill="{C['text']}">AI systems that are grounded, tested, and honest<tspan fill="{C['amber']}">_</tspan></text>
   <rect x="{w - 64}" y="44" width="8" height="8" fill="{C['amber']}"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></rect>
   <line x1="56" y1="200" x2="{w - 56}" y2="200" stroke="{C['hair2']}"/>
-  <rect x="56" y="199" width="0" height="2" fill="{C['amber']}"><animate attributeName="width" from="0" to="{w - 112}" dur="1.4s" fill="freeze"/></rect>
+  <rect x="{w / 2}" y="199" width="0" height="2" fill="{C['amber']}"><animate attributeName="x" from="{w / 2}" to="56" dur="1.4s" fill="freeze"/><animate attributeName="width" from="0" to="{w - 112}" dur="1.4s" fill="freeze"/></rect>
 </svg>
 """
 
