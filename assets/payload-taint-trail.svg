@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 164" role="img"
+     aria-label="taint-trail: Follows an untrusted Actions value after it moves, until it dies or hits a shell. ci passing, Python · CI security · 707 tests · pushed 23 SEP">
+  <rect x="1" y="1" width="478" height="162" rx="12" fill="#05070A" stroke="#26313D"/>
+  <rect x="1" y="22" width="3" height="120" fill="#FFB000"/>
+  <text x="26" y="30" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#6B7683" letter-spacing="2.5">PAYLOAD 05</text>
+  <circle cx="360" cy="26.5" r="3.5" fill="#37D67A"><animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+  <text x="454" y="30" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#37D67A" letter-spacing="2">CI PASSING</text>
+  <text x="26" y="60" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#FFB000">taint-trail</text>
+  <text x="26" y="88" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#D8E1E8">Follows an untrusted Actions value after</text><text x="26" y="111" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#D8E1E8">it moves, until it dies or hits a shell.</text>
+  <line x1="26" y1="126" x2="454" y2="126" stroke="#1C2530"/>
+  <text x="26" y="146" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#6B7683">Python · CI security · 707 tests · pushed 23 SEP</text>
+</svg>

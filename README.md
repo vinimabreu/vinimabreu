@@ -1,11 +1,13 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=210&section=header&text=Vinicius%20Pereira&fontSize=54&fontColor=FFFFFF&fontAlignY=36&desc=AI%20systems%20that%20are%20grounded%2C%20tested%2C%20and%20honest&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="Vinicius Pereira. AI systems that are grounded, tested, and honest." />
+<img src="assets/header.svg" width="100%" alt="Vinicius Pereira. AI systems that are grounded, tested, and honest." />
 
 > **The model proposes, the code disposes.**<br>
 > The model holds the conversation. Tested code makes every decision that matters.
 
-I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from actual runs; every README is honest about the trade-offs. Forty-two public projects, more than 500 deterministic tests, one rule.
+I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from actual runs; every README is honest about the trade-offs. The console below counts the public repos and the tests their READMEs state, fresh every weekday; one rule runs through all of them.
 
 > My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded, tested, and honest.
+
+<img src="assets/console.svg" width="100%" alt="Mission console, refreshed every weekday from public data: every public repo on a radar by launch date, the tests their READMEs state, the last launch, the last write-up, and the CI state of the six flagships.">
 
 
 
@@ -16,51 +18,51 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 <p align="center"><em>▶ 60-second profile reel</em></p>
 
 <p align="center">
-<a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-6E56CF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio: vinimabreu.dev"></a>
+<a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-FFB000?style=for-the-badge&logo=vercel&logoColor=05070A" alt="Portfolio: vinimabreu.dev"></a>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-6E56CF?style=flat-square&logo=python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/FastAPI-6E56CF?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-<img src="https://img.shields.io/badge/Django-6E56CF?style=flat-square&logo=django&logoColor=white" alt="Django">
-<img src="https://img.shields.io/badge/Celery-6E56CF?style=flat-square&logo=celery&logoColor=white" alt="Celery">
-<img src="https://img.shields.io/badge/PostgreSQL-6E56CF?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
-<img src="https://img.shields.io/badge/Pydantic-6E56CF?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic">
-<img src="https://img.shields.io/badge/pytest-6E56CF?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
-<img src="https://img.shields.io/badge/Playwright-6E56CF?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
-<img src="https://img.shields.io/badge/pandas-6E56CF?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
-<img src="https://img.shields.io/badge/Tesseract%20OCR-6E56CF?style=flat-square" alt="Tesseract OCR">
-<img src="https://img.shields.io/badge/AWS%20Rekognition-6E56CF?style=flat-square" alt="AWS Rekognition">
-<img src="https://img.shields.io/badge/Claude-6E56CF?style=flat-square&logo=anthropic&logoColor=white" alt="Claude">
-<img src="https://img.shields.io/badge/Gemini-6E56CF?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini">
-<img src="https://img.shields.io/badge/Google%20ADK-6E56CF?style=flat-square&logo=google&logoColor=white" alt="Google ADK (Agent Development Kit)">
-<img src="https://img.shields.io/badge/A2A-6E56CF?style=flat-square" alt="A2A (Agent2Agent protocol)">
-<img src="https://img.shields.io/badge/MCP-6E56CF?style=flat-square" alt="MCP (Model Context Protocol)">
-<img src="https://img.shields.io/badge/Chroma-6E56CF?style=flat-square&logo=chromadb&logoColor=white" alt="Chroma">
-<img src="https://img.shields.io/badge/SQLite-6E56CF?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
-<img src="https://img.shields.io/badge/Docker-6E56CF?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/n8n-6E56CF?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
-<img src="https://img.shields.io/badge/Make-6E56CF?style=flat-square&logo=make&logoColor=white" alt="Make">
-<img src="https://img.shields.io/badge/Twilio-6E56CF?style=flat-square&logo=twilio&logoColor=white" alt="Twilio">
-<img src="https://img.shields.io/badge/Retell-6E56CF?style=flat-square" alt="Retell">
-<img src="https://img.shields.io/badge/Streamlit-6E56CF?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
-<img src="https://img.shields.io/badge/GitHub%20Actions-6E56CF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
-<img src="https://img.shields.io/badge/TypeScript-6E56CF?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-<img src="https://img.shields.io/badge/JavaScript-6E56CF?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
-<img src="https://img.shields.io/badge/React-6E56CF?style=flat-square&logo=react&logoColor=white" alt="React">
-<img src="https://img.shields.io/badge/Next.js-6E56CF?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
-<img src="https://img.shields.io/badge/Vue.js-6E56CF?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js">
-<img src="https://img.shields.io/badge/Node.js-6E56CF?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
-<img src="https://img.shields.io/badge/Vite-6E56CF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
-<img src="https://img.shields.io/badge/Deno-6E56CF?style=flat-square&logo=deno&logoColor=white" alt="Deno">
-<img src="https://img.shields.io/badge/Capacitor-6E56CF?style=flat-square&logo=capacitor&logoColor=white" alt="Capacitor">
-<img src="https://img.shields.io/badge/Vercel-6E56CF?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
-<img src="https://img.shields.io/badge/Supabase-6E56CF?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
+<img src="https://img.shields.io/badge/Python-0A0E14?style=flat-square&logo=python&logoColor=FFB000" alt="Python">
+<img src="https://img.shields.io/badge/FastAPI-0A0E14?style=flat-square&logo=fastapi&logoColor=FFB000" alt="FastAPI">
+<img src="https://img.shields.io/badge/Django-0A0E14?style=flat-square&logo=django&logoColor=FFB000" alt="Django">
+<img src="https://img.shields.io/badge/Celery-0A0E14?style=flat-square&logo=celery&logoColor=FFB000" alt="Celery">
+<img src="https://img.shields.io/badge/PostgreSQL-0A0E14?style=flat-square&logo=postgresql&logoColor=FFB000" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/Pydantic-0A0E14?style=flat-square&logo=pydantic&logoColor=FFB000" alt="Pydantic">
+<img src="https://img.shields.io/badge/pytest-0A0E14?style=flat-square&logo=pytest&logoColor=FFB000" alt="pytest">
+<img src="https://img.shields.io/badge/Playwright-0A0E14?style=flat-square&logo=playwright&logoColor=FFB000" alt="Playwright">
+<img src="https://img.shields.io/badge/pandas-0A0E14?style=flat-square&logo=pandas&logoColor=FFB000" alt="pandas">
+<img src="https://img.shields.io/badge/Tesseract%20OCR-0A0E14?style=flat-square" alt="Tesseract OCR">
+<img src="https://img.shields.io/badge/AWS%20Rekognition-0A0E14?style=flat-square" alt="AWS Rekognition">
+<img src="https://img.shields.io/badge/Claude-0A0E14?style=flat-square&logo=anthropic&logoColor=FFB000" alt="Claude">
+<img src="https://img.shields.io/badge/Gemini-0A0E14?style=flat-square&logo=googlegemini&logoColor=FFB000" alt="Google Gemini">
+<img src="https://img.shields.io/badge/Google%20ADK-0A0E14?style=flat-square&logo=google&logoColor=FFB000" alt="Google ADK (Agent Development Kit)">
+<img src="https://img.shields.io/badge/A2A-0A0E14?style=flat-square" alt="A2A (Agent2Agent protocol)">
+<img src="https://img.shields.io/badge/MCP-0A0E14?style=flat-square" alt="MCP (Model Context Protocol)">
+<img src="https://img.shields.io/badge/Chroma-0A0E14?style=flat-square&logo=chromadb&logoColor=FFB000" alt="Chroma">
+<img src="https://img.shields.io/badge/SQLite-0A0E14?style=flat-square&logo=sqlite&logoColor=FFB000" alt="SQLite">
+<img src="https://img.shields.io/badge/Docker-0A0E14?style=flat-square&logo=docker&logoColor=FFB000" alt="Docker">
+<img src="https://img.shields.io/badge/n8n-0A0E14?style=flat-square&logo=n8n&logoColor=FFB000" alt="n8n">
+<img src="https://img.shields.io/badge/Make-0A0E14?style=flat-square&logo=make&logoColor=FFB000" alt="Make">
+<img src="https://img.shields.io/badge/Twilio-0A0E14?style=flat-square&logo=twilio&logoColor=FFB000" alt="Twilio">
+<img src="https://img.shields.io/badge/Retell-0A0E14?style=flat-square" alt="Retell">
+<img src="https://img.shields.io/badge/Streamlit-0A0E14?style=flat-square&logo=streamlit&logoColor=FFB000" alt="Streamlit">
+<img src="https://img.shields.io/badge/GitHub%20Actions-0A0E14?style=flat-square&logo=githubactions&logoColor=FFB000" alt="GitHub Actions">
+<img src="https://img.shields.io/badge/TypeScript-0A0E14?style=flat-square&logo=typescript&logoColor=FFB000" alt="TypeScript">
+<img src="https://img.shields.io/badge/JavaScript-0A0E14?style=flat-square&logo=javascript&logoColor=FFB000" alt="JavaScript">
+<img src="https://img.shields.io/badge/React-0A0E14?style=flat-square&logo=react&logoColor=FFB000" alt="React">
+<img src="https://img.shields.io/badge/Next.js-0A0E14?style=flat-square&logo=nextdotjs&logoColor=FFB000" alt="Next.js">
+<img src="https://img.shields.io/badge/Vue.js-0A0E14?style=flat-square&logo=vuedotjs&logoColor=FFB000" alt="Vue.js">
+<img src="https://img.shields.io/badge/Node.js-0A0E14?style=flat-square&logo=nodedotjs&logoColor=FFB000" alt="Node.js">
+<img src="https://img.shields.io/badge/Vite-0A0E14?style=flat-square&logo=vite&logoColor=FFB000" alt="Vite">
+<img src="https://img.shields.io/badge/Deno-0A0E14?style=flat-square&logo=deno&logoColor=FFB000" alt="Deno">
+<img src="https://img.shields.io/badge/Capacitor-0A0E14?style=flat-square&logo=capacitor&logoColor=FFB000" alt="Capacitor">
+<img src="https://img.shields.io/badge/Vercel-0A0E14?style=flat-square&logo=vercel&logoColor=FFB000" alt="Vercel">
+<img src="https://img.shields.io/badge/Supabase-0A0E14?style=flat-square&logo=supabase&logoColor=FFB000" alt="Supabase">
 </p>
 
 <sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#the-free-handbook">Free handbook</a> &middot; <a href="#invited-review">Invited review</a> &middot; <a href="#merged-upstream">Merged upstream</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=4" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## The house rule, running
 
@@ -71,7 +73,7 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 
 <sub>Three scenes on rotation, all from captured runs: <a href="https://github.com/vinimabreu/betorskip">betorskip</a> refusing a $84.00 return that Gemma worked out on its own, because the slip only prints To Win $64.00 (the recorded model answer in <code>examples/readings</code>); <a href="https://github.com/vinimabreu/sequence-gate">sequence-gate</a> stopping a send after the invoice was paid, refusing a replay and holding a message at 00:12 in the contact's time zone (<code>examples/demo.py</code>, column spacing trimmed); and <a href="https://github.com/vinimabreu/web-pilot">web-pilot</a>'s guardrails blocking a credential field and an off-site jump (<code>examples/safety_demo.py</code>). Each one is reproducible from its repo.</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## The free handbook
 
@@ -85,21 +87,21 @@ https://github.com/user-attachments/assets/9c36119b-a972-40bf-8418-8c00f87f98ab
 
 </td></tr></table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Invited review
 
 **[A Decision-Centered Reference Architecture for Trustworthy Agentic Commerce](https://arxiv.org/abs/2607.18347)**<br>
 Invited technical reviewer on this decision-centered reference architecture by Dimitrios S. Sfyris, founder of AspectSoft, now published on arXiv. Credited by name for refining the separation between commercial eligibility and actor authority, payment artifacts treated as evidence rather than automatic permission, and the controls that keep AI-generated claims grounded, scoped, and verifiable.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Merged upstream
 
 **[containers/crun#2166](https://github.com/containers/crun/pull/2166)**<br>
 crun is the OCI runtime that Podman and CRI-O run containers with. Its passwd parser tested for a digit with `**s - '0' < 10`, a signed comparison with no lower bound: `**s` promotes to `int`, so every byte below `'0'` yields a negative value that is also below 10. Out of the 256 possible byte values, 186 kept the loop running and `'\0'` was one of them, so a passwd line whose uid field is empty walks the parser past the end of the buffer. The correct form was imported from musl in June 2020 and lost its `U` suffix 43 minutes later, in a commit that dropped it to silence `-Werror=sign-compare` on the Alpine build, which is where the affected path compiles. Traced back to that commit and fixed with an explicit range test that stays warning free without a cast. Reviewed and merged by the project maintainer.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## CI security
 
@@ -111,17 +113,17 @@ The usual fix for `${{ github.event.comment.body }}` inside a `run:` block is to
 ## Flagships
 
 <p align="center">
-  <a href="https://github.com/vinimabreu/revenue-loop"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-revenue-loop-dark.svg"><img src="assets/flagship-revenue-loop-light.svg" alt="revenue-loop: a won CRM deal reaches Google and Meta exactly once, or waits in quarantine" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/sequence-gate"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-sequence-gate-dark.svg"><img src="assets/flagship-sequence-gate-light.svg" alt="sequence-gate: decides whether the next follow-up may fire, stopping before the send and never sending twice" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/tenant-fence"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-tenant-fence-dark.svg"><img src="assets/flagship-tenant-fence-light.svg" alt="tenant-fence: multi-tenant RAG where entitlements filter before top-k, so no ranking can leak across customers" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/langgraph-production"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-langgraph-production-dark.svg"><img src="assets/flagship-langgraph-production-light.svg" alt="langgraph-production: a LangGraph support agent with a human gate and a resume that runs exactly once" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/taint-trail"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-taint-trail-dark.svg"><img src="assets/flagship-taint-trail-light.svg" alt="taint-trail: follows an untrusted GitHub Actions value after it moves, until it dies or reaches a shell" width="49%"></picture></a>
-  <a href="https://github.com/vinimabreu/betorskip"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flagship-betorskip-dark.svg"><img src="assets/flagship-betorskip-light.svg" alt="betorskip: a local Gemma reads the bet slip, and code checks every number and the slip's own arithmetic" width="49%"></picture></a>
+  <a href="https://github.com/vinimabreu/revenue-loop"><img src="assets/payload-revenue-loop.svg" alt="revenue-loop: a won CRM deal reaches Google and Meta exactly once, or waits in quarantine; live CI state and last push" width="49%"></a>
+  <a href="https://github.com/vinimabreu/sequence-gate"><img src="assets/payload-sequence-gate.svg" alt="sequence-gate: decides whether the next follow-up may fire, stopping before the send and never sending twice; live CI state and last push" width="49%"></a>
+  <a href="https://github.com/vinimabreu/tenant-fence"><img src="assets/payload-tenant-fence.svg" alt="tenant-fence: multi-tenant RAG where entitlements filter before top-k, so no ranking can leak across customers; live CI state and last push" width="49%"></a>
+  <a href="https://github.com/vinimabreu/langgraph-production"><img src="assets/payload-langgraph-production.svg" alt="langgraph-production: a LangGraph support agent with a human gate and a resume that runs exactly once; live CI state and last push" width="49%"></a>
+  <a href="https://github.com/vinimabreu/taint-trail"><img src="assets/payload-taint-trail.svg" alt="taint-trail: follows an untrusted GitHub Actions value after it moves, until it dies or reaches a shell; live CI state and last push" width="49%"></a>
+  <a href="https://github.com/vinimabreu/betorskip"><img src="assets/payload-betorskip.svg" alt="betorskip: a local Gemma reads the bet slip, and code checks every number and the slip's own arithmetic; live CI state and last push" width="49%"></a>
 </p>
 
 <sub><a href="https://github.com/vinimabreu/revenue-loop">revenue-loop</a> &middot; <a href="https://github.com/vinimabreu/sequence-gate">sequence-gate</a> &middot; <a href="https://github.com/vinimabreu/tenant-fence">tenant-fence</a> &middot; <a href="https://github.com/vinimabreu/langgraph-production">langgraph-production</a> &middot; <a href="https://github.com/vinimabreu/taint-trail">taint-trail</a> &middot; <a href="https://github.com/vinimabreu/betorskip">betorskip</a></sub>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Retrieval and RAG
 
@@ -145,7 +147,7 @@ A RAG pipeline with its own eval harness (hit@k, MRR, recall@k): BM25, dense, an
 **[mini-rag](https://github.com/vinimabreu/mini-rag)**<br>
 A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Agents and tools
 
@@ -178,7 +180,7 @@ Plain English to SQL, with a self-correction loop, on a read-only connection.
 **[mcp-listings](https://github.com/vinimabreu/mcp-listings)**<br>
 MCP server exposing a property-listings dataset to Claude as typed tools.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Voice and automation
 
@@ -211,7 +213,7 @@ The same thesis on Make (ex Integromat): error routing for scenarios that refuse
 **[grounded-copy](https://github.com/vinimabreu/grounded-copy)**<br>
 Generates on-brand product copy from your catalog, then checks every claim back against it: an invented price, spec, discount or material is flagged for review, nothing fabricated ships. Deterministic, key-free core.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Evaluation and quality
 
@@ -238,7 +240,7 @@ A RAG answer can be correct, cite the right chunk, and still come from the model
 **[Keep the number you wrote](https://www.kaggle.com/benchmarks/vinimabreu/keep-the-number-you-wrote)** (Kaggle benchmark)<br>
 Do models keep the number, the unit and the direction when a plain sentence becomes rules? 40 sentences about going outside, in Portuguese and English, with knots, Fahrenheit, "12 da noite" and numbers that are not limits, graded against a hand-checked key on two prompts: units named only in the field, and units spelled out. Across eight models, six got all 40 with the units spelled out; without them, the misses were knots read as km/h, a wrong Fahrenheit conversion and midnight as hour 0, the same kind of error dapraia caught in a local Gemma. [Write-up](https://dev.to/vinimabreu/keep-the-number-you-wrote-40-beach-plans-8-models-and-where-the-knots-went-3fl2).
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Data engineering and extraction
 
@@ -288,7 +290,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 <sub>Captured output: <a href="https://github.com/vinimabreu/revenue-loop">revenue-loop</a>'s offline demo (<code>python -m examples.loop_demo</code>, trimmed to three of its six steps). A won deal reaches Google and Meta once under one conversion key, a click captured for another contact is quarantined on both platforms instead of credited, and the CRM firing the same webhook again sends nothing. All data synthetic.</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Stack
 
@@ -302,7 +304,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 **Identity &amp; trust** &nbsp;AWS Rekognition face match &middot; document + liveness KYC flows &middot; privacy-by-design under LGPD<br>
 **Ops** &nbsp;Docker &middot; GitHub Actions &middot; PostgreSQL &middot; Google Cloud Run
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=2" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## How I work
 
@@ -325,4 +327,4 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
   Full portfolio and case studies at <a href="https://vinimabreu.dev"><b>vinimabreu.dev</b></a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6E56CF,50:8B7BD8,100:A78BFA&height=110&section=footer" width="100%" alt="" />
+<img src="assets/divider.svg" width="100%" alt="" />

@@ -1,0 +1,337 @@
+{
+ "collected": "2026-10-13",
+ "projects": [
+  {
+   "name": "betorskip",
+   "created": "2026-10-13",
+   "pushed": "2026-10-13",
+   "description": "Paste a bet slip, get BET, SKIP or CHECK: read by a local Gemma, every number checked against the slip and its own arithmetic, decided by your bankroll rules.",
+   "tests": 134,
+   "ci": "success"
+  },
+  {
+   "name": "dapraia",
+   "created": "2026-10-07",
+   "pushed": "2026-10-07",
+   "description": "The hour to go outside tomorrow, in one line: an open forecast, your own words read by Gemma 4 on your machine, and a window picked by plain code.",
+   "tests": 344
+  },
+  {
+   "name": "whatran",
+   "created": "2026-10-02",
+   "pushed": "2026-10-06",
+   "description": "What your coding agents ran in your terminal today: atuin and Claude Code history, flagged by fixed rules, explained by Gemma 4 on your own machine.",
+   "tests": 318
+  },
+  {
+   "name": "conversion-preflight",
+   "created": "2026-09-30",
+   "pushed": "2026-09-30",
+   "description": "Preflight agent for Google and Meta offline conversion uploads: rules from a Sanity knowledge base, declared rules from a Sanity dataset, digests from tested code.",
+   "tests": null
+  },
+  {
+   "name": "taint-trail",
+   "created": "2026-09-22",
+   "pushed": "2026-09-23",
+   "description": "Follows an untrusted GitHub Actions value after it leaves run:, through env:, with:, step outputs and into the called action, until it dies in argv, reaches a shell, spoofs GITHUB_OUTPUT, or becomes opaque with the reason named. An injection that moved is not an injection that was fixed.",
+   "tests": 707,
+   "ci": "success"
+  },
+  {
+   "name": "revenue-loop",
+   "created": "2026-09-17",
+   "pushed": "2026-09-17",
+   "description": "Closed-loop revenue attribution: when a CRM deal is won, the conversion reaches Google and Meta exactly once, attributed, or it is quarantined with a reason",
+   "tests": 734,
+   "ci": "success"
+  },
+  {
+   "name": "sequence-gate",
+   "created": "2026-09-13",
+   "pushed": "2026-09-13",
+   "description": "Decide whether the next step of a follow-up sequence may fire: stop before the send, idempotent per case and step, quiet hours in the contact's timezone, caps across sequences, escalation that ends with a person.",
+   "tests": 138,
+   "ci": "success"
+  },
+  {
+   "name": "before-you-give",
+   "created": "2026-09-06",
+   "pushed": "2026-09-06",
+   "description": "Hear what a nonprofit's public tax filings say before you donate. No score, no guessing.",
+   "tests": 82
+  },
+  {
+   "name": "ghl-bridge",
+   "created": "2026-08-25",
+   "pushed": "2026-08-25",
+   "description": "Policy-gated bridge between a HighLevel workspace and AI automation: event-keyed webhook idempotency, an approval gate no draft can route past, doctrine-grade dedupe, and rate limits proven offline against a deterministic fake.",
+   "tests": 379
+  },
+  {
+   "name": "on-behalf",
+   "created": "2026-08-25",
+   "pushed": "2026-08-25",
+   "description": "Permission-aware RAG that asks the source, as the user, at query time. OBO token broker, Graph and Drive semantics as deterministic fakes, entitlement before top-k, and the snapshot index that leaks by design so the tests can prove it.",
+   "tests": 353
+  },
+  {
+   "name": "tenant-fence",
+   "created": "2026-08-12",
+   "pushed": "2026-08-15",
+   "description": "Multi-tenant RAG retrieval where cross-tenant leakage is impossible by construction: entitlement filtering applied before the candidate set is scored, proven by an adversarial suite in CI.",
+   "tests": 369,
+   "ci": "success"
+  },
+  {
+   "name": "langgraph-production",
+   "created": "2026-08-04",
+   "pushed": "2026-08-04",
+   "description": "A LangGraph support agent with the reliability layer around it: routing measured against labelled fixtures, a human gate before irreversible tools, durable resume with exactly-once effects, and a CI gate that fails when a number moves.",
+   "tests": 373,
+   "ci": "success"
+  },
+  {
+   "name": "make-failsafe",
+   "created": "2026-07-28",
+   "pushed": "2026-07-28",
+   "description": "Error handling patterns for Make.com scenarios that refuse to die silently: a tested FastAPI decision service plus importable draft blueprints for ERP to 3PL flows",
+   "tests": null
+  },
+  {
+   "name": "confidence-gate",
+   "created": "2026-07-20",
+   "pushed": "2026-07-20",
+   "description": "A trust gate for LLM output: validate structure, score confidence from external signals, and route to auto-accept, human review, or abstain.",
+   "tests": null
+  },
+  {
+   "name": "grounding-probe",
+   "created": "2026-07-11",
+   "pushed": "2026-07-28",
+   "description": "Does the RAG answer use the retrieved context, or just agree with it? Counterfactual grounding check: ablate the evidence, re-run the generator, read the verdict.",
+   "tests": null
+  },
+  {
+   "name": "duelup-live",
+   "created": "2026-07-10",
+   "pushed": "2026-07-10",
+   "description": "",
+   "tests": null
+  },
+  {
+   "name": "token-ledger",
+   "created": "2026-07-07",
+   "pushed": "2026-07-07",
+   "description": "Per-query token ledger for LLM pipelines: record what the API reports, answer with one GROUP BY. Zero dependencies, dashboard included.",
+   "tests": 32
+  },
+  {
+   "name": "lead-quorum",
+   "created": "2026-07-06",
+   "pushed": "2026-09-01",
+   "description": "Distributed multi-agent lead qualifier on Google ADK + A2A: cross-model corroboration, auditable scoring, abstains instead of guessing",
+   "tests": 16
+  },
+  {
+   "name": "crosswatch",
+   "created": "2026-07-05",
+   "pushed": "2026-07-20",
+   "description": "Cross-source corroboration and scheduled scoring for data you cannot trust from one provider. Zero dependencies, config-driven scheduler, scores that explain themselves.",
+   "tests": 63
+  },
+  {
+   "name": "ai-in-practice",
+   "created": "2026-07-03",
+   "pushed": "2026-07-03",
+   "description": "Free 84-page handbook on applied AI: LLMs, local models, RAG, agents, MCP, fine-tuning, evals. From zero to working agent.",
+   "tests": null
+  },
+  {
+   "name": "cloudrun-pipeline",
+   "created": "2026-06-29",
+   "pushed": "2026-06-29",
+   "description": "Take a data pipeline from a local script to a deployed, scheduled service on Google Cloud Run, with health checks, run history, and retries.",
+   "tests": 60
+  },
+  {
+   "name": "lead-qualifier",
+   "created": "2026-06-29",
+   "pushed": "2026-07-20",
+   "description": "Qualify scraped leads with rules or an LLM (0-100 score + reason) and measure the qualifier with a precision/recall eval harness. Zero runtime dependencies.",
+   "tests": null
+  },
+  {
+   "name": "scrape-sentinel",
+   "created": "2026-06-29",
+   "pushed": "2026-07-20",
+   "description": "The change-aware layer for any scraper: turn records into new / changed / removed, then alert and schedule. Zero runtime dependencies.",
+   "tests": null
+  },
+  {
+   "name": "repo-packager",
+   "created": "2026-06-21",
+   "pushed": "2026-06-21",
+   "description": "Download GitHub repos and deliver clean, deterministic, verifiable ZIPs (manifest + sha256). Standard-library Python, zero dependencies.",
+   "tests": null
+  },
+  {
+   "name": "bedrock",
+   "created": "2026-06-16",
+   "pushed": "2026-09-18",
+   "description": "A natural-language-to-SQL data agent with a stability harness: runs each question K times against a defended answer key and flags the ones that flap, with a CI gate that blocks reliability regressions.",
+   "tests": 28
+  },
+  {
+   "name": "grounded-copy",
+   "created": "2026-06-15",
+   "pushed": "2026-06-15",
+   "description": "Generate on-brand product copy from your catalog, and prove it didn't invent anything. Deterministic grounding check + optional Claude layer.",
+   "tests": 23
+  },
+  {
+   "name": "retell-sms-handler",
+   "created": "2026-06-15",
+   "pushed": "2026-07-20",
+   "description": "Deterministic In-Call SMS for Retell voice agents: consent gated, number resolved in code, every send logged. FastAPI + Twilio.",
+   "tests": 66
+  },
+  {
+   "name": "source-of-truth",
+   "created": "2026-06-14",
+   "pushed": "2026-06-14",
+   "description": "Centralize scattered knowledge sources into one queryable base that flags cross-source conflicts, marks stale sources, and abstains honestly. Pure-Python, deterministic, no API key.",
+   "tests": 29
+  },
+  {
+   "name": "record-refinery",
+   "created": "2026-06-13",
+   "pushed": "2026-06-13",
+   "description": "Raw business records in, a clean validated deduplicated dataset + a QA brief out. Email/phone/URL validated in code, dedup with an optional model-proposed canonical name. Deterministic, offline, 41 tests.",
+   "tests": 41
+  },
+  {
+   "name": "doc-eval",
+   "created": "2026-06-12",
+   "pushed": "2026-07-20",
+   "description": "Field-level evaluation and release gate for LLM document extraction: exact golden set, per-field precision/recall, CI gate that blocks regressions",
+   "tests": 39
+  },
+  {
+   "name": "multi-agent-analyst",
+   "created": "2026-06-12",
+   "pushed": "2026-06-12",
+   "description": "A multi-agent crew that answers business questions no single source can: a planner routes work to a self-correcting SQL agent and a BM25 doc retriever, a verifier feeds objections back, and every answer cites its evidence or honestly refuses.",
+   "tests": null
+  },
+  {
+   "name": "n8n-lead-triage",
+   "created": "2026-06-12",
+   "pushed": "2026-06-12",
+   "description": "AI lead triage in n8n: the workflow routes, a tested HTTP service decides, and low confidence or any model failure routes to a human instead of dropping the lead",
+   "tests": 17
+  },
+  {
+   "name": "rag-chat",
+   "created": "2026-06-12",
+   "pushed": "2026-06-12",
+   "description": "Chat-with-your-docs widget: grounded answers from your documents with clickable citations, an honest \"I don't know\", and a real chat UI. Pure-Python retrieval, runs key-free in demo mode.",
+   "tests": 22
+  },
+  {
+   "name": "voice-receptionist",
+   "created": "2026-06-12",
+   "pushed": "2026-06-12",
+   "description": "An AI phone receptionist for a multi-location business: books against a live agenda over Twilio, answers policy questions with abstention, hands off to humans, and logs every call. The model proposes; the code disposes.",
+   "tests": 22
+  },
+  {
+   "name": "web-pilot",
+   "created": "2026-06-12",
+   "pushed": "2026-06-12",
+   "description": "A browser-use agent where the model proposes one action and code disposes: closed action vocabulary, guardrails (domain allowlist, no credential/payment fields, step budget), full audit trace. Runs key-free in a sandbox demo.",
+   "tests": 32
+  },
+  {
+   "name": "mcp-listings",
+   "created": "2026-06-11",
+   "pushed": "2026-06-11",
+   "description": "An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools",
+   "tests": null
+  },
+  {
+   "name": "sql-agent",
+   "created": "2026-06-11",
+   "pushed": "2026-06-11",
+   "description": "Ask a database questions in plain English. A text-to-SQL agent that writes, runs, and self-corrects its own SQL against a read-only connection, then answers with the numbers and an optional chart.",
+   "tests": null
+  },
+  {
+   "name": "rag-quality",
+   "created": "2026-06-10",
+   "pushed": "2026-07-14",
+   "description": "A RAG pipeline that measures retrieval quality instead of assuming it: BM25 + dense embeddings + RRF hybrid, an eval harness (hit@k, MRR, recall@k), and grounded answers that cite sources and abstain when unsure. Core runs key-free on CPU.",
+   "tests": null
+  },
+  {
+   "name": "docs-to-markdown",
+   "created": "2026-06-09",
+   "pushed": "2026-06-09",
+   "description": "Scrape any documentation or marketing site into a clean Markdown corpus: per-page Markdown + frontmatter, manifest, coverage report. JS rendering, code fidelity, framework-agnostic.",
+   "tests": null
+  },
+  {
+   "name": "pdf-extract",
+   "created": "2026-06-09",
+   "pushed": "2026-06-09",
+   "description": "Turn PDF documents into validated structured JSON. Pluggable OCR (Tesseract / AWS Textract) and extraction (regex / Anthropic / Bedrock). Runs locally with no cloud account; AWS + LLM adapters included.",
+   "tests": null
+  },
+  {
+   "name": "ai-watcher",
+   "created": "2026-06-06",
+   "pushed": "2026-06-06",
+   "description": "Monitor RSS/Atom feeds and turn new articles into structured AI summaries with Claude (scrape -> summarize -> digest). Delivers a ready answer, not raw data.",
+   "tests": null
+  },
+  {
+   "name": "mini-rag",
+   "created": "2026-06-06",
+   "pushed": "2026-06-06",
+   "description": "A small, working Retrieval-Augmented Generation API (FastAPI + Chroma + Claude). Ingest documents, ask questions, get answers grounded only in your data with cited sources.",
+   "tests": null
+  },
+  {
+   "name": "bcb-data-pipeline",
+   "created": "2026-04-28",
+   "pushed": "2026-10-13",
+   "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
+   "tests": null
+  },
+  {
+   "name": "web-scraper",
+   "created": "2026-04-28",
+   "pushed": "2026-04-28",
+   "description": "End-to-end Python project: Playwright scraper, SQLite storage, and Streamlit dashboard for books.toscrape.com",
+   "tests": null
+  }
+ ],
+ "project_count": 44,
+ "tests_total": 4421,
+ "repos_with_tests": 25,
+ "last_launch": "betorskip",
+ "last_launch_date": "2026-10-13",
+ "latest_article": {
+  "title": "Bet or skip: Gemma reads the bet slip on my laptop, and the slip's own arithmetic checks Gemma",
+  "date": "2026-10-13",
+  "url": "https://dev.to/vinimabreu/bet-or-skip-gemma-reads-the-bet-slip-on-my-laptop-and-the-slips-own-arithmetic-checks-gemma-eif"
+ },
+ "flagships": [
+  "revenue-loop",
+  "sequence-gate",
+  "tenant-fence",
+  "langgraph-production",
+  "taint-trail",
+  "betorskip"
+ ]
+}
