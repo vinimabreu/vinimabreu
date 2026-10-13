@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1506" role="img" aria-label="Vinicius Pereira, AI systems that are grounded, tested, and honest. Mission console: 44 public repos on a radar, 4,421 tests stated across 25 READMEs, last launch betorskip, updated 2026-10-13">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1477" role="img" aria-label="Vinicius Pereira, AI systems that are grounded, tested, and honest. Mission console: 44 public repos on a radar, 4,421 tests stated across 25 READMEs, last launch betorskip, updated 2026-10-13">
   <defs><radialGradient id="heroglow" cx="0.92" cy="0.18" r="0.55"><stop offset="0" stop-color="#FFB000" stop-opacity="0.13"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/></radialGradient><radialGradient id="heroglow2" cx="0.9" cy="0.82" r="0.5"><stop offset="0" stop-color="#FFB000" stop-opacity="0.08"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/></radialGradient></defs>
-  <rect x="1" y="1" width="1198" height="1504" rx="16" fill="#05070A" stroke="#26313D"/>
-  <rect x="1" y="1" width="1198" height="1504" rx="16" fill="url(#heroglow)"/>
-  <rect x="1" y="1" width="1198" height="1504" rx="16" fill="url(#heroglow2)"/>
+  <rect x="1" y="1" width="1198" height="1475" rx="16" fill="#05070A" stroke="#26313D"/>
+  <rect x="1" y="1" width="1198" height="1475" rx="16" fill="url(#heroglow)"/>
+  <rect x="1" y="1" width="1198" height="1475" rx="16" fill="url(#heroglow2)"/>
   <svg x="0.0" y="0.0" width="1200.0" height="230.0" viewBox="0 0 1200 230">
   <defs>
     <pattern id="hd-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.03"/></pattern>
@@ -18,17 +18,17 @@
   <line x1="56" y1="200" x2="1144" y2="200" stroke="#26313D"/>
   <rect x="600.0" y="199" width="0" height="2" fill="#FFB000"><animate attributeName="x" from="600.0" to="56" dur="1.4s" fill="freeze"/><animate attributeName="width" from="0" to="1088" dur="1.4s" fill="freeze"/></rect>
 </svg>
-  <svg x="0.0" y="230.0" width="1200.0" height="401.0" viewBox="0 0 1200 401">
+  <svg x="0.0" y="230.0" width="1200.0" height="372.0" viewBox="0 0 1200 372">
   
   <text x="56" y="58" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#FFB000" letter-spacing="3" font-weight="700">THE HOUSE RULE</text>
   <text x="56" y="112" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#F2F5F8" letter-spacing="-0.5">The model proposes, the code disposes.</text>
   <text x="56" y="152.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="400" fill="#FFB000">The model holds the conversation. Tested code makes every decision that matters.</text>
-  <text x="56" y="198.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF">I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship</text><text x="56" y="227.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF">deterministic test suites that need no API key and show captured output from actual runs; every README is honest</text><text x="56" y="256.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF">about the trade-offs. The console below counts the public repos and the tests their READMEs state, fresh every</text><text x="56" y="285.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF">weekday; one rule runs through all of them.</text>
-  <rect x="56" y="320" width="3" height="44" fill="#7A5600"/>
-  <text x="78" y="335.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded,</text><text x="78" y="357.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">tested, and honest.</text>
+  <text x="56" y="198.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF" textLength="1088" lengthAdjust="spacing">I build retrieval, agents, MCP servers, voice, and automation with that one rule at the center. The flagships ship deterministic</text><text x="56" y="227.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF" textLength="1088" lengthAdjust="spacing">test suites that need no API key and show captured output from actual runs; every README is honest about the trade-offs. The</text><text x="56" y="256.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="400" fill="#A9B4BF">console below counts the public repos and the tests their READMEs state, fresh every weekday; one rule runs through all of them.</text>
+  <rect x="56" y="291" width="3" height="44" fill="#7A5600"/>
+  <text x="78" y="306.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">My client work is under NDA and stays private. These public projects are built to the same standard, and show how I work: grounded,</text><text x="78" y="328.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13.5" font-weight="400" fill="#6B7683">tested, and honest.</text>
 </svg>
-  <line x1="36" y1="631.0" x2="1164" y2="631.0" stroke="#1C2530"/>
-  <svg x="0.0" y="631.0" width="1200.0" height="500.0" viewBox="0 0 1200 500">
+  <line x1="36" y1="602.0" x2="1164" y2="602.0" stroke="#1C2530"/>
+  <svg x="0.0" y="602.0" width="1200.0" height="500.0" viewBox="0 0 1200 500">
   <defs>
     <pattern id="co-scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#FFFFFF" opacity="0.018"/></pattern>
     <radialGradient id="co-glow" cx="0.85" cy="1" r="0.7"><stop offset="0" stop-color="#FFB000" stop-opacity="0.10"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/></radialGradient>
@@ -136,10 +136,10 @@
   <clipPath id="co-tk"><rect x="20" y="462" width="1160" height="24"/></clipPath><line x1="20" y1="456" x2="1180" y2="456" stroke="#1C2530"/><g clip-path="url(#co-tk)"><g><text y="478" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#6B7683" letter-spacing="0.5"><tspan x="0">LAUNCH LOG   betorskip 13 OCT   ·   dapraia 07 OCT   ·   whatran 02 OCT   ·   conversion-preflight 30 SEP   ·   taint-trail 22 SEP   ·   revenue-loop 17 SEP   ·   sequence-gate 13 SEP   ·   before-you-give 06 SEP   ·   ghl-bridge 25 AUG   ·   on-behalf 25 AUG   ·   tenant-fence 12 AUG   ·   langgraph-production 04 AUG   ·   </tspan><tspan x="2347">LAUNCH LOG   betorskip 13 OCT   ·   dapraia 07 OCT   ·   whatran 02 OCT   ·   conversion-preflight 30 SEP   ·   taint-trail 22 SEP   ·   revenue-loop 17 SEP   ·   sequence-gate 13 SEP   ·   before-you-give 06 SEP   ·   ghl-bridge 25 AUG   ·   on-behalf 25 AUG   ·   tenant-fence 12 AUG   ·   langgraph-production 04 AUG   ·   </tspan></text><animateTransform attributeName="transform" type="translate" from="20 0" to="-2327 0" dur="59s" repeatCount="indefinite"/></g></g>
   <rect x="1" y="1" width="1198" height="498" rx="14" fill="url(#co-scan)"/>
 </svg>
-  <line x1="36" y1="1131.0" x2="1164" y2="1131.0" stroke="#1C2530"/>
-  <text x="36" y="1175.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#FFB000">RECEIPTS</text>
-  <text x="1164" y="1175.0" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#6B7683">VERIFY AT VINIMABREU.DEV/PROOF</text>
-  <svg x="36.0" y="1197.0" width="555.0" height="129.5" viewBox="0 0 480 112">
+  <line x1="36" y1="1102.0" x2="1164" y2="1102.0" stroke="#1C2530"/>
+  <text x="36" y="1146.0" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="3" font-weight="700" fill="#FFB000">RECEIPTS</text>
+  <text x="1164" y="1146.0" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" letter-spacing="2" fill="#6B7683">VERIFY AT VINIMABREU.DEV/PROOF</text>
+  <svg x="36.0" y="1168.0" width="555.0" height="129.5" viewBox="0 0 480 112">
   <rect x="1" y="1" width="478" height="110" rx="12" fill="#05070A" stroke="#26313D"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="#37D67A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="52" y="33" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#FFB000" letter-spacing="2.5" font-weight="700">PAID BOUNTY</text>
@@ -147,7 +147,7 @@
   <text x="26" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#F2F5F8">Anthropic</text>
   <text x="26" y="94" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#6B7683">security report, paid</text>
 </svg>
-  <svg x="609.0" y="1197.0" width="555.0" height="129.5" viewBox="0 0 480 112">
+  <svg x="609.0" y="1168.0" width="555.0" height="129.5" viewBox="0 0 480 112">
   <rect x="1" y="1" width="478" height="110" rx="12" fill="#05070A" stroke="#26313D"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="#37D67A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="52" y="33" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#FFB000" letter-spacing="2.5" font-weight="700">PAID BOUNTY</text>
@@ -155,7 +155,7 @@
   <text x="26" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#F2F5F8">MongoDB</text>
   <text x="26" y="94" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#6B7683">security report, resolved and paid</text>
 </svg>
-  <svg x="36.0" y="1340.5" width="555.0" height="129.5" viewBox="0 0 480 112">
+  <svg x="36.0" y="1311.5" width="555.0" height="129.5" viewBox="0 0 480 112">
   <rect x="1" y="1" width="478" height="110" rx="12" fill="#05070A" stroke="#26313D"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="#37D67A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="52" y="33" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#FFB000" letter-spacing="2.5" font-weight="700">MERGED UPSTREAM</text>
@@ -163,7 +163,7 @@
   <text x="26" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#F2F5F8">containers/crun</text>
   <text x="26" y="94" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#6B7683">PR #2166 · OCI runtime used by Podman</text>
 </svg>
-  <svg x="609.0" y="1340.5" width="555.0" height="129.5" viewBox="0 0 480 112">
+  <svg x="609.0" y="1311.5" width="555.0" height="129.5" viewBox="0 0 480 112">
   <rect x="1" y="1" width="478" height="110" rx="12" fill="#05070A" stroke="#26313D"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="#37D67A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="52" y="33" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#FFB000" letter-spacing="2.5" font-weight="700">CREDITED REVIEWER</text>

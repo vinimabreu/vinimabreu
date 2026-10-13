@@ -28,9 +28,9 @@ def esc(text: str) -> str:
     return html.escape(text, quote=True)
 
 
-def wrap(text: str, width_px: float, size: float, mono: bool = False) -> list[str]:
-    """Greedy word wrap with an average glyph width: 0.6em for mono, 0.52em for sans."""
-    per = size * (0.6 if mono else 0.52)
+def wrap(text: str, width_px: float, size: float, mono: bool = False, per_em: float | None = None) -> list[str]:
+    """Greedy word wrap with an average glyph width: 0.6em for mono, 0.52em for sans (or per_em)."""
+    per = size * (per_em or (0.6 if mono else 0.52))
     limit = max(10, int(width_px / per))
     lines, line = [], ""
     for word in text.split():
@@ -46,10 +46,17 @@ def wrap(text: str, width_px: float, size: float, mono: bool = False) -> list[st
 
 
 def text_block(x: float, y: float, lines: list[str], size: float, colour: str, lead: float, family: str = SANS,
-               weight: str = "400", italic: bool = False) -> tuple[str, float]:
+               weight: str = "400", italic: bool = False, justify: float | None = None) -> tuple[str, float]:
+    """With justify (a width in px), every line but the last is stretched to exactly that width,
+    so a paragraph reaches the right edge whatever font the reader's system picks."""
     style = ' font-style="italic"' if italic else ""
-    out = "".join(f'<text x="{x}" y="{y + i * lead:.1f}" font-family="{family}" font-size="{size}" '
-                  f'font-weight="{weight}" fill="{colour}"{style}>{esc(t)}</text>' for i, t in enumerate(lines))
+    out = ""
+    for i, t in enumerate(lines):
+        # only lines already close to the width get stretched; a short line would show gaps between letters
+        full = justify and i < len(lines) - 1 and len(t.split()) > 1 and len(t) * size * 0.47 >= 0.85 * justify
+        fit = f' textLength="{justify:.0f}" lengthAdjust="spacing"' if full else ""
+        out += (f'<text x="{x}" y="{y + i * lead:.1f}" font-family="{family}" font-size="{size}" '
+                f'font-weight="{weight}" fill="{colour}"{style}{fit}>{esc(t)}</text>')
     return out, y + (len(lines) - 1) * lead
 
 
@@ -82,7 +89,7 @@ def brief() -> str:
     parts.append(f'<text x="{x}" y="112" font-family="{SANS}" font-size="40" font-weight="700" fill="{C["white"]}" '
                  f'letter-spacing="-0.5">{esc(BRIEF_RULE)}</text>')
     sub, y = text_block(x, 152, [BRIEF_SUB], 20, C["amber"], 28)
-    body, y = text_block(x, y + 46, wrap(BRIEF_BODY, W - 2 * x, 18), 18, C["soft"], 29)
+    body, y = text_block(x, y + 46, wrap(BRIEF_BODY, W - 2 * x, 18, per_em=0.47), 18, C["soft"], 29, justify=W - 2 * x)
     nda_y = y + 50
     nda, y2 = text_block(x + 22, nda_y, wrap(BRIEF_NDA, W - 2 * x - 22, 13.5, mono=True), 13.5, C["muted"], 22, MONO)
     bar = f'<rect x="{x}" y="{nda_y - 15}" width="3" height="{y2 - nda_y + 22:.0f}" fill="{C["amberdim"]}"/>'
@@ -129,7 +136,7 @@ def handbook(cover: bytes) -> str:
              f'href="data:image/jpeg;base64,{b64}"/>',
              eyebrow(x, 64, "FIELD MANUAL · FREE · 84 PAGES"),
              f'<text x="{x}" y="112" font-family="{SANS}" font-size="34" font-weight="700" fill="{C["white"]}">{esc(HB_TITLE)}</text>']
-    body, y = text_block(x, 154, wrap(HB_BODY, W - x - 48, 17.5), 17.5, C["soft"], 28)
+    body, y = text_block(x, 154, wrap(HB_BODY, W - x - 48, 17.5, per_em=0.47), 17.5, C["soft"], 28, justify=W - x - 48)
     lic, _ = text_block(x, y + 40, [HB_LICENSE], 14, C["amber"], 20, MONO)
     return frame(cy * 2 + chh, "\n  ".join(parts + [body, lic]), f"{HB_TITLE}: {HB_BODY} {HB_LICENSE}")
 
@@ -145,7 +152,7 @@ def dossier(label: str, title: str, body: str, footer: str, tagline: str = "") -
         parts.append(tl)
     tlines = wrap(title, W - 2 * x, 30)
     t, y = text_block(x, y + 46, tlines, 30, C["white"], 38, SANS, "700")
-    b, y = text_block(x, y + 40, wrap(body, W - 2 * x, 17.5), 17.5, C["soft"], 28)
+    b, y = text_block(x, y + 40, wrap(body, W - 2 * x, 17.5, per_em=0.47), 17.5, C["soft"], 28, justify=W - 2 * x)
     parts += [t, b, f'<line x1="{x}" y1="{y + 28:.0f}" x2="{W - x}" y2="{y + 28:.0f}" stroke="{C["hair"]}"/>']
     f, y = text_block(x, y + 56, [footer], 13.5, C["muted"], 20, MONO)
     parts.append(f)
@@ -239,8 +246,8 @@ def how_i_work() -> str:
     parts, bottom = [], 0
     for i, (head, body) in enumerate(HOW):
         x = 40 + i * (col + 24)
-        lines = wrap(body, col - 48, 17)
-        t, y = text_block(x + 24, 104, lines, 17, C["soft"], 27)
+        lines = wrap(body, col - 48, 17, per_em=0.47)
+        t, y = text_block(x + 24, 104, lines, 17, C["soft"], 27, justify=col - 48)
         parts += [f'<rect x="{x:.0f}" y="28" width="{col:.0f}" height="__H__" rx="10" fill="{C["panel"]}" stroke="{C["hair2"]}"/>',
                   f'<rect x="{x:.0f}" y="28" width="{col:.0f}" height="3" fill="{C["amber"]}"/>',
                   eyebrow(x + 24, 70, head), t]
@@ -261,10 +268,10 @@ REVIEWS = [
 
 def quote_card(text: str, who: str) -> str:
     x = 56
-    lines = wrap(f"“{text}”", W - 2 * x, 19)
+    lines = wrap(f"“{text}”", W - 2 * x, 19, per_em=0.47)
     parts = [f'<text x="{x - 8}" y="96" font-family="Georgia,serif" font-size="96" fill="{C["amberdim"]}">“</text>',
              eyebrow(x + 50, 58, "CLIENT REVIEW")]
-    t, y = text_block(x, 112, lines, 19, C["text"], 31, SANS, italic=True)
+    t, y = text_block(x, 112, lines, 19, C["text"], 31, SANS, italic=True, justify=W - 2 * x)
     parts.append(t)
     w, _ = text_block(x, y + 46, [f"· {who}"], 13.5, C["muted"], 20, MONO)
     parts.append(w)
