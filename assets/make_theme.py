@@ -86,7 +86,7 @@ BRIEF_SITE = "VINIMABREU.DEV"
 def brief() -> str:
     x = 56
     parts = [eyebrow(x, 54, "THE HOUSE RULE"),
-             f'<text x="{x}" y="106" font-family="{SANS}" font-size="38" font-weight="700" fill="{C["white"]}" '
+             f'<text x="{x}" y="106" font-family="{SANS}" font-size="38" font-weight="700" fill="{C["amber"]}" '
              f'letter-spacing="-0.5">{esc(BRIEF_RULE)}</text>']
     sub, y = text_block(x, 144, [BRIEF_SUB], 19, C["text"], 28)
     body, y = text_block(x, y + 42, wrap(BRIEF_BODY, W - 2 * x, 17.5, per_em=0.47), 17.5, C["soft"], 28, justify=W - 2 * x)
@@ -98,23 +98,6 @@ def brief() -> str:
               f'font-weight="700" fill="{C["amber"]}">{BRIEF_SITE} ↗</text>')
     return frame(oy + 34, "\n  ".join(parts + [sub, body, status]),
                  f"{BRIEF_RULE} {BRIEF_SUB} {BRIEF_BODY} Open to freelance and contract work: vinimabreu.dev.")
-
-
-# ---------------------------------------------------------------- the open-to-work card above the button
-
-CTA_HEAD = "Open to AI engineering, RAG, agents and data work, freelance or contract."
-CTA_BODY = ("RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. "
-            "Based in Brazil, working with clients worldwide.")
-
-
-def cta() -> str:
-    x = 56
-    parts = [f'<circle cx="{x + 5}" cy="{49}" r="5" fill="{C["green"]}"/>',
-             f'<text x="{x + 20}" y="54" font-family="{MONO}" font-size="13" fill="{C["muted"]}" letter-spacing="3" '
-             f'font-weight="700">OPEN TO WORK</text>']
-    head, y = text_block(x, 100, wrap(CTA_HEAD, W - 2 * x, 26, per_em=0.5), 26, C["white"], 34, weight="700")
-    body, y = text_block(x, y + 40, wrap(CTA_BODY, W - 2 * x, 17.5, per_em=0.47), 17.5, C["soft"], 28)
-    return frame(y + 44, "\n  ".join(parts + [head, body]), f"Open to work. {CTA_HEAD} {CTA_BODY}")
 
 
 # ---------------------------------------------------------------- the button
@@ -195,7 +178,6 @@ def main() -> None:
     out = {
         "button-casestudies.svg": button("FULL PORTFOLIO · VINIMABREU.DEV ↗"),
         "brief.svg": brief(),
-        "cta.svg": cta(),
         "handbook.svg": handbook((HERE / "handbook-cover.jpg").read_bytes()),
         "quote-1.svg": quote_card(*REVIEWS[0]),
         "quote-2.svg": quote_card(*REVIEWS[1]),

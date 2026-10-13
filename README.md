@@ -311,6 +311,6 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 <img src="assets/quote-2.svg" width="100%" alt="Client review, data extraction from a public registry: completed the work ahead of schedule and with accuracy. I would hire him again.">
 
-<img src="assets/cta.svg" width="100%" alt="Open to work. Open to AI engineering, RAG, agents and data work, freelance or contract. RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with clients worldwide.">
+**Open to AI engineering, RAG, agents and data work, freelance or contract.** RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with clients worldwide.
 
 <p align="center"><a href="https://vinimabreu.dev"><img src="assets/button-casestudies.svg" alt="Full portfolio and case studies at vinimabreu.dev" width="560"></a></p>
