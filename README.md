@@ -20,7 +20,21 @@ I build retrieval, agents, MCP servers, voice, and automation with that one rule
 <a href="https://vinimabreu.dev"><img src="https://img.shields.io/badge/portfolio-vinimabreu.dev-FFB000?style=for-the-badge&logo=vercel&logoColor=05070A" alt="Portfolio: vinimabreu.dev"></a>
 </p>
 
-<sub><a href="#the-house-rule-running">The rule, running</a> &middot; <a href="#the-free-handbook">Free handbook</a> &middot; <a href="#invited-review">Invited review</a> &middot; <a href="#merged-upstream">Merged upstream</a> &middot; <a href="#flagships">Flagships</a> &middot; <a href="#retrieval-and-rag">Retrieval and RAG</a> &middot; <a href="#agents-and-tools">Agents and tools</a> &middot; <a href="#voice-and-automation">Voice and automation</a> &middot; <a href="#evaluation-and-quality">Evaluation and quality</a> &middot; <a href="#data-engineering-and-extraction">Data engineering and extraction</a> &middot; <a href="#stack">Stack</a> &middot; <a href="#how-i-work">How I work</a></sub>
+<p align="center">
+  <a href="#the-house-rule-running"><img src="assets/nav-the-house-rule-running.svg" alt="The house rule, running" height="30"></a>
+  <a href="#the-free-handbook"><img src="assets/nav-the-free-handbook.svg" alt="The free handbook" height="30"></a>
+  <a href="#invited-review"><img src="assets/nav-invited-review.svg" alt="Invited review" height="30"></a>
+  <a href="#merged-upstream"><img src="assets/nav-merged-upstream.svg" alt="Merged upstream" height="30"></a>
+  <a href="#ci-security"><img src="assets/nav-ci-security.svg" alt="CI security" height="30"></a>
+  <a href="#flagships"><img src="assets/nav-flagships.svg" alt="Flagships" height="30"></a>
+  <a href="#retrieval-and-rag"><img src="assets/nav-retrieval-and-rag.svg" alt="Retrieval and RAG" height="30"></a>
+  <a href="#agents-and-tools"><img src="assets/nav-agents-and-tools.svg" alt="Agents and tools" height="30"></a>
+  <a href="#voice-and-automation"><img src="assets/nav-voice-and-automation.svg" alt="Voice and automation" height="30"></a>
+  <a href="#evaluation-and-quality"><img src="assets/nav-evaluation-and-quality.svg" alt="Evaluation and quality" height="30"></a>
+  <a href="#data-engineering-and-extraction"><img src="assets/nav-data-engineering-and-extraction.svg" alt="Data engineering and extraction" height="30"></a>
+  <a href="#stack"><img src="assets/nav-stack.svg" alt="Stack" height="30"></a>
+  <a href="#how-i-work"><img src="assets/nav-how-i-work.svg" alt="How I work" height="30"></a>
+</p>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 

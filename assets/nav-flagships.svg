@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 30" width="128" height="30" role="img" aria-label="Flagships">
+  <rect x="0.5" y="0.5" width="127" height="29" rx="6" fill="#0A0E14" stroke="#26313D"/>
+  <text x="14" y="19.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" letter-spacing="2" fill="#FFB000" font-weight="700">06</text>
+  <text x="39.2" y="19.5" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" letter-spacing="2" fill="#D8E1E8">FLAGSHIPS</text>
+</svg>
