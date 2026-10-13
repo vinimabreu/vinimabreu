@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 112" role="img" aria-label="co-author: When AI Acts for the Company, essay with Dimitrios S. Sfyris · Verba, Oct 2026">
+  <rect x="1" y="1" width="478" height="110" rx="12" fill="#05070A" stroke="#26313D"/>
+  <path d="M26 28 l5 5 l10 -11" fill="none" stroke="#37D67A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="33" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#6B7683" letter-spacing="2.5" font-weight="700">CO-AUTHOR</text>
+  <text x="456" y="33" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#6B7683" letter-spacing="1">READ ↗</text>
+  <text x="26" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#FFB000">When AI Acts for the Company</text>
+  <text x="26" y="94" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#6B7683">essay with Dimitrios S. Sfyris · Verba, Oct 2026</text>
+</svg>

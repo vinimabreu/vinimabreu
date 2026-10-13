@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 212" role="img" aria-label="Open to work. Open to AI engineering, RAG, agents and data work, freelance or contract. RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with clients worldwide.">
+  <rect x="1" y="1" width="1198" height="210" rx="14" fill="#05070A" stroke="#26313D"/>
+  <circle cx="61" cy="49" r="5" fill="#37D67A"/>
+  <text x="76" y="54" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6B7683" letter-spacing="3" font-weight="700">OPEN TO WORK</text>
+  <text x="56" y="100.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#F2F5F8">Open to AI engineering, RAG, agents and data work, freelance or contract.</text>
+  <text x="56" y="140.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17.5" font-weight="400" fill="#A9B4BF">RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with</text><text x="56" y="168.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17.5" font-weight="400" fill="#A9B4BF">clients worldwide.</text>
+</svg>

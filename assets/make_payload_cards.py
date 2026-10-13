@@ -78,7 +78,7 @@ def header() -> str:
   <rect width="{w}" height="{h}" rx="14" fill="{C['ground']}"/>
   <rect width="{w}" height="{h}" rx="14" fill="url(#grid)"/>
   <text x="{w / 2}" y="62" text-anchor="middle" font-family="{MONO}" font-size="13" fill="{C['muted']}" letter-spacing="4" font-weight="700">VINIMABREU · AI ENGINEER</text>
-  <text x="{w / 2}" y="136" text-anchor="middle" font-family="{SANS}" font-size="64" font-weight="700" fill="#F2F5F8" letter-spacing="-1.5">Vinicius Pereira</text>
+  <text x="{w / 2}" y="136" text-anchor="middle" font-family="{SANS}" font-size="64" font-weight="700" fill="{C['amber']}" letter-spacing="-1.5">Vinicius Pereira</text>
   <text x="{w / 2}" y="178" text-anchor="middle" font-family="{MONO}" font-size="17" fill="{C['text']}">AI systems that are grounded, tested, and honest</text>
   <line x1="56" y1="200" x2="{w - 56}" y2="200" stroke="{C['hair2']}"/>
 </svg>

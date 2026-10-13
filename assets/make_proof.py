@@ -23,6 +23,7 @@ TILES = [
     ("proof-mongodb", "PAID BOUNTY", "MongoDB", "security report, resolved and paid"),
     ("proof-crun", "MERGED UPSTREAM", "containers/crun", "PR #2166 · OCI runtime used by Podman"),
     ("proof-arxiv", "CREDITED REVIEWER", "arXiv 2607.18347", "agentic commerce reference architecture"),
+    ("proof-verba", "CO-AUTHOR", "When AI Acts for the Company", "essay with Dimitrios S. Sfyris · Verba, Oct 2026"),
 ]
 
 
@@ -30,12 +31,12 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def tile(label: str, name: str, detail: str) -> str:
+def tile(label: str, name: str, detail: str, link: str = "VERIFY ↗") -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(label.lower())}: {esc(name)}, {esc(detail)}">
   <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="{C['ground']}" stroke="{C['hair2']}"/>
   <path d="M26 28 l5 5 l10 -11" fill="none" stroke="{C['green']}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="52" y="33" font-family="{MONO}" font-size="11" fill="{C['muted']}" letter-spacing="2.5" font-weight="700">{esc(label)}</text>
-  <text x="{W - 24}" y="33" text-anchor="end" font-family="{MONO}" font-size="10" fill="{C['muted']}" letter-spacing="1">VERIFY ↗</text>
+  <text x="{W - 24}" y="33" text-anchor="end" font-family="{MONO}" font-size="10" fill="{C['muted']}" letter-spacing="1">{esc(link)}</text>
   <text x="26" y="70" font-family="{SANS}" font-size="24" font-weight="700" fill="{C['amber']}">{esc(name)}</text>
   <text x="26" y="94" font-family="{MONO}" font-size="12" fill="{C['muted']}">{esc(detail)}</text>
 </svg>
@@ -44,7 +45,8 @@ def tile(label: str, name: str, detail: str) -> str:
 
 def main() -> None:
     for stem, label, name, detail in TILES:
-        (HERE / f"{stem}.svg").write_text(tile(label, name, detail), encoding="utf-8")
+        link = "READ ↗" if stem == "proof-verba" else "VERIFY ↗"
+        (HERE / f"{stem}.svg").write_text(tile(label, name, detail, link), encoding="utf-8")
     print(f"wrote {len(TILES)} proof tiles")
 
 

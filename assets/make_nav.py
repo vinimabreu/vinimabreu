@@ -26,7 +26,7 @@ def chip(label: str) -> tuple[int, str]:
     w = int(18 + len(label) * ADVANCE + 16)
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {H}" width="{w}" height="{H}" role="img" aria-label="{label.title()}">
   <rect x="0.5" y="0.5" width="{w - 1}" height="{H - 1}" rx="6" fill="#0A0E14" stroke="#26313D"/>
-  <text x="18" y="19.5" font-family="{MONO}" font-size="11" letter-spacing="2" fill="#D8E1E8">{label}</text>
+  <text x="18" y="19.5" font-family="{MONO}" font-size="11" letter-spacing="2" fill="#FFB000">{label}</text>
 </svg>
 """
     return w, svg

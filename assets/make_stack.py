@@ -1,11 +1,10 @@
-"""The Stack section: the twelve tools that carry the work, a card per area, a pill per tool with its icon.
+"""The Stack section: the full toolchain, the same 65 tools as the site, a card per area, a pill per tool with its icon.
 
     python3 assets/make_stack.py
 
-Kept short on purpose: the generic tools every project uses are left out, so the
-list says what is particular to this work. Icons are Simple Icons path data (CC0),
-stored in stack_icons.json so the panel draws offline; a tool with no Simple Icons
-entry gets a plain marker.
+Icons are Simple Icons path data (CC0) plus the site's own icons for the tools Simple
+Icons lacks, stored in stack_icons.json so the panel draws offline; a tool with no
+icon gets a plain marker.
 """
 
 from __future__ import annotations
@@ -20,15 +19,32 @@ SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
 C = {"ground": "#05070A", "panel": "#0A0E14", "hair": "#1C2530", "hair2": "#26313D", "amber": "#FFB000",
      "amberdim": "#7A5600", "text": "#D8E1E8", "muted": "#6B7683", "white": "#F2F5F8"}
 
-# category -> tools as (name, Simple Icons slug or "")
+# category -> tools as (name, icon key in stack_icons.json or ""); the same 65 tools as the site's toolchain
 STACK = [
-    ("MODELS AND AGENTS", [("Claude API", "anthropic"), ("Ollama", "ollama"), ("LangGraph", "langgraph"), ("MCP", "modelcontextprotocol")]),
-    ("BUILD AND RETRIEVAL", [("Python", "python"), ("FastAPI", "fastapi"), ("pytest", "pytest"), ("pgvector", "postgresql")]),
-    ("AUTOMATION", [("n8n", "n8n"), ("Make", "make"), ("Clay", ""), ("Twilio", "twilio")]),
+    ("CORE", [("Python", "python"), ("FastAPI", "fastapi"), ("Pydantic", "pydantic"), ("pytest", "pytest"), ("Django", "django"),
+              ("Django REST Framework", "django"), ("Celery", "celery")]),
+    ("MODELS", [("Claude", "anthropic"), ("ChatGPT", "chatgpt"), ("Gemini", "googlegemini"), ("Llama", "meta"), ("Qwen", "qwen"),
+                ("Mistral", "mistralai")]),
+    ("RETRIEVAL AND RAG", [("LangChain", "langchain"), ("Hugging Face", "huggingface"), ("Chroma", ""), ("Qdrant", "qdrant"),
+                           ("pgvector", "postgresql"), ("BM25", "")]),
+    ("AGENTS AND PROTOCOLS", [("LangGraph", "langgraph"), ("CrewAI", "crewai"), ("Google ADK", "googleadk"), ("A2A", ""),
+                              ("MCP", "modelcontextprotocol")]),
+    ("LOCAL AND INFERENCE", [("Ollama", "ollama"), ("LM Studio", "lmstudio"), ("PyTorch", "pytorch")]),
+    ("DATA AND SCIENCE", [("pandas", "pandas"), ("NumPy", "numpy"), ("scikit-learn", "scikitlearn"), ("Jupyter", "jupyter"),
+                          ("Plotly", "plotly")]),
+    ("EXTRACTION AND AUTOMATION", [("Playwright", ""), ("Selenium", "selenium"), ("Scrapy", "scrapy"), ("Tesseract OCR", ""),
+                                   ("n8n", "n8n"), ("Make", "make"), ("Clay", ""), ("Airtable", "airtable"), ("Xero", "xero"),
+                                   ("Dropbox", "dropbox"), ("PDFMonkey", ""), ("Microsoft 365", "microsoft365")]),
+    ("APIS AND COMMS", [("Streamlit", "streamlit"), ("Twilio", "twilio"), ("Retell", ""), ("OpenAPI", "openapiinitiative"),
+                        ("AWS Rekognition", "awsrekognition")]),
+    ("FULL-STACK WEB", [("TypeScript", "typescript"), ("JavaScript", "javascript"), ("React", "react"), ("Next.js", "nextdotjs"),
+                        ("Vue.js", "vuedotjs"), ("Node.js", "nodedotjs"), ("Vite", "vite"), ("Capacitor", "capacitor"), ("Deno", "deno")]),
+    ("OPS AND DEPLOY", [("Docker", "docker"), ("GitHub Actions", "githubactions"), ("Vercel", "vercel"), ("Supabase", "supabase"),
+                        ("SQLite", "sqlite"), ("PostgreSQL", "postgresql"), ("Google Cloud", "googlecloud")]),
 ]
 
 W = 1200
-PAD, GAP, COLS = 36, 18, 3
+PAD, GAP, COLS = 36, 18, 2
 CARD_W = (W - 2 * PAD - (COLS - 1) * GAP) / COLS
 INNER = CARD_W - 2 * 18
 PILL_H, PILL_GAP, ICON = 30, 8, 14
@@ -47,7 +63,7 @@ def layout(tools: list[tuple[str, str]]) -> list[list[tuple[str, str, float]]]:
     rows, row, used = [], [], 0.0
     for name, slug in tools:
         w = pill_w(name)
-        if row and (len(row) == 2 or used + PILL_GAP + w > INNER):
+        if row and used + PILL_GAP + w > INNER:
             rows.append(row); row, used = [], 0.0
         row.append((name, slug, w)); used += (PILL_GAP if len(row) > 1 else 0) + w
     if row:
@@ -92,10 +108,12 @@ def main() -> None:
             parts.append(card(PAD + i * (CARD_W + GAP), y, h, label, rows, icons))
         y += h + GAP
     height = y + PAD - GAP
-    top = (f'<text x="{PAD}" y="50" font-family="{MONO}" font-size="13" letter-spacing="3" font-weight="700" fill="{C["text"]}">CORE TOOLS</text>'
+    top = (f'<text x="{PAD}" y="50" font-family="{MONO}" font-size="13" letter-spacing="3" font-weight="700" fill="{C["text"]}">TOOLCHAIN</text>'
            f'<text x="{W - PAD}" y="50" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{C["muted"]}">{total} TOOLS</text>'
            f'<line x1="{PAD}" y1="64" x2="{W - PAD}" y2="64" stroke="{C["hair"]}"/>')
-    alt = "; ".join(f"{label.title()}: {', '.join(n for n, _ in tools)}" for label, tools in STACK)
+    alt = "Toolchain, 65 tools. " + "; ".join(
+        f"{label.capitalize().replace('rag', 'RAG').replace('Apis', 'APIs')}: {', '.join(n for n, _ in tools)}"
+        for label, tools in STACK) + "."
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {height:.0f}" role="img" aria-label="{esc(alt)}">\n'
            f'  <rect x="1" y="1" width="{W - 2}" height="{height - 2:.0f}" rx="14" fill="{C["ground"]}" stroke="{C["hair2"]}"/>\n'
            f'  {top}\n  ' + "\n  ".join(parts) + "\n</svg>\n")

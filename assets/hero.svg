@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 738" role="img" aria-label="Vinicius Pereira, AI systems that are grounded, tested, and honest. Live status: 44 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch betorskip, updated 2026-10-13">
-  <rect x="1" y="1" width="1198" height="736" rx="16" fill="#05070A" stroke="#26313D"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1042" role="img" aria-label="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 44 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch betorskip, updated 2026-10-13">
+  <rect x="1" y="1" width="1198" height="1040" rx="16" fill="#05070A" stroke="#26313D"/>
   <svg x="0.0" y="0.0" width="1200.0" height="230.0" viewBox="0 0 1200 230">
   <defs>
     <pattern id="hd-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.03"/></pattern>
@@ -7,11 +7,20 @@
   
   <rect width="1200" height="230" rx="0" fill="url(#hd-grid)"/>
   <text x="600.0" y="62" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6B7683" letter-spacing="4" font-weight="700">VINIMABREU · AI ENGINEER</text>
-  <text x="600.0" y="136" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="64" font-weight="700" fill="#F2F5F8" letter-spacing="-1.5">Vinicius Pereira</text>
+  <text x="600.0" y="136" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="64" font-weight="700" fill="#FFB000" letter-spacing="-1.5">Vinicius Pereira</text>
   <text x="600.0" y="178" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="17" fill="#D8E1E8">AI systems that are grounded, tested, and honest</text>
   <line x1="56" y1="200" x2="1144" y2="200" stroke="#26313D"/>
 </svg>
-  <svg x="0.0" y="230.0" width="1200.0" height="500.0" viewBox="0 0 1200 500">
+  <svg x="0.0" y="212.0" width="1200.0" height="322.0" viewBox="0 0 1200 322">
+  
+  <text x="56" y="54" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6B7683" letter-spacing="3" font-weight="700">THE HOUSE RULE</text>
+  <text x="56" y="106" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#F2F5F8" letter-spacing="-0.5">The model proposes, the code disposes.</text>
+  <text x="56" y="144.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="400" fill="#D8E1E8">The model holds the conversation. Tested code makes every decision that matters.</text>
+  <text x="56" y="186.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17.5" font-weight="400" fill="#A9B4BF" textLength="1088" lengthAdjust="spacing">I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship</text><text x="56" y="214.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17.5" font-weight="400" fill="#A9B4BF" textLength="1088" lengthAdjust="spacing">deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the</text><text x="56" y="242.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17.5" font-weight="400" fill="#A9B4BF">trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard.</text>
+  <circle cx="61" cy="283" r="5" fill="#37D67A"/><text x="76" y="288" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="2.5" font-weight="700" fill="#D8E1E8">OPEN TO FREELANCE AND CONTRACT WORK</text><text x="1144" y="288" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="2.5" font-weight="700" fill="#FFB000">VINIMABREU.DEV ↗</text>
+</svg>
+  <line x1="56" y1="534.0" x2="1144" y2="534.0" stroke="#1C2530"/>
+  <svg x="0.0" y="534.0" width="1200.0" height="500.0" viewBox="0 0 1200 500">
   <defs>
     <pattern id="co-scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#FFFFFF" opacity="0.018"/></pattern>
   </defs>

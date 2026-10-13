@@ -1,8 +1,4 @@
-<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI systems that are grounded, tested, and honest. Live status from public data, refreshed every weekday: every public repo on a radar by launch date, the tests of the six flagships with their CI state, the last launch and the latest write-up."></a>
-
-<p align="center"><b>AI engineer</b> · RAG, agents, automation and data pipelines · <b>Open to freelance and contract work</b> · <a href="https://vinimabreu.dev">vinimabreu.dev</a></p>
-
-**The model proposes, the code disposes.** The model holds the conversation; tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice and automation with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard.
+<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 44 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch betorskip, updated 2026-10-13"></a>
 
 <p align="center">
   <a href="#proof"><img src="assets/nav-proof.svg" alt="Proof" height="30"></a>
@@ -21,9 +17,8 @@
   <a href="https://vinimabreu.dev/proof"><img src="assets/proof-mongodb.svg" alt="Paid bounty: MongoDB, security report, resolved and paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
   <a href="https://github.com/containers/crun/pull/2166"><img src="assets/proof-crun.svg" alt="Merged upstream: containers/crun pull request 2166, reviewed and merged by the project maintainer" width="49%"></a>
   <a href="https://arxiv.org/abs/2607.18347"><img src="assets/proof-arxiv.svg" alt="Credited reviewer: arXiv 2607.18347, a reference architecture for trustworthy agentic commerce" width="49%"></a>
+  <a href="https://www.verba.ing/2026/10/13/when-ai-acts-for-the-company"><img src="assets/proof-verba.svg" alt="Co-author: When AI Acts for the Company, an essay with Dimitrios S. Sfyris on Verba, October 2026, on AI systems that act on a company's behalf" width="49%"></a>
 </p>
-
-<p align="center">Co-author, with Dimitrios S. Sfyris, of <a href="https://www.verba.ing/2026/10/13/when-ai-acts-for-the-company">When AI Acts for the Company</a> on Verba (October 2026): what changes when an AI system stops answering and starts acting for a company.</p>
 
 <details>
 <summary><b>The crun fix in full</b></summary>
@@ -306,7 +301,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 ## Stack
 
-<img src="assets/stack.svg" width="100%" alt="Core tools. Models and agents: Claude API, Ollama, LangGraph, MCP. Build and retrieval: Python, FastAPI, pytest, pgvector. Automation: n8n, Make, Clay, Twilio.">
+<img src="assets/stack.svg" width="100%" alt="Toolchain, 65 tools. Core: Python, FastAPI, Pydantic, pytest, Django, Django REST Framework, Celery; Models: Claude, ChatGPT, Gemini, Llama, Qwen, Mistral; Retrieval and RAG: LangChain, Hugging Face, Chroma, Qdrant, pgvector, BM25; Agents and protocols: LangGraph, CrewAI, Google ADK, A2A, MCP; Local and inference: Ollama, LM Studio, PyTorch; Data and science: pandas, NumPy, scikit-learn, Jupyter, Plotly; Extraction and automation: Playwright, Selenium, Scrapy, Tesseract OCR, n8n, Make, Clay, Airtable, Xero, Dropbox, PDFMonkey, Microsoft 365; APIs and comms: Streamlit, Twilio, Retell, OpenAPI, AWS Rekognition; Full-stack web: TypeScript, JavaScript, React, Next.js, Vue.js, Node.js, Vite, Capacitor, Deno; Ops and deploy: Docker, GitHub Actions, Vercel, Supabase, SQLite, PostgreSQL, Google Cloud.">
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
@@ -316,6 +311,6 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 <img src="assets/quote-2.svg" width="100%" alt="Client review, data extraction from a public registry: completed the work ahead of schedule and with accuracy. I would hire him again.">
 
-**Open to AI engineering, RAG, agents and data work, freelance or contract.** RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with clients worldwide.
+<img src="assets/cta.svg" width="100%" alt="Open to work. Open to AI engineering, RAG, agents and data work, freelance or contract. RAG and LLM systems, agents and automations, scraping and data pipelines, all built with tests and CI. Based in Brazil, working with clients worldwide.">
 
 <p align="center"><a href="https://vinimabreu.dev"><img src="assets/button-casestudies.svg" alt="Full portfolio and case studies at vinimabreu.dev" width="560"></a></p>
