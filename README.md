@@ -348,50 +348,7 @@ Cross-source corroboration and scheduled scoring for data you cannot trust from 
 
 ## Stack
 
-<p>
-<img src="assets/stack-core.svg" alt="Core" height="34"><br>
-<img src="https://img.shields.io/badge/Python-0A0E14?style=for-the-badge&logo=python&logoColor=FFB000" alt="Python"> <img src="https://img.shields.io/badge/FastAPI-0A0E14?style=for-the-badge&logo=fastapi&logoColor=FFB000" alt="FastAPI"> <img src="https://img.shields.io/badge/Django%20%2B%20DRF-0A0E14?style=for-the-badge&logo=django&logoColor=FFB000" alt="Django + DRF"> <img src="https://img.shields.io/badge/Celery-0A0E14?style=for-the-badge&logo=celery&logoColor=FFB000" alt="Celery"> <img src="https://img.shields.io/badge/Flask-0A0E14?style=for-the-badge&logo=flask&logoColor=FFB000" alt="Flask"> <img src="https://img.shields.io/badge/Pydantic-0A0E14?style=for-the-badge&logo=pydantic&logoColor=FFB000" alt="Pydantic"> <img src="https://img.shields.io/badge/pytest-0A0E14?style=for-the-badge&logo=pytest&logoColor=FFB000" alt="pytest"> <img src="https://img.shields.io/badge/pandas-0A0E14?style=for-the-badge&logo=pandas&logoColor=FFB000" alt="pandas"> <img src="https://img.shields.io/badge/NumPy-0A0E14?style=for-the-badge&logo=numpy&logoColor=FFB000" alt="NumPy">
-</p>
-
-<p>
-<img src="assets/stack-retrieval.svg" alt="Retrieval" height="34"><br>
-<img src="https://img.shields.io/badge/Chroma-0A0E14?style=for-the-badge" alt="Chroma"> <img src="https://img.shields.io/badge/Qdrant-0A0E14?style=for-the-badge&logo=qdrant&logoColor=FFB000" alt="Qdrant"> <img src="https://img.shields.io/badge/pgvector-0A0E14?style=for-the-badge&logo=postgresql&logoColor=FFB000" alt="pgvector"> <img src="https://img.shields.io/badge/BM25%20%2B%20dense%20embeddings-0A0E14?style=for-the-badge" alt="BM25 + dense embeddings"> <img src="https://img.shields.io/badge/SQLite-0A0E14?style=for-the-badge&logo=sqlite&logoColor=FFB000" alt="SQLite">
-</p>
-
-<p>
-<img src="assets/stack-models.svg" alt="Models" height="34"><br>
-<img src="https://img.shields.io/badge/Claude%20API-0A0E14?style=for-the-badge&logo=anthropic&logoColor=FFB000" alt="Claude API"> <img src="https://img.shields.io/badge/OpenAI-0A0E14?style=for-the-badge&logo=openai&logoColor=FFB000" alt="OpenAI"> <img src="https://img.shields.io/badge/Gemini-0A0E14?style=for-the-badge&logo=googlegemini&logoColor=FFB000" alt="Gemini"> <img src="https://img.shields.io/badge/Ollama-0A0E14?style=for-the-badge&logo=ollama&logoColor=FFB000" alt="Ollama"> <img src="https://img.shields.io/badge/Gemma-0A0E14?style=for-the-badge&logo=google&logoColor=FFB000" alt="Gemma"> <img src="https://img.shields.io/badge/Llama-0A0E14?style=for-the-badge&logo=meta&logoColor=FFB000" alt="Llama"> <img src="https://img.shields.io/badge/Qwen-0A0E14?style=for-the-badge" alt="Qwen"> <img src="https://img.shields.io/badge/Mistral-0A0E14?style=for-the-badge&logo=mistralai&logoColor=FFB000" alt="Mistral"> <img src="https://img.shields.io/badge/LM%20Studio-0A0E14?style=for-the-badge" alt="LM Studio"> <img src="https://img.shields.io/badge/Hugging%20Face-0A0E14?style=for-the-badge&logo=huggingface&logoColor=FFB000" alt="Hugging Face">
-</p>
-
-<p>
-<img src="assets/stack-agents.svg" alt="Agents" height="34"><br>
-<img src="https://img.shields.io/badge/LangGraph-0A0E14?style=for-the-badge&logo=langgraph&logoColor=FFB000" alt="LangGraph"> <img src="https://img.shields.io/badge/LangChain-0A0E14?style=for-the-badge&logo=langchain&logoColor=FFB000" alt="LangChain"> <img src="https://img.shields.io/badge/CrewAI-0A0E14?style=for-the-badge&logo=crewai&logoColor=FFB000" alt="CrewAI"> <img src="https://img.shields.io/badge/MCP-0A0E14?style=for-the-badge&logo=modelcontextprotocol&logoColor=FFB000" alt="MCP"> <img src="https://img.shields.io/badge/Google%20ADK%20%2B%20A2A-0A0E14?style=for-the-badge&logo=google&logoColor=FFB000" alt="Google ADK + A2A">
-</p>
-
-<p>
-<img src="assets/stack-extraction.svg" alt="Extraction" height="34"><br>
-<img src="https://img.shields.io/badge/Playwright-0A0E14?style=for-the-badge&logo=playwright&logoColor=FFB000" alt="Playwright"> <img src="https://img.shields.io/badge/Selenium-0A0E14?style=for-the-badge&logo=selenium&logoColor=FFB000" alt="Selenium"> <img src="https://img.shields.io/badge/Scrapy-0A0E14?style=for-the-badge&logo=scrapy&logoColor=FFB000" alt="Scrapy"> <img src="https://img.shields.io/badge/Tesseract%20OCR-0A0E14?style=for-the-badge" alt="Tesseract OCR"> <img src="https://img.shields.io/badge/AWS%20Textract-0A0E14?style=for-the-badge" alt="AWS Textract">
-</p>
-
-<p>
-<img src="assets/stack-automation.svg" alt="Automation" height="34"><br>
-<img src="https://img.shields.io/badge/n8n-0A0E14?style=for-the-badge&logo=n8n&logoColor=FFB000" alt="n8n"> <img src="https://img.shields.io/badge/Make-0A0E14?style=for-the-badge&logo=make&logoColor=FFB000" alt="Make"> <img src="https://img.shields.io/badge/Clay-0A0E14?style=for-the-badge" alt="Clay"> <img src="https://img.shields.io/badge/Airtable-0A0E14?style=for-the-badge&logo=airtable&logoColor=FFB000" alt="Airtable"> <img src="https://img.shields.io/badge/Xero-0A0E14?style=for-the-badge&logo=xero&logoColor=FFB000" alt="Xero"> <img src="https://img.shields.io/badge/Dropbox-0A0E14?style=for-the-badge&logo=dropbox&logoColor=FFB000" alt="Dropbox"> <img src="https://img.shields.io/badge/PDFMonkey-0A0E14?style=for-the-badge" alt="PDFMonkey"> <img src="https://img.shields.io/badge/Microsoft%20365-0A0E14?style=for-the-badge" alt="Microsoft 365"> <img src="https://img.shields.io/badge/Twilio-0A0E14?style=for-the-badge&logo=twilio&logoColor=FFB000" alt="Twilio"> <img src="https://img.shields.io/badge/Retell-0A0E14?style=for-the-badge" alt="Retell"> <img src="https://img.shields.io/badge/ElevenLabs-0A0E14?style=for-the-badge&logo=elevenlabs&logoColor=FFB000" alt="ElevenLabs"> <img src="https://img.shields.io/badge/Streamlit-0A0E14?style=for-the-badge&logo=streamlit&logoColor=FFB000" alt="Streamlit">
-</p>
-
-<p>
-<img src="assets/stack-full-stack-web.svg" alt="Full-stack web" height="34"><br>
-<img src="https://img.shields.io/badge/TypeScript-0A0E14?style=for-the-badge&logo=typescript&logoColor=FFB000" alt="TypeScript"> <img src="https://img.shields.io/badge/JavaScript-0A0E14?style=for-the-badge&logo=javascript&logoColor=FFB000" alt="JavaScript"> <img src="https://img.shields.io/badge/React-0A0E14?style=for-the-badge&logo=react&logoColor=FFB000" alt="React"> <img src="https://img.shields.io/badge/Next.js-0A0E14?style=for-the-badge&logo=nextdotjs&logoColor=FFB000" alt="Next.js"> <img src="https://img.shields.io/badge/Vue-0A0E14?style=for-the-badge&logo=vuedotjs&logoColor=FFB000" alt="Vue"> <img src="https://img.shields.io/badge/Node.js-0A0E14?style=for-the-badge&logo=nodedotjs&logoColor=FFB000" alt="Node.js"> <img src="https://img.shields.io/badge/Vite-0A0E14?style=for-the-badge&logo=vite&logoColor=FFB000" alt="Vite"> <img src="https://img.shields.io/badge/Deno-0A0E14?style=for-the-badge&logo=deno&logoColor=FFB000" alt="Deno"> <img src="https://img.shields.io/badge/Capacitor-0A0E14?style=for-the-badge&logo=capacitor&logoColor=FFB000" alt="Capacitor"> <img src="https://img.shields.io/badge/Vercel-0A0E14?style=for-the-badge&logo=vercel&logoColor=FFB000" alt="Vercel"> <img src="https://img.shields.io/badge/Supabase-0A0E14?style=for-the-badge&logo=supabase&logoColor=FFB000" alt="Supabase">
-</p>
-
-<p>
-<img src="assets/stack-identity-trust.svg" alt="Identity & trust" height="34"><br>
-<img src="https://img.shields.io/badge/AWS%20Rekognition%20face%20match-0A0E14?style=for-the-badge" alt="AWS Rekognition face match"> <img src="https://img.shields.io/badge/document%20%2B%20liveness%20KYC%20flows-0A0E14?style=for-the-badge" alt="document + liveness KYC flows"> <img src="https://img.shields.io/badge/privacy--by--design%20under%20LGPD-0A0E14?style=for-the-badge" alt="privacy-by-design under LGPD">
-</p>
-
-<p>
-<img src="assets/stack-ops.svg" alt="Ops" height="34"><br>
-<img src="https://img.shields.io/badge/Docker-0A0E14?style=for-the-badge&logo=docker&logoColor=FFB000" alt="Docker"> <img src="https://img.shields.io/badge/GitHub%20Actions-0A0E14?style=for-the-badge&logo=githubactions&logoColor=FFB000" alt="GitHub Actions"> <img src="https://img.shields.io/badge/PostgreSQL-0A0E14?style=for-the-badge&logo=postgresql&logoColor=FFB000" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Google%20Cloud%20Run-0A0E14?style=for-the-badge&logo=googlecloud&logoColor=FFB000" alt="Google Cloud Run">
-</p>
+<img src="assets/stack.svg" width="100%" alt="Core: Python, FastAPI, Django + DRF, Celery, Flask, Pydantic, pytest, pandas, NumPy; Models: Claude API, OpenAI, Gemini, Ollama, Gemma, Llama, Qwen, Mistral, LM Studio, Hugging Face; Automation: n8n, Make, Clay, Airtable, Xero, Dropbox, PDFMonkey, Microsoft 365, Twilio, Retell, ElevenLabs, Streamlit; Retrieval: Chroma, Qdrant, pgvector, BM25 + dense embeddings, SQLite; Agents: LangGraph, LangChain, CrewAI, MCP, Google ADK + A2A; Extraction: Playwright, Selenium, Scrapy, Tesseract OCR, AWS Textract; Full-Stack Web: TypeScript, JavaScript, React, Next.js, Vue, Node.js, Vite, Deno, Capacitor, Vercel, Supabase; Identity & Trust: AWS Rekognition face match, document + liveness KYC flows, privacy-by-design under LGPD; Ops: Docker, GitHub Actions, PostgreSQL, Google Cloud Run">
 
 <img src="assets/divider.svg" width="100%" alt="" />
 

@@ -285,11 +285,6 @@ def cta() -> str:
     return frame(236, "\n  ".join(parts), f"{CTA_HEAD} {' '.join(CTA_LINES)}")
 
 
-# ---------------------------------------------------------------- stack category labels
-
-STACK_LABELS = ["CORE", "RETRIEVAL", "MODELS", "AGENTS", "EXTRACTION", "AUTOMATION", "FULL-STACK WEB", "IDENTITY & TRUST", "OPS"]
-
-
 def main() -> None:
     out = {
         "brief.svg": brief(),
@@ -312,8 +307,6 @@ def main() -> None:
     rows = json.loads((HERE / "rows.json").read_text(encoding="utf-8"))
     for r in rows:
         out[f"row-{r['slug']}.svg"] = row(r["index"], r["name"], r["desc"], r.get("extra", ""))
-    for label in STACK_LABELS:
-        out[f"stack-{label.lower().replace(' & ', '-').replace(' ', '-')}.svg"] = chip(label)
     for name, svg in out.items():
         (HERE / name).write_text(svg, encoding="utf-8")
     print(f"wrote {len(out)} panels")
