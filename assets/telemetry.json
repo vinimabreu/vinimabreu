@@ -1,12 +1,12 @@
 {
- "collected": "2026-10-13",
+ "collected": "2026-10-14",
  "projects": [
   {
    "name": "betorskip",
    "created": "2026-10-13",
-   "pushed": "2026-10-13",
+   "pushed": "2026-10-14",
    "description": "Paste a bet slip, get BET, SKIP or CHECK: read by a local Gemma, every number checked against the slip and its own arithmetic, decided by your bankroll rules.",
-   "tests": 134,
+   "tests": 137,
    "ci": "success"
   },
   {
@@ -304,7 +304,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-10-13",
+   "pushed": "2026-10-14",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -317,7 +317,7 @@
   }
  ],
  "project_count": 44,
- "tests_total": 4421,
+ "tests_total": 4424,
  "repos_with_tests": 25,
  "last_launch": "betorskip",
  "last_launch_date": "2026-10-13",

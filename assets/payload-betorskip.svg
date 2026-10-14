@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 104" role="img"
-     aria-label="betorskip: A local Gemma reads the bet slip; code checks every number and its arithmetic. ci passing, Python · Ollama + Gemma 4 · 134 tests · pushed 13 OCT">
+     aria-label="betorskip: A local Gemma reads the bet slip; code checks every number and its arithmetic. ci passing, Python · Ollama + Gemma 4 · 137 tests · pushed 14 OCT">
   <rect x="1" y="1" width="478" height="102" rx="12" fill="#05070A" stroke="#26313D"/>
   <circle cx="360" cy="35.5" r="3.5" fill="#37D67A"/>
   <text x="456" y="39" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="10" fill="#37D67A" letter-spacing="2">CI PASSING</text>
   <text x="24" y="43" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#FFB000">betorskip</text>
   <line x1="24" y1="62" x2="456" y2="62" stroke="#1C2530"/>
-  <text x="24" y="86" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#6B7683">Python · Ollama + Gemma 4 · 134 tests · pushed 13 OCT</text>
+  <text x="24" y="86" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#6B7683">Python · Ollama + Gemma 4 · 137 tests · pushed 14 OCT</text>
 </svg>
