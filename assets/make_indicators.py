@@ -84,7 +84,7 @@ def build(theme: str, selic: float, ipca: float, usd: float) -> str:
 def main() -> None:
     try:
         values = {name: fetch(sid) for name, sid in SERIES.items()}
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
         # Transient upstream outage (5xx, timeout, DNS): keeping the prior real
         # numbers is the intended outcome, not a failure of this repo. Log it
         # and exit clean so a Central Bank blip does not turn the profile red.
