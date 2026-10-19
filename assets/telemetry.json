@@ -1,5 +1,5 @@
 {
- "collected": "2026-10-16",
+ "collected": "2026-10-19",
  "projects": [
   {
    "name": "betorskip",
@@ -304,7 +304,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-10-16",
+   "pushed": "2026-10-17",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
