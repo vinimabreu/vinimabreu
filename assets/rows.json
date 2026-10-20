@@ -36,6 +36,13 @@
  },
  {
   "section": "agents",
+  "name": "ghostsubs",
+  "url": "https://github.com/vinimabreu/ghostsubs",
+  "desc": "Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code",
+  "slug": "ghostsubs"
+ },
+ {
+  "section": "agents",
   "name": "whatran",
   "url": "https://github.com/vinimabreu/whatran",
   "desc": "What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma",

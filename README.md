@@ -102,7 +102,7 @@ Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by
 ## Projects
 
 <details>
-<summary><b>36 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
+<summary><b>37 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
@@ -134,6 +134,7 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
 **Agents and tools** · *Agents that can only do what their tool layer allows.*
 
+<a href="https://github.com/vinimabreu/ghostsubs"><img src="assets/row-ghostsubs.svg" width="100%" alt="ghostsubs: Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code"></a>
 <a href="https://github.com/vinimabreu/whatran"><img src="assets/row-whatran.svg" width="100%" alt="whatran: What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma"></a>
 <a href="https://github.com/vinimabreu/dapraia"><img src="assets/row-dapraia.svg" width="100%" alt="dapraia: The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code"></a>
 <a href="https://github.com/vinimabreu/web-pilot"><img src="assets/row-web-pilot.svg" width="100%" alt="web-pilot: A browser-use agent where the model proposes one action and code disposes"></a>
@@ -143,7 +144,10 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 <a href="https://github.com/vinimabreu/mcp-listings"><img src="assets/row-mcp-listings.svg" width="100%" alt="mcp-listings: An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools"></a>
 
 <details>
-<summary>Notes on these 7</summary>
+<summary>Notes on these 8</summary>
+
+**[ghostsubs](https://github.com/vinimabreu/ghostsubs)**<br>
+Everything a bank or card account pays on repeat, in one line a month, from the CSV exports you already download. Banks print each charge as a descriptor (`PAYPAL *SPOTIFY 4025550134`, `SPOTIFY AB STOCKHOLM SE`), and Gemma 4 on Ollama, on your own machine, names the business behind each one once. A name is kept only when the descriptor spells it out, and plain code works out every schedule and amount, including price increases and trials that turned paid. Answers are cached, so the first run on four example statements took 102 seconds and the second 0.57. On 159 descriptors it named 148 right against 99 without the model, and across ten seeds it found all 420 planted series and invented none, where a first version had invented 17. 221 tests, no dependencies, and the statement never leaves the laptop.
 
 **[whatran](https://github.com/vinimabreu/whatran)**<br>
 What the coding agents ran in your terminal today, read from the history that already records it: atuin's agent-tagged entries and Claude Code's own session files. Fixed rules decide what deserves a second look (`curl | sh`, `rm -rf` on something that is not a cache, a force push, a read of `.env`, `sudo` here or on a server over `ssh`), one simple command at a time and only from the part the shell actually runs, so a heredoc of test data or a commit message never counts. Gemma 4 on Ollama, on the same machine, writes the note, and the note is checked against the facts before anyone sees it: a command it quotes or a number it uses that the facts do not hold, and the note is withheld. Its first run on a real working day of mine raised 64 flags, 21 of them wrong; reading what runs brought the same day down to four entries. 318 tests, no dependencies, and the history never leaves the machine.
