@@ -1,6 +1,13 @@
 {
- "collected": "2026-10-19",
+ "collected": "2026-10-20",
  "projects": [
+  {
+   "name": "ghostsubs",
+   "created": "2026-10-20",
+   "pushed": "2026-10-20",
+   "description": "Finds recurring charges in bank and card CSV exports. Gemma 4 runs locally to name each descriptor, and code checks every name.",
+   "tests": null
+  },
   {
    "name": "betorskip",
    "created": "2026-10-13",
@@ -304,7 +311,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-10-17",
+   "pushed": "2026-10-20",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -316,11 +323,11 @@
    "tests": null
   }
  ],
- "project_count": 44,
+ "project_count": 45,
  "tests_total": 4424,
  "repos_with_tests": 25,
- "last_launch": "betorskip",
- "last_launch_date": "2026-10-13",
+ "last_launch": "ghostsubs",
+ "last_launch_date": "2026-10-20",
  "articles_published": 29,
  "latest_article": {
   "title": "Bet or skip: Gemma reads the bet slip on my laptop, and the slip's own arithmetic checks Gemma",
