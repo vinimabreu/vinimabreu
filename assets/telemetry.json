@@ -1,5 +1,5 @@
 {
- "collected": "2026-10-21",
+ "collected": "2026-10-22",
  "projects": [
   {
    "name": "ghostsubs",
@@ -311,7 +311,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-10-21",
+   "pushed": "2026-10-22",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -328,11 +328,11 @@
  "repos_with_tests": 25,
  "last_launch": "ghostsubs",
  "last_launch_date": "2026-10-20",
- "articles_published": 29,
+ "articles_published": 30,
  "latest_article": {
-  "title": "Bet or skip: Gemma reads the bet slip on my laptop, and the slip's own arithmetic checks Gemma",
-  "date": "2026-10-13",
-  "url": "https://dev.to/vinimabreu/bet-or-skip-gemma-reads-the-bet-slip-on-my-laptop-and-the-slips-own-arithmetic-checks-gemma-eif"
+  "title": "Slow once, instant after: Gemma 4 names each bank descriptor one time on your laptop, and code checks every name",
+  "date": "2026-10-20",
+  "url": "https://dev.to/vinimabreu/slow-once-instant-after-gemma-4-names-each-bank-descriptor-one-time-on-your-laptop-and-code-28lk"
  },
  "flagships": [
   "revenue-loop",
