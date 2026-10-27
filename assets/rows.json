@@ -36,6 +36,13 @@
  },
  {
   "section": "agents",
+  "name": "ofrenda",
+  "url": "https://github.com/vinimabreu/ofrenda",
+  "desc": "An ofrenda for the people whose code still runs: one card per person, the words by a local Gemma, every quote checked against git",
+  "slug": "ofrenda"
+ },
+ {
+  "section": "agents",
   "name": "ghostsubs",
   "url": "https://github.com/vinimabreu/ghostsubs",
   "desc": "Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code",

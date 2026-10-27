@@ -1,4 +1,4 @@
-<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 45 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch ghostsubs, updated 2026-10-20"></a>
+<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 46 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch ofrenda, updated 2026-10-27"></a>
 
 <p align="center">
   <a href="#proof"><img src="assets/nav-proof.svg" alt="Proof" height="30"></a>
@@ -102,7 +102,7 @@ Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by
 ## Projects
 
 <details>
-<summary><b>37 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
+<summary><b>38 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
@@ -134,6 +134,7 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
 **Agents and tools** · *Agents that can only do what their tool layer allows.*
 
+<a href="https://github.com/vinimabreu/ofrenda"><img src="assets/row-ofrenda.svg" width="100%" alt="ofrenda: An ofrenda for the people whose code still runs: one card per person, the words by a local Gemma, every quote checked against git"></a>
 <a href="https://github.com/vinimabreu/ghostsubs"><img src="assets/row-ghostsubs.svg" width="100%" alt="ghostsubs: Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code"></a>
 <a href="https://github.com/vinimabreu/whatran"><img src="assets/row-whatran.svg" width="100%" alt="whatran: What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma"></a>
 <a href="https://github.com/vinimabreu/dapraia"><img src="assets/row-dapraia.svg" width="100%" alt="dapraia: The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code"></a>
@@ -144,7 +145,10 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 <a href="https://github.com/vinimabreu/mcp-listings"><img src="assets/row-mcp-listings.svg" width="100%" alt="mcp-listings: An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools"></a>
 
 <details>
-<summary>Notes on these 8</summary>
+<summary>Notes on these 9</summary>
+
+**[ofrenda](https://github.com/vinimabreu/ofrenda)**<br>
+A card for everyone whose code still runs in a repository after they moved on from it, read from git history alone. Blame runs with `-w -M -C` and the repository's own ignore list, through a shadow repository that never reads its config, so nothing in a repository you did not write gets to run. Gemma 4 on Ollama, on your own machine, writes one sentence per person; plain code keeps it only when every quote matches that person's commit messages letter for letter, and a second reading screens it for death, judgment or gender wording. On flask, requests, bottle and paramiko it made 40 cards with 106 quotes checked, and none of 1,687 deliberately broken answers got through. 400 tests, no dependencies, and the history never leaves the laptop.
 
 **[ghostsubs](https://github.com/vinimabreu/ghostsubs)**<br>
 Everything a bank or card account pays on repeat, in one line a month, from the CSV exports you already download. Banks print each charge as a descriptor (`PAYPAL *SPOTIFY 4025550134`, `SPOTIFY AB STOCKHOLM SE`), and Gemma 4 on Ollama, on your own machine, names the business behind each one once. A name is kept only when the descriptor spells it out, and plain code works out every schedule and amount, including price increases and trials that turned paid. Answers are cached, so the first run on four example statements took 102 seconds and the second 0.57. On 159 descriptors it named 148 right against 99 without the model, and across ten seeds it found all 420 planted series and invented none, where a first version had invented 17. 221 tests, no dependencies, and the statement never leaves the laptop.
