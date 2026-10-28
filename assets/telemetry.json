@@ -1,5 +1,5 @@
 {
- "collected": "2026-10-27",
+ "collected": "2026-10-28",
  "projects": [
   {
    "name": "ofrenda",
@@ -318,7 +318,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-10-27",
+   "pushed": "2026-10-28",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
