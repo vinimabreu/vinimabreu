@@ -1,6 +1,13 @@
 {
- "collected": "2026-11-05",
+ "collected": "2026-11-06",
  "projects": [
+  {
+   "name": "gifthorse",
+   "created": "2026-11-06",
+   "pushed": "2026-11-06",
+   "description": "Static triage for a file, folder or archive from a stranger: inspect it without running it and answer BLOCK, REVIEW or NO FINDINGS with file, line and defanged indicators.",
+   "tests": 375
+  },
   {
    "name": "ofrenda",
    "created": "2026-10-27",
@@ -318,7 +325,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-11-05",
+   "pushed": "2026-11-06",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -330,11 +337,11 @@
    "tests": null
   }
  ],
- "project_count": 46,
- "tests_total": 4424,
- "repos_with_tests": 25,
- "last_launch": "ofrenda",
- "last_launch_date": "2026-10-27",
+ "project_count": 47,
+ "tests_total": 4799,
+ "repos_with_tests": 26,
+ "last_launch": "gifthorse",
+ "last_launch_date": "2026-11-06",
  "articles_published": 31,
  "latest_article": {
   "title": "An ofrenda for the people whose code still runs: Gemma 4 writes the cards on my laptop, and git checks every quote",
