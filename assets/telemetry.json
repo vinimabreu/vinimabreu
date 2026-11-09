@@ -1,12 +1,12 @@
 {
- "collected": "2026-11-06",
+ "collected": "2026-11-09",
  "projects": [
   {
    "name": "gifthorse",
    "created": "2026-11-06",
    "pushed": "2026-11-06",
    "description": "Static triage for a file, folder or archive from a stranger: inspect it without running it and answer BLOCK, REVIEW or NO FINDINGS with file, line and defanged indicators.",
-   "tests": 375
+   "tests": 376
   },
   {
    "name": "ofrenda",
@@ -325,7 +325,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-11-06",
+   "pushed": "2026-11-09",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -338,15 +338,15 @@
   }
  ],
  "project_count": 47,
- "tests_total": 4799,
+ "tests_total": 4800,
  "repos_with_tests": 26,
  "last_launch": "gifthorse",
  "last_launch_date": "2026-11-06",
- "articles_published": 31,
+ "articles_published": 32,
  "latest_article": {
-  "title": "An ofrenda for the people whose code still runs: Gemma 4 writes the cards on my laptop, and git checks every quote",
-  "date": "2026-10-27",
-  "url": "https://dev.to/vinimabreu/an-ofrenda-for-the-people-whose-code-still-runs-gemma-4-writes-the-cards-on-my-laptop-and-git-5ea0"
+  "title": "Three 'clients' sent me malware in two days. Binance lost $6.34 billion to the same trick.",
+  "date": "2026-11-06",
+  "url": "https://dev.to/vinimabreu/three-clients-sent-me-malware-in-two-days-binance-lost-634-billion-to-the-same-trick-47k3"
  },
  "flagships": [
   "revenue-loop",
