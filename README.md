@@ -59,7 +59,7 @@ Invited technical reviewer on [A Decision-Centered Reference Architecture for Tr
 <table>
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/vinimabreu/taint-trail"><img src="assets/payload-taint-trail.svg" alt="taint-trail: live CI state, test count and last push" width="100%"></a><br>Follows an untrusted GitHub Actions value after it moves, until it dies or reaches a shell.</td>
-<td width="50%" valign="top"><a href="https://github.com/vinimabreu/betorskip"><img src="assets/payload-betorskip.svg" alt="betorskip: live CI state, test count and last push" width="100%"></a><br>A local Gemma reads the bet slip; code checks every number and the slip's own arithmetic.</td>
+<td width="50%" valign="top"><a href="https://github.com/vinimabreu/gifthorse"><img src="assets/payload-gifthorse.svg" alt="gifthorse: live CI state, test count and last push" width="100%"></a><br>Reads what a stranger sends without running any of it and answers BLOCK, REVIEW or NO FINDINGS, with the file and the line.</td>
 </tr>
 </table>
 
@@ -92,8 +92,8 @@ A LangGraph support agent with the reliability layer that decides whether it can
 **[taint-trail](https://github.com/vinimabreu/taint-trail)**<br>
 The usual fix for `${{ github.event.comment.body }}` inside a `run:` block is to move the value into `env:`, which removes the finding from every scanner that looks for templates in scripts and removes nothing from the job. This follows the value after the move: through `env:`, `with:`, step outputs and into the called action, recursively, until it dies as a discrete argument with no shell in between, reaches a shell, can spoof `$GITHUB_OUTPUT` through a static heredoc delimiter, or becomes opaque, in which case it says exactly where it stopped and why instead of guessing. Every verdict is a chain with a file and line at each hop, because that is what convinces a maintainer. Modelled on a real finding in coordinated disclosure. 707 tests, one dependency, no network, no key.
 
-**[betorskip](https://github.com/vinimabreu/betorskip)**<br>
-Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by the bankroll rules you wrote down. Gemma 4 on Ollama, on your own machine, returns every number with the words it came from; plain code keeps only what the slip backs up, then checks the slip against itself: stake times odds is the return it prints, the legs multiply to the total, a "6-Fold" has six legs. That arithmetic put back a decimal point the OCR dropped (1747 for 17.47) and caught three misread legs on the same slip. On screenshots it had never seen, 17 of 24 verdicts were right, 6 came back for a look and one was wrong, and the README says which. It never says a bet will win. 134 tests, no dependencies. [Write-up](https://dev.to/vinimabreu/bet-or-skip-gemma-reads-the-bet-slip-on-my-laptop-and-the-slips-own-arithmetic-checks-gemma-eif).
+**[gifthorse](https://github.com/vinimabreu/gifthorse)**<br>
+Static triage for what a stranger sends: a zip of "requirements", a repository for a "coding assignment", a folder to "just review". It reads zip, tar and their compressed forms in memory and never executes, imports, extracts or follows anything, then answers BLOCK, REVIEW or NO FINDINGS with the file, the line, what would set it off and the hosts it would have contacted, defanged for a report. 24 rules look at the places a package can run without being opened as a program: a script named like a document, an active git hook, a build config that runs on load, an editor task on folder open, a download piped into a shell. A link is never followed and a file it could not read is at least REVIEW, so NO FINDINGS means nothing found, never safe. On 218 popular npm and PyPI packages it gave 169 NO FINDINGS, 49 REVIEW and 0 BLOCK. 376 tests, zero runtime dependencies, MIT.
 
 </details>
 
@@ -102,19 +102,7 @@ Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by
 ## Projects
 
 <details>
-<summary><b>39 more public projects</b>, by area: security, retrieval, agents, automation, evaluation and data</summary>
-
-**Security** · *What a stranger sends gets read, never run.*
-
-<a href="https://github.com/vinimabreu/gifthorse"><img src="assets/row-gifthorse.svg" width="100%" alt="gifthorse: Reads a zip, folder or repo from a stranger without running any of it, then answers BLOCK, REVIEW or NO FINDINGS with the file and the line"></a>
-
-<details>
-<summary>Notes on this one</summary>
-
-**[gifthorse](https://github.com/vinimabreu/gifthorse)**<br>
-Static triage for what a stranger sends: a zip of "requirements", a repository for a "coding assignment", a folder to "just review". It reads zip, tar and their compressed forms in memory and never executes, imports, extracts or follows anything, then answers BLOCK, REVIEW or NO FINDINGS with the file, the line, what would set it off and the hosts it would have contacted, defanged for a report. 24 rules look at the places a package can run without being opened as a program: a script named like a document, an active git hook, a build config that runs on load, an editor task on folder open, a download piped into a shell. A link is never followed and a file it could not read is at least REVIEW, so NO FINDINGS means nothing found, never safe. On 218 popular npm and PyPI packages it gave 169 NO FINDINGS, 49 REVIEW and 0 BLOCK. 376 tests, zero runtime dependencies, MIT.
-
-</details>
+<summary><b>39 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
@@ -150,6 +138,7 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 <a href="https://github.com/vinimabreu/ghostsubs"><img src="assets/row-ghostsubs.svg" width="100%" alt="ghostsubs: Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code"></a>
 <a href="https://github.com/vinimabreu/whatran"><img src="assets/row-whatran.svg" width="100%" alt="whatran: What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma"></a>
 <a href="https://github.com/vinimabreu/dapraia"><img src="assets/row-dapraia.svg" width="100%" alt="dapraia: The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code"></a>
+<a href="https://github.com/vinimabreu/betorskip"><img src="assets/row-betorskip.svg" width="100%" alt="betorskip: A local Gemma reads the bet slip; code checks every number and the slip&#39;s own arithmetic"></a>
 <a href="https://github.com/vinimabreu/web-pilot"><img src="assets/row-web-pilot.svg" width="100%" alt="web-pilot: A browser-use agent where the model proposes one action and code disposes"></a>
 <a href="https://github.com/vinimabreu/lead-quorum"><img src="assets/row-lead-quorum.svg" width="100%" alt="lead-quorum: Multi-agent lead qualifier on Google ADK + A2A that abstains instead of guessing"></a>
 <a href="https://github.com/vinimabreu/multi-agent-analyst"><img src="assets/row-multi-agent-analyst.svg" width="100%" alt="multi-agent-analyst: A multi-agent crew that answers business questions no single source can"></a>
@@ -157,7 +146,7 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 <a href="https://github.com/vinimabreu/mcp-listings"><img src="assets/row-mcp-listings.svg" width="100%" alt="mcp-listings: An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools"></a>
 
 <details>
-<summary>Notes on these 9</summary>
+<summary>Notes on these 10</summary>
 
 **[ofrenda](https://github.com/vinimabreu/ofrenda)**<br>
 A card for everyone whose code still runs in a repository after they moved on from it, read from git history alone. Blame runs with `-w -M -C` and the repository's own ignore list, through a shadow repository that never reads its config, so nothing in a repository you did not write gets to run. Gemma 4 on Ollama, on your own machine, writes one sentence per person; plain code keeps it only when every quote matches that person's commit messages letter for letter, and a second reading screens it for death, judgment or gender wording. On flask, requests, bottle and paramiko it made 40 cards with 106 quotes checked, and none of 1,687 deliberately broken answers got through. 400 tests, no dependencies, and the history never leaves the laptop.
@@ -170,6 +159,9 @@ What the coding agents ran in your terminal today, read from the history that al
 
 **[dapraia](https://github.com/vinimabreu/dapraia)**<br>
 The hour to go outside tomorrow, in one line. You say how you like the beach in your own words ("pouco vento, maré baixa, pelo menos 2 horas"), and Gemma 4 on Ollama, on your own machine, turns them into rules that each have to quote the words they came from, with every number you wrote accounted for. Plain code then checks every daylight hour of an Open-Meteo forecast against those rules and picks the window; the model only writes the sentence of why, and that sentence is checked against the facts before you see it. The tide model was checked against the Brazilian Navy's official table: its low tides came 53 to 69 minutes early, and one measured shift brings all eight within 10 minutes. 344 tests, no dependencies.
+
+**[betorskip](https://github.com/vinimabreu/betorskip)**<br>
+Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by the bankroll rules you wrote down. Gemma 4 on Ollama, on your own machine, returns every number with the words it came from; plain code keeps only what the slip backs up, then checks the slip against itself: stake times odds is the return it prints, the legs multiply to the total, a "6-Fold" has six legs. That arithmetic put back a decimal point the OCR dropped (1747 for 17.47) and caught three misread legs on the same slip. On screenshots it had never seen, 17 of 24 verdicts were right, 6 came back for a look and one was wrong, and the README says which. It never says a bet will win. 134 tests, no dependencies. [Write-up](https://dev.to/vinimabreu/bet-or-skip-gemma-reads-the-bet-slip-on-my-laptop-and-the-slips-own-arithmetic-checks-gemma-eif).
 
 **[web-pilot](https://github.com/vinimabreu/web-pilot)**<br>
 Browser-use agent built on the house rule: the model proposes one action, code disposes. Closed action vocabulary, guardrails (domain allowlist, no credential or payment fields, step budget), full audit trace.

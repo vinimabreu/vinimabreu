@@ -6,7 +6,8 @@
    "created": "2026-11-06",
    "pushed": "2026-11-06",
    "description": "Static triage for a file, folder or archive from a stranger: inspect it without running it and answer BLOCK, REVIEW or NO FINDINGS with file, line and defanged indicators.",
-   "tests": 376
+   "tests": 376,
+   "ci": "success"
   },
   {
    "name": "ofrenda",
@@ -27,8 +28,7 @@
    "created": "2026-10-13",
    "pushed": "2026-10-14",
    "description": "Paste a bet slip, get BET, SKIP or CHECK: read by a local Gemma, every number checked against the slip and its own arithmetic, decided by your bankroll rules.",
-   "tests": 137,
-   "ci": "success"
+   "tests": 137
   },
   {
    "name": "dapraia",
@@ -354,6 +354,6 @@
   "tenant-fence",
   "langgraph-production",
   "taint-trail",
-  "betorskip"
+  "gifthorse"
  ]
 }

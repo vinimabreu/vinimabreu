@@ -27,7 +27,7 @@ COPY = {
     "tenant-fence": (["Multi-tenant RAG: entitlements filter", "before top-k, so no ranking can leak."], "RAG"),
     "langgraph-production": (["A LangGraph support agent with a human", "gate and a resume that runs exactly once."], "LangGraph"),
     "taint-trail": (["Follows an untrusted Actions value after", "it moves, until it dies or hits a shell."], "CI security"),
-    "betorskip": (["A local Gemma reads the bet slip; code", "checks every number and its arithmetic."], "Ollama + Gemma 4"),
+    "gifthorse": (["Reads what a stranger sends without", "running it: BLOCK, REVIEW or NO FINDINGS."], "Static triage"),
 }
 
 

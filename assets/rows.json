@@ -1,12 +1,5 @@
 [
  {
-  "section": "security",
-  "name": "gifthorse",
-  "url": "https://github.com/vinimabreu/gifthorse",
-  "desc": "Reads a zip, folder or repo from a stranger without running any of it, then answers BLOCK, REVIEW or NO FINDINGS with the file and the line",
-  "slug": "gifthorse"
- },
- {
   "section": "rag",
   "name": "on-behalf",
   "url": "https://github.com/vinimabreu/on-behalf",
@@ -68,6 +61,13 @@
   "url": "https://github.com/vinimabreu/dapraia",
   "desc": "The hour to go outside tomorrow, in one line: your own words read by a local Gemma, the window picked by code",
   "slug": "dapraia"
+ },
+ {
+  "section": "agents",
+  "name": "betorskip",
+  "url": "https://github.com/vinimabreu/betorskip",
+  "desc": "A local Gemma reads the bet slip; code checks every number and the slip's own arithmetic",
+  "slug": "betorskip"
  },
  {
   "section": "agents",

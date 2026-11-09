@@ -23,7 +23,7 @@ USER = "vinimabreu"
 # Not projects: the profile itself and two placeholder repos.
 SKIP = {USER, "-", "minikube-prt-replica"}
 # The flagships, in the order the README shows them.
-FLAGSHIPS = ["revenue-loop", "sequence-gate", "tenant-fence", "langgraph-production", "taint-trail", "betorskip"]
+FLAGSHIPS = ["revenue-loop", "sequence-gate", "tenant-fence", "langgraph-production", "taint-trail", "gifthorse"]
 
 TEST_PATTERNS = (
     re.compile(r"tests?-(\d[\d,]*)(?:%20passing)?-", re.I),          # shields badge
