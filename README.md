@@ -102,7 +102,19 @@ Paste a bet slip, or point at a screenshot of one, and get BET, SKIP or CHECK by
 ## Projects
 
 <details>
-<summary><b>38 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
+<summary><b>39 more public projects</b>, by area: security, retrieval, agents, automation, evaluation and data</summary>
+
+**Security** · *What a stranger sends gets read, never run.*
+
+<a href="https://github.com/vinimabreu/gifthorse"><img src="assets/row-gifthorse.svg" width="100%" alt="gifthorse: Reads a zip, folder or repo from a stranger without running any of it, then answers BLOCK, REVIEW or NO FINDINGS with the file and the line"></a>
+
+<details>
+<summary>Notes on this one</summary>
+
+**[gifthorse](https://github.com/vinimabreu/gifthorse)**<br>
+Static triage for what a stranger sends: a zip of "requirements", a repository for a "coding assignment", a folder to "just review". It reads zip, tar and their compressed forms in memory and never executes, imports, extracts or follows anything, then answers BLOCK, REVIEW or NO FINDINGS with the file, the line, what would set it off and the hosts it would have contacted, defanged for a report. 24 rules look at the places a package can run without being opened as a program: a script named like a document, an active git hook, a build config that runs on load, an editor task on folder open, a download piped into a shell. A link is never followed and a file it could not read is at least REVIEW, so NO FINDINGS means nothing found, never safe. On 218 popular npm and PyPI packages it gave 169 NO FINDINGS, 49 REVIEW and 0 BLOCK. 376 tests, zero runtime dependencies, MIT.
+
+</details>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
