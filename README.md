@@ -1,4 +1,4 @@
-<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 47 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch gifthorse, updated 2026-11-06"></a>
+<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 48 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch switchboard, updated 2026-11-25"></a>
 
 <p align="center">
   <a href="#proof"><img src="assets/nav-proof.svg" alt="Proof" height="30"></a>
@@ -102,7 +102,7 @@ Static triage for what a stranger sends: a zip of "requirements", a repository f
 ## Projects
 
 <details>
-<summary><b>39 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
+<summary><b>40 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
@@ -134,6 +134,7 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 
 **Agents and tools** · *Agents that can only do what their tool layer allows.*
 
+<a href="https://github.com/vinimabreu/switchboard"><img src="assets/row-switchboard.svg" width="100%" alt="switchboard: A Claude Code back office: three markdown specialists, handoffs on disk, and a gate on every tool call"></a>
 <a href="https://github.com/vinimabreu/ofrenda"><img src="assets/row-ofrenda.svg" width="100%" alt="ofrenda: An ofrenda for the people whose code still runs: one card per person, the words by a local Gemma, every quote checked against git"></a>
 <a href="https://github.com/vinimabreu/ghostsubs"><img src="assets/row-ghostsubs.svg" width="100%" alt="ghostsubs: Finds recurring charges in bank and card CSV exports: each descriptor named by a local Gemma, every name checked by code"></a>
 <a href="https://github.com/vinimabreu/whatran"><img src="assets/row-whatran.svg" width="100%" alt="whatran: What your coding agents ran in your terminal today, flagged by fixed rules and explained by a local Gemma"></a>
@@ -146,7 +147,10 @@ A small, working RAG API on FastAPI, Chroma, and Claude. The clean baseline.
 <a href="https://github.com/vinimabreu/mcp-listings"><img src="assets/row-mcp-listings.svg" width="100%" alt="mcp-listings: An MCP (Model Context Protocol) server exposing a property-listings dataset to Claude as typed tools"></a>
 
 <details>
-<summary>Notes on these 10</summary>
+<summary>Notes on these 11</summary>
+
+**[switchboard](https://github.com/vinimabreu/switchboard)**<br>
+A back office on Claude Code: one dispatcher and three specialist agents written as markdown, with every handoff saved on disk, so a new session with no memory of the last one reads the inbox and picks up the work where it stopped. A PreToolUse hook decides every tool call in code, for the dispatcher and for every specialist, whatever the model writes: a payment stops until a person approves that exact invoice and amount, once, and a kill switch denies every call from every agent. 61 tests, standard library only, CI on Linux and macOS for Python 3.11 to 3.13. [Write-up](https://dev.to/vinimabreu/pythons-shlex-read-a-comment-where-bash-read-a-payment-4apo).
 
 **[ofrenda](https://github.com/vinimabreu/ofrenda)**<br>
 A card for everyone whose code still runs in a repository after they moved on from it, read from git history alone. Blame runs with `-w -M -C` and the repository's own ignore list, through a shadow repository that never reads its config, so nothing in a repository you did not write gets to run. Gemma 4 on Ollama, on your own machine, writes one sentence per person; plain code keeps it only when every quote matches that person's commit messages letter for letter, and a second reading screens it for death, judgment or gender wording. On flask, requests, bottle and paramiko it made 40 cards with 106 quotes checked, and none of 1,687 deliberately broken answers got through. 400 tests, no dependencies, and the history never leaves the laptop.
