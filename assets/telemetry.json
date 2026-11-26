@@ -1,6 +1,13 @@
 {
- "collected": "2026-11-25",
+ "collected": "2026-11-26",
  "projects": [
+  {
+   "name": "switchboard",
+   "created": "2026-11-25",
+   "pushed": "2026-11-25",
+   "description": "A Claude Code back office: a dispatcher, three specialists in markdown, handoffs on disk, and a PreToolUse gate that decides every tool call, with single-use approvals and a kill switch.",
+   "tests": 61
+  },
   {
    "name": "gifthorse",
    "created": "2026-11-06",
@@ -325,7 +332,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-11-25",
+   "pushed": "2026-11-26",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -337,16 +344,16 @@
    "tests": null
   }
  ],
- "project_count": 47,
- "tests_total": 4800,
- "repos_with_tests": 26,
- "last_launch": "gifthorse",
- "last_launch_date": "2026-11-06",
- "articles_published": 32,
+ "project_count": 48,
+ "tests_total": 4861,
+ "repos_with_tests": 27,
+ "last_launch": "switchboard",
+ "last_launch_date": "2026-11-25",
+ "articles_published": 33,
  "latest_article": {
-  "title": "Three 'clients' sent me malware in two days. Binance lost $6.34 billion to the same trick.",
-  "date": "2026-11-06",
-  "url": "https://dev.to/vinimabreu/three-clients-sent-me-malware-in-two-days-binance-lost-634-billion-to-the-same-trick-47k3"
+  "title": "Python's shlex read a comment where bash read a payment",
+  "date": "2026-11-25",
+  "url": "https://dev.to/vinimabreu/pythons-shlex-read-a-comment-where-bash-read-a-payment-4apo"
  },
  "flagships": [
   "revenue-loop",
