@@ -1,4 +1,4 @@
-<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 48 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch switchboard, updated 2026-11-25"></a>
+<a href="https://vinimabreu.dev"><img src="assets/hero.svg" width="100%" alt="Vinicius Pereira, AI engineer: AI systems that are grounded, tested, and honest. The model proposes, the code disposes. The model holds the conversation. Tested code makes every decision that matters. I build retrieval, agents, MCP servers, voice, automation and data pipelines with that one rule at the center. The flagships ship deterministic test suites that need no API key and show captured output from real runs, and every README is honest about the trade-offs. My client work is under NDA and stays private; these public projects are built to the same standard. Open to freelance and contract work: vinimabreu.dev. Live status: 49 public repos on a radar by launch date, the six flagships with their tests and CI state, last launch callproof, updated 2026-11-26"></a>
 
 <p align="center">
   <a href="#proof"><img src="assets/nav-proof.svg" alt="Proof" height="30"></a>
@@ -102,7 +102,7 @@ Static triage for what a stranger sends: a zip of "requirements", a repository f
 ## Projects
 
 <details>
-<summary><b>40 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
+<summary><b>41 more public projects</b>, by area: retrieval, agents, automation, evaluation and data</summary>
 
 **Retrieval and RAG** · *Citations you can click, an honest "I don't know", retrieval quality that is measured rather than assumed, and a fence between customers that a ranking cannot climb over.*
 
@@ -222,6 +222,7 @@ Generates on-brand product copy from your catalog, then checks every claim back 
 
 **Evaluation and quality** · *A regression gets blocked before it ships, not discovered after.*
 
+<a href="https://github.com/vinimabreu/callproof"><img src="assets/row-callproof.svg" width="100%" alt="callproof: Scripted phone calls against a voice agent, scored on what it did, not on what it said."></a>
 <a href="https://github.com/vinimabreu/confidence-gate"><img src="assets/row-confidence-gate.svg" width="100%" alt="confidence-gate: A trust gate for LLM output: auto-accept, human review, or abstain, on external signals"></a>
 <a href="https://github.com/vinimabreu/bedrock"><img src="assets/row-bedrock.svg" width="100%" alt="bedrock: A natural-language-to-SQL data agent with a stability harness"></a>
 <a href="https://github.com/vinimabreu/doc-eval"><img src="assets/row-doc-eval.svg" width="100%" alt="doc-eval: Field-level evaluation and release gate for LLM document extraction"></a>
@@ -231,7 +232,10 @@ Generates on-brand product copy from your catalog, then checks every claim back 
 <a href="https://www.kaggle.com/benchmarks/vinimabreu/keep-the-number-you-wrote"><img src="assets/row-keep-the-number-you-wrote.svg" width="100%" alt="Keep the number you wrote: Kaggle benchmark: do models keep the number, the unit and the direction when a sentence becomes rules?"></a>
 
 <details>
-<summary>Notes on these 7</summary>
+<summary>Notes on these 8</summary>
+
+**[callproof](https://github.com/vinimabreu/callproof)**<br>
+Tests a voice agent with scripted phone calls against a fictional bike shop: a phone number said as words, a name spelled in one breath, a name the line mishears and the caller corrects at the read-back. Each call is scored on the tool calls and the shop's diary, never on what the agent says, and a call exported from Retell gets the same checks plus a latency budget. Driven with gpt-5.4-mini for 21 calls, 9 failed; the most convincing one read the details back and asked "Is that correct?" after the booking tool had already run. A call the scripted caller could not follow is reported as not scored, never blamed on the agent. 124 tests, standard library only, CI on Linux and macOS for Python 3.11 to 3.13. [Write-up](https://dev.to/vinimabreu/the-agent-asked-is-that-correct-after-it-had-already-booked-5k9).
 
 **[confidence-gate](https://github.com/vinimabreu/confidence-gate)**<br>
 The gate between an LLM's output and production. It validates the structure, then scores confidence from external signals instead of the model's own word (is the output grounded in the evidence, does it survive resampling, does it satisfy the schema), and routes each result to auto-accept, a human review queue with a full audit trail, or abstain. Calibrated on the cost of a false accept, not the acceptance rate, because a confident wrong answer is the expensive one. Zero runtime dependencies beyond Pydantic, the generator injected as a callable.

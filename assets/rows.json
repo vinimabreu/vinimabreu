@@ -162,6 +162,13 @@
  },
  {
   "section": "evals",
+  "name": "callproof",
+  "url": "https://github.com/vinimabreu/callproof",
+  "desc": "Scripted phone calls against a voice agent, scored on what it did, not on what it said.",
+  "slug": "callproof"
+ },
+ {
+  "section": "evals",
   "name": "confidence-gate",
   "url": "https://github.com/vinimabreu/confidence-gate",
   "desc": "A trust gate for LLM output: auto-accept, human review, or abstain, on external signals",
