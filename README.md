@@ -15,6 +15,7 @@
 <p align="center">
   <a href="https://vinimabreu.dev/proof"><img src="assets/proof-anthropic.svg" alt="Paid bounty: Anthropic, security report, paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
   <a href="https://vinimabreu.dev/proof"><img src="assets/proof-mongodb.svg" alt="Paid bounty: MongoDB, security report, resolved and paid. Receipt on vinimabreu.dev/proof" width="49%"></a>
+  <a href="https://github.com/canonical/multipass/security/advisories/GHSA-pp54-9c8c-vp5g"><img src="assets/proof-multipass.svg" alt="Published advisory: Canonical Multipass, GHSA-pp54-9c8c-vp5g, path traversal, credited reporter" width="49%"></a>
   <a href="https://github.com/containers/crun/pull/2166"><img src="assets/proof-crun.svg" alt="Merged upstream: containers/crun pull request 2166, reviewed and merged by the project maintainer" width="49%"></a>
   <a href="https://arxiv.org/abs/2607.18347"><img src="assets/proof-arxiv.svg" alt="Credited reviewer: arXiv 2607.18347, a reference architecture for trustworthy agentic commerce" width="49%"></a>
   <a href="https://www.verba.ing/2026/10/13/when-ai-acts-for-the-company"><img src="assets/proof-verba.svg" alt="Co-author: When AI Acts for the Company, an essay with Dimitrios S. Sfyris on Verba, October 2026, on AI systems that act on a company's behalf" width="49%"></a>

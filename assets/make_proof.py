@@ -1,9 +1,10 @@
-"""Proof tiles: four things a reader can verify, each linked to its evidence.
+"""Proof tiles: things a reader can verify, each linked to its evidence.
 
     python3 assets/make_proof.py
 
 Only what is public and settled goes here: the two paid bounties (receipts on
-vinimabreu.dev/proof), the merged upstream fix, and the credited review.
+vinimabreu.dev/proof), the published advisory, the merged upstream fix, and the
+credited review.
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ W, H = 480, 112
 TILES = [
     ("proof-anthropic", "PAID BOUNTY", "Anthropic", "security report, paid"),
     ("proof-mongodb", "PAID BOUNTY", "MongoDB", "security report, resolved and paid"),
+    ("proof-multipass", "PUBLISHED ADVISORY", "Canonical Multipass", "GHSA-pp54-9c8c-vp5g · credited reporter"),
     ("proof-crun", "MERGED UPSTREAM", "containers/crun", "PR #2166 · OCI runtime used by Podman"),
     ("proof-arxiv", "CREDITED REVIEWER", "arXiv 2607.18347", "agentic commerce reference architecture"),
     ("proof-verba", "CO-AUTHOR", "When AI Acts for the Company", "essay with Dimitrios S. Sfyris · Verba, Oct 2026"),
