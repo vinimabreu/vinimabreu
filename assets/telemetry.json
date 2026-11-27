@@ -1,12 +1,12 @@
 {
- "collected": "2026-11-26",
+ "collected": "2026-11-27",
  "projects": [
   {
    "name": "callproof",
    "created": "2026-11-26",
-   "pushed": "2026-11-26",
+   "pushed": "2026-11-27",
    "description": "Scripted phone calls against a voice agent, scored on what it did, not on what it said.",
-   "tests": 124
+   "tests": 152
   },
   {
    "name": "switchboard",
@@ -339,7 +339,7 @@
   {
    "name": "bcb-data-pipeline",
    "created": "2026-04-28",
-   "pushed": "2026-11-26",
+   "pushed": "2026-11-27",
    "description": "Daily ETL of Brazilian macroeconomic indicators (Selic, IPCA, FX) from the BCB SGS API. Python + pandas + GitHub Actions.",
    "tests": null
   },
@@ -352,7 +352,7 @@
   }
  ],
  "project_count": 49,
- "tests_total": 4985,
+ "tests_total": 5013,
  "repos_with_tests": 28,
  "last_launch": "callproof",
  "last_launch_date": "2026-11-26",
